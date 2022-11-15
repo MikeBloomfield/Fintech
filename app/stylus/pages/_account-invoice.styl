@@ -1,0 +1,682 @@
+main
+  padding: 1px 0
+
+.page-invoice
+  font-family: "Montserrat", sans-serif;
+  .invoice
+    &__title
+      h2
+        margin-bottom: 15px
+        font-size: 20px
+        line-height: 1.5
+    &__content 
+      display flex
+      justify-content space-between
+      align-items stretch
+      max-width 1400px 
+      width 100% 
+      padding 40px 15px
+      margin 0 auto
+    &__block 
+      background: #1F204E;
+      border-radius: 10px;
+      padding 25px 30px 30px
+      color: #fff
+      &.lg 
+        max-width 970px
+        width 100%
+        margin-right 30px
+      &.sm 
+        max-width 370px 
+        width 100%
+        padding 25px 40px 30px
+    .right 
+      text-align right
+      .invoice__info-title
+        margin-top: 3px;
+        margin-bottom: 4px;
+        & + .invoice__info-description 
+          margin-bottom 8px
+    &__description 
+      color #fff
+      font-size 15px
+      line-height 15px
+      display flex
+      justify-content flex-start
+      align-items center
+      margin-top 2px
+      .status 
+        margin-left 30px
+    &__text 
+      color #fff
+      font-size 15px
+      line-height 15px
+      padding: 15px
+      border-radius: 5px
+      border: 1px solid rgba(#fff,.2);
+    &__btn  
+      a
+        display flex
+        justify-content center
+        align-items center
+        font-size: 15px;
+        line-height: 25px;
+        font-weight 500
+        text-transform uppercase
+        text-decoration none
+        color #fff
+        border-radius 5px
+        border 2px solid #319BE2
+        width 100%
+        padding 8px 10px
+        transition all .4s ease
+        span 
+          display inline-block
+          margin-left 5px
+        &:hover 
+          background #319be2
+          color #ffffff
+          border 2px solid #319be2
+      &-pdf
+        max-width 170px 
+        width 100% 
+        margin-left auto
+        margin-top 30px
+        background-color: #319be2
+        border-radius: 5px
+      &.blue 
+        a 
+          background $blue 
+          color $white
+      &.small 
+        a 
+          font-size: 9px;
+          padding 0 7px
+    &__top 
+      display flex
+      justify-content space-between 
+      align-items center
+      margin-bottom 5px 
+      display flex
+      justify-content space-between
+    &__info
+      margin-top 50px
+      margin-bottom 30px
+      display flex
+      justify-content space-between
+      p 
+        line-height 25px
+        margin-bottom 5px
+      &-logo 
+        max-width 190px 
+        width 100%
+      &-description 
+        color #fff
+        font-size 12px
+        line-height 12px
+        margin-bottom 6px
+        opacity: .5;
+      &-title 
+        color #fff
+        font-size 25px
+        line-height 30px
+      &-name 
+        margin-bottom 5px
+    &__table
+      margin-top 50px
+    .status 
+      display flex
+      justify-content center
+      border-radius 3px
+      font-size 9px
+      font-weight 500
+      line-height 25px
+      text-transform uppercase
+      text-align center
+      padding 0 24px
+      width max-content
+      &.gray
+        color #8D8DA3
+        background: rgba(73, 73, 109, 0.3);
+      &.yellow
+        color #EFA809
+        background: rgba(239, 168, 9, 0.3);
+      &.green
+        color #06D49C
+        background: rgba(6, 212, 156, 0.3);
+    &__tr 
+      display flex
+      justify-content space-between
+      align-items center
+      border-bottom 1px solid $white2
+      padding-bottom 3px
+    &__td 
+      color #fff
+      font-size 15px
+      line-height 15px
+      text-align left
+      width 100%
+      margin-right 5px
+      &.bold 
+          font-weight 500
+    &__td 
+      max-width 100px 
+      width 100%
+      text-align center
+      margin-right 10px
+      &[data-table="Amount"]
+        text-align right
+        margin-right 0
+      &[data-table="Description"]
+        max-width none
+        min-width 200px
+        text-align left
+    &__thead 
+      .invoice
+        &__tr
+          min-height 45px
+          border-bottom: 1px solid rgba(#fff,.2);
+        &__td
+          color #fff
+          font-size 12px
+          line-height 15px
+          opacity .5
+    &__tbody
+      .invoice
+        &__tr
+          min-height 55px
+          padding 10px 0
+          border-bottom: 1px solid rgba(#fff,.2);
+    &__total
+      display flex
+      justify-content space-between
+      align-items center
+      max-width 226px 
+      width 100% 
+      margin-left auto
+      margin-top 24px
+      &-title 
+        color #fff
+        font-size 20px
+        line-height 1.5
+        font-weight: bold;
+      &-sum
+        color #fff
+        font-weight: bold;
+        font-size 20px
+        line-height 1.5
+    &__notes 
+      margin-top 20px
+      &-description
+        color rgba(#fff, .5)
+        font-size 12px
+        line-height 12px
+        margin-bottom: 5px;
+    &__detailes 
+      &-title 
+        margin-bottom 42px
+      &-description
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(#fff,.5);
+        margin-bottom: 15px
+      &-btns 
+        margin-top 11px
+        .invoice__detailes-description
+          margin-bottom 9px
+        .invoice__btn 
+          margin-bottom 20px 
+      &-steps 
+        margin-top 18px
+      &-step 
+        display flex
+        justify-content flex-start
+        min-height 140px
+        &-info 
+          margin-left 20px
+        &-icon
+          .done
+            opacity 0
+          .icon 
+            margin-top 5px
+            position relative 
+            &:before 
+              content ""
+              position absolute 
+              height 60px 
+              width 1px
+              background rgba(#6E7073, .3)
+              left 10px 
+              bottom 100%
+            &:after 
+              content ""
+              position absolute 
+              height 60px 
+              width 1px
+              background rgba(#6E7073, .3)
+              left 10px 
+              top 90%
+        &:first-child 
+          .icon:before 
+            display none
+        &:last-child 
+          .icon:after 
+            display none
+        &.active
+          .done
+            opacity 1
+          .icon
+            .round 
+              display none
+            .round-main 
+              stroke #06D49C
+              fill #06D49C
+            &:after,
+            &:before
+              background #06D49C
+        &-title 
+          font-size: 20px;
+          line-height: 30px;
+          color: #fff;
+          font-weight: bold;
+          margin-bottom: 10px
+        &-time 
+          font-size: 15px;
+          line-height: 25px;
+          color: #fff;
+          margin-bottom 10px
+        &-btn 
+          max-width 85px
+          width 100%
+
+  @media (max-width : 998px)
+    .invoice
+      &__block 
+        padding 20px 20px
+        &.lg 
+          margin-right 10px
+      &__info 
+        flex-direction column 
+        .right 
+          text-align left
+          margin-top 20px
+  
+  @media (max-width : 768px)
+
+    .invoice 
+      &__content 
+        flex-direction column
+      &__block 
+        &.lg 
+          margin-right 0 
+          margin-bottom 20px
+          max-width none
+        &.sm 
+          max-width none
+
+      &__td 
+        font-size 12px 
+        margin-right 5px
+        &[data-table="Description"]
+          min-width 150px
+      &__info 
+        margin-bottom 30px
+        &-title 
+          font-size 20px 
+          line-height 25px
+      &__total 
+        max-width 150px
+        margin-top 15px
+        &-title,
+        &-sum 
+            font-size 20px
+      &__btn 
+        &-pdf 
+          margin-top 20px
+
+
+  @media (max-width : 480px)
+
+    .invoice
+      &__detailes
+        &-step
+          min-height 120px
+          &:last-child 
+            min-height 90px
+          &-icon 
+            .icon
+              &:after,
+              &:before 
+                height 50px
+          &-title 
+            font-size 18px 
+            line-height 25px
+            margin-top 3px
+
+
+  @media (max-width : 374px)
+
+    .invoice
+      &__thead  
+        .invoice__td
+          font-size 10px 
+      &__td 
+        font-size 11px
+        &[data-table="Description"]
+          min-width 120px
+      &__top 
+        flex-direction column 
+        align-items flex-start
+        .right 
+          text-align left
+          margin-top 20px
+      &__text 
+        font-size 13px
+        line-height 18px
+
+  
+      
+.page-invoice-step2
+  .invoice 
+    &__wrapper
+      max-width 800px 
+      width 100% 
+      margin 0 auto
+      padding 0 15px
+    &__section 
+      margin-top 25px
+    &__block
+      background: rgba(#1F204E, .8);
+      border-radius: 5px;
+      margin-top 14px
+      padding 25px 30px
+      h2
+        font-size: 20px
+        font-weight: bold;
+        margin-bottom: 50px
+    &__text
+      color #fff
+      font-size: 15px;
+      line-height: 25px;
+      span 
+        color $blue
+        font-weight 500 
+    &__top 
+      display flex
+      justify-content space-between
+      align-items center
+      &-back 
+        a
+          display flex
+          justify-content flex-start
+          align-items center
+          font-size: 15px
+          font-weight: bold;
+          .icon 
+            margin-right 10px
+      &-secure 
+        display flex
+        justify-content flex-end
+        align-items center
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(#fff, .5)
+        .icon 
+          display inline-block
+          margin-left 5px
+  .payment 
+    &__items 
+      display flex
+      justify-content space-between
+      &:last-child 
+        .payment__item 
+          margin-bottom 0
+    &__item
+      margin-bottom 20px
+      width: 50%
+    &__description
+      font-size: 12px;
+      line-height: 15px;
+      color: #6E7073;
+      margin-bottom 5px
+    &__title 
+      font-size: 20px;
+      line-height: 25px;
+      color: #fff;
+      font-weight bold
+
+  .send
+    &__select
+      margin 0 0 20px
+      //display flex
+      //justify-content space-between
+      //align-items center
+      label 
+        font-size: 15px;
+        line-height: 25px;
+        color: #fff
+        display inline-block
+        margin-bottom 10px
+      .ui.dropdown
+        display flex
+        justify-content space-between
+        align-items center
+        background: #1F204E;
+        border-radius: 5px;
+        min-height 50px
+        padding 0 10px 0 20px
+        max-width 520px
+        width 100%
+        color: #fff
+        border: 1px solid #48497D;
+        .menu 
+          width 100%
+          border none 
+          border-radius 5px
+          .item 
+            padding 10px 20px
+            &:first-child 
+              border-radius 5px 5px 0 0
+            &:last-child 
+              border-radius 0 0 5px 5px
+        .icon 
+          width 20px
+          display flex
+          align-items center 
+          margin-left 3px
+          &:before 
+            display none
+        .img 
+          max-width 20px
+          display flex
+          justify-content center
+          align-items center
+          margin-right 5px
+        .item 
+          display flex
+          justify-content flex-start
+          align-items center
+          width 100%
+          font-size: 15px;
+          line-height: 25px;
+          .info
+            width 30%
+            display flex
+            justify-content flex-start
+            border-right: 1px solid #48497D;
+          .balance 
+            font-size: 12px;
+            line-height: 15px;
+            margin 0 auto 
+            width 70%
+            text-align center
+    &__info 
+      display flex
+      justify-content space-between
+      margin-top 20px
+      &-img 
+        max-width 140px
+        width 100%
+        margin-right 10px
+        background-color: #fff
+        border-radius: 5px
+        padding: 15px
+      &-items 
+        width 100%
+        max-width 540px
+      &-item 
+        padding-bottom 5px
+        margin-top 9px
+        margin-bottom 20px
+        display flex
+        justify-content space-between
+        &:last-child 
+          margin-bottom 0
+        label 
+          color rgba(#fff, .5)
+          font-size: 12px;
+          line-height: 15px;
+        &-block 
+          width 100%
+          label 
+            margin-bottom 5px
+            display inline-block
+        &-input 
+          width 100%
+          padding 5px 10px 0px 0
+          border none 
+          color #fff
+          font-size: 15px;
+          line-height: 25px;
+          background-color: transparent;
+        &-copy 
+          max-width 140px
+          width 100%
+          margin-top auto
+          a
+            display flex
+            justify-content center
+            align-items center
+            background: #319BE2;
+            border: 2px solid #319BE2;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: 15px;
+            line-height: 25px;
+            font-weight 500
+            text-transform: uppercase;
+            color: #FFFFFF;
+            width 100%
+            padding 8px 5px
+            img 
+              margin-right 7px
+              width 17px
+    &-timer 
+      margin-top 23px
+      p 
+        font-size 10px
+        line-height 15px
+        font-weight 500
+      &__block 
+        border-radius 10px
+        background-color $white2
+        display flex
+        align-items center
+        margin-top 10px
+        padding 12px 15px 13px
+        max-width: 130px
+        width 100%
+      &__icon 
+        margin-right 14px
+        width 15px
+        height 15px
+      &__info 
+        border-left 1px solid $white
+        font-size 15px 
+        line-height 15px
+        font-weight 500
+        padding-left 14px
+
+
+  .note
+    margin-bottom: 20px
+    .invoice__block 
+      border-left 5px solid #FF6053
+      border-right 5px solid transparent
+      padding 30px 25px
+    &__title 
+      margin-bottom 20px
+      h2 
+        font-size: 20px;
+        line-height: 25px;
+        font-weight 400
+        margin-bottom: 0
+        span 
+          color: #FF6053;
+
+  @media (max-width : 998px)
+    .invoice
+      &__block 
+        padding 20px 20px
+    
+    .payment 
+      &__description 
+        margin-bottom 5px
+      &__title 
+        font-size 15px 
+        line-height 15px
+    
+    .note__title 
+      h2
+        font-size 18px 
+        line-height 25px
+    
+  @media (max-width : 768px)
+
+    .send__select
+      flex-direction column
+      align-items flex-start
+      margin-bottom 20px
+    
+    .send__info
+      flex-direction column 
+      &-img 
+        margin 0 auto
+      &-items 
+        max-width none
+      &-item 
+        &-copy 
+          max-width 45px 
+          a
+            img 
+              margin-right 0
+            .text 
+              display none
+    .send__select 
+      .ui.dropdown 
+        padding 10px 10px 10px 20px
+        .item
+          flex-direction column 
+          align-items flex-start
+          .balance 
+            text-align left
+            width 100%
+          .info 
+            width 100%
+            margin-bottom 10px
+            border: none;
+    .invoice__text
+      font-size 13px 
+      line-height 15px
+    
+    .payment
+      &__items
+        flex-direction column
+        &:last-child 
+          .payment__item:first-of-type 
+            margin-bottom 10px
+      &__item
+        margin-bottom 10px
+        &:last-of-type
+          text-align left
+          margin-bottom 20px

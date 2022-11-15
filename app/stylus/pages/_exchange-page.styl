@@ -1,0 +1,378 @@
+.exchange-page
+    position relative
+.exchange
+    padding-top 132px
+    background: linear-gradient(191.07deg, #242666 0.71%, #090B2F 54.6%);
+    &__title
+        font-size 45px
+        line-height 55px
+        max-width: 581px
+        margin: 0 auto 40px
+        text-align center
+        span
+            color: $blue
+    &__button
+        max-width: 206px
+        display block
+        background: #319BE2;
+        box-shadow: 5px -15px 40px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        text-transform uppercase
+        color: #fff
+        padding: 22px
+        margin: auto
+        text-align center
+        font-size 15px
+        line-height 15px
+        &:hover
+            color: #fff
+            background: $blue-hover
+
+.exchange-why
+    position relative
+    padding-top 135px
+    background: linear-gradient(0deg, #090b2f 0%, #1d1f5a 50%, #090b2f 100%) 
+    &__title
+        font-size 45px
+        line-height 55px
+        margin-bottom 40px
+        text-align center
+        position relative
+    .wrapper
+        max-width: 1250px
+    &__wrapper
+        max-width: 1250px
+        margin: auto
+        display flex
+        justify-content: center
+        gap: 100px
+        flex-wrap: wrap
+        position relative
+    &__item
+        display flex
+        flex-direction: column
+        align-items: center
+        &-label
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 90px;
+            color: #319BE2;
+            margin 0
+            text-align center
+        &-desc
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+            max-width: 200px
+            margin: 0 auto
+
+.exchange-reward
+    padding-top 135px
+    .wrapper
+        max-width: 1250px
+    &__title
+        font-size 45px
+        line-height 55px
+        margin-bottom 40px
+        text-align center
+    &__wrapper
+        max-width: 1170px
+        margin: auto
+        display flex
+        justify-content: center
+        gap: 30px
+        flex-wrap: wrap
+    &__item
+        background: #1F204E;
+        mix-blend-mode: normal;
+        backdrop-filter: blur(4px);
+        border-radius: 5px;
+        padding: 50px 40px
+        display flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-end
+        max-width: 370px
+        &:first-child
+            .exchange-reward__item-pic
+                margin-top 15px
+        &-label
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top 40px
+            margin-bottom 10px
+        &-desc
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+            opacity: 0.75;
+            margin-bottom 40px
+        &-button
+            display block
+            background: $blue
+            box-shadow: 5px -15px 40px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            text-align center
+            text-transform uppercase
+            font-size 15px
+            line-height 15px
+            padding: 22px 0
+            width: 210px
+            &:hover
+                color: #fff
+                background: $blue-hover
+
+
+.exchange-calc
+    padding-top 135px
+    &__title
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom 40px
+        text-align center
+    &__wrapper
+        display flex
+        justify-content: center
+        gap: 25px
+        margin-bottom 40px
+        flex-wrap: wrap
+    &__left
+        width: 280px
+    &__right
+        width: 395px
+    &__item
+        border: 1px solid #34345e
+        border-radius: 5px
+        padding: 15px
+        width: 100%
+        cursor: pointer
+        height: 70px
+        display flex
+        & > div
+            display flex
+            gap: 15px
+            align-items: center
+        p
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            color: #848597
+            max-width: 135px
+            text-align left
+        &-pic
+            max-width: 40px
+        &:not(:last-child)
+            margin-bottom 15px
+    &__item.active
+        background: #273e85
+        border: 1px solid #273e85
+        p
+            color: #fff
+    &__box
+        background: #273E85;
+        border-radius: 5px;
+        width: 100%
+        padding: 25px 30px
+        height: 112px
+        position relative
+        &:before
+            content: ""
+            position absolute
+            top: 30px
+            right: 30px
+            width: 20px
+            height: 20px
+            display block
+            background: #309be2
+            border-radius: 3px
+        &:after
+            content: ""
+            position absolute
+            top: 36px
+            right: 36px
+            width: 8px
+            height: 8px
+            display block
+            background: #fff
+            border-radius: 2px
+        &:not(:last-child)
+            margin-bottom 15px
+        p:first-child
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FFFFFF;
+            margin 0
+        p:last-child
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin 0
+    &__button
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border-radius: 5px
+        background: $blue
+        padding: 22px
+        max-width: 265px
+        display block
+        text-align center
+        margin: auto
+        &:hover
+            background: $blue-hover
+            color: #fff
+
+
+
+.exchange-advantage
+    padding-top 135px
+    position relative
+    background: linear-gradient(0deg, #090b2f 0%, #1d1f5a 50%, #090b2f 100%)
+    .wrapper
+        max-width 1250px
+    &__title
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom 40px
+        text-align center
+        position relative
+    &__list
+        display flex
+        justify-content: flex-start
+        gap: 40px 80px
+        flex-wrap: wrap
+        &-item
+            padding-left 50px
+            background: url(../img/icons/check-page.svg)
+            background-position: left top
+            background-repeat: no-repeat
+            background-size: 30px 30px
+            text-align left
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            width: 330px
+
+
+.exchange-start
+    padding-top 135px
+    .wrapper
+        max-width: 1250px
+    &__title
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom 40px
+        text-align center
+    &__wrapper
+        max-width: 1170px
+        margin: auto
+        display flex
+        justify-content: center
+        gap: 30px
+        flex-wrap: wrap
+    &__item
+        max-width: 370px
+        &-pic
+            max-width: 370px
+            margin-bottom 25px
+        &-label
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom 10px
+        &-desc
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+
+
+
+
+.exchange-faq
+    padding 135px 0
+    background: linear-gradient(0deg, #090b2f 0%, #1d1f5a 50%, #090b2f 100%)
+    &__title
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom 40px
+        text-align center
+    .accordeon
+        max-width: 700px
+        margin: auto
+        dl
+            padding: 20px 30px
+            background: #1b1c4f;
+            border-radius: 5px;
+            &:not(:last-child)
+                margin-bottom 10px
+            span
+                transition: $default-transition
+        dl.active
+            background: #1d2763
+            span
+                transform: rotate(180deg)
+        dt
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            display flex
+            justify-content: space-between
+            cursor: pointer
+        dd
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #C6C6D1;
+            padding-top 10px
+
+
+@media (max-width : 1230px)
+    .exchange-advantage__list
+        justify-content: center
+
+@media (max-width : 425px)
+    .exchange__title, 
+    .exchange-why__title, 
+    .exchange-reward__title, 
+    .exchange-calc__title,
+    .exchange-advantage__title,
+    .exchange-start__title,
+    .exchange-faq__title
+        font-size 28px
+        line-height 35px
+        text-align center
+    .exchange-why__wrapper
+        gap: 20px
+    .exchange-why__item-label
+        font-size 50px
+        line-height 70px
+    .exchange-calc__box::after
+        top: 21px
+        right: 21px
+    .exchange-calc__box::before
+        top: 15px
+        right: 15px
+    .exchange-start__wrapper
+        gap: 60px

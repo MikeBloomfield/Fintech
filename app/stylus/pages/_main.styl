@@ -1,0 +1,298 @@
+
+.page__all 
+	background: linear-gradient(191.07deg, #242666 0.71%, #090B2F 54.6%);
+	.header 
+		position static
+		padding 13px 0
+	.wrapper
+		min-width $min-width
+		max-width $max-width
+		padding 0 15px 0 15px
+		margin 0 auto
+		position relative
+	.footer__wrap.wrapper
+		padding-top: 30px;
+	.main
+		min-width $min-width
+		width 100%
+
+	main 
+		padding 30px 0
+
+	h1,h2,h3,h4,h5,p 
+
+		font-family $base-font-family
+		margin 0
+	table 
+		width 100%
+	th 
+		color $gray 	
+		font-weight 400
+		font-size: 12px;
+		line-height: 15px;
+		font-family $base-font-family 
+		vertical-align middle
+
+
+	td 
+		color $white 
+		font-size: 15px;
+		line-height: 25px;
+		font-family $base-font-family 
+		vertical-align middle
+
+	.ui.accordion:not(.styled) .accordion .title~.content:not(.ui), 
+	.ui.accordion:not(.styled) .title~.content:not(.ui)
+		padding 0
+	.ui.accordion .title:not(.ui)
+		padding 0
+		font-family $base-font-family
+	.ui.attached.segment
+		margin 0
+		width 100%
+		max-width 100%
+	.ui.attached.menu
+		max-width 100%
+		font-family $base-font-family
+
+		
+
+
+
+	.default 
+		&__title 
+			h1
+				font-weight 700
+				font-size: 45px;
+				line-height: 50px;
+				color $white 
+				text-align left
+			h2 
+				font-size: 45px;
+				line-height: 50px;
+				font-weight 700
+				color $white 
+				text-align center
+			h3 
+				font-weight 700
+				font-size 25px
+				line-height 35px
+				color $white 
+				transition all .4s ease
+			h4
+				font-weight 600
+				font-size 20px
+				line-height 30px
+			&.big 
+				h3 
+					font-size: 30px;
+					line-height: 40px;
+		
+		&__text 
+			p,
+			a 
+				font-weight 400
+				font-size: 20px;
+				line-height: 30px;
+				color $white
+			&.white 
+				p,
+				a 
+					color $white
+			&.big 
+				p,
+				a
+					font-size: 20px
+					line-height: 35px
+			a 
+				&:hover 
+					color $green
+		&__btn 
+			a,
+			button 
+				display inline-block 
+				text-align center
+				border none
+				width 100% 
+				border-radius 16px
+				font-weight 500
+				font-size 15px
+				line-height 25px
+				padding 13px 10px 12px
+				background $dark-blue
+				color $white
+				position relative 
+				transition $default-transition
+				top 0
+				&:hover	
+					box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+					top -3px
+			&.white 
+				a
+					background $dark-blue
+					color $white
+			&.green 
+				a
+					background $dark-blue
+			&.border 
+				a
+					border: 2px solid $white
+					padding 8px 8px
+					background transparent
+			&.transparent
+				a 
+					background transparent
+		&__input 
+			input,
+			textarea
+				width 100%
+				font-weight 500
+				font-size 15px
+				line-height 20px
+				color $white
+				background #040652
+				border 1px solid transparent
+				border-radius 15px
+				padding 14px 20px
+				position relative
+				&::placeholder 
+					color $gray 
+				&:focus 
+					border 1px solid $green
+					outline none
+				&.red 
+					border 1px solid $red
+			label 
+				display block
+				font-weight 500
+				font-size 12px
+				line-height 20px
+				color $gray
+			&-check 
+				input 
+					display none
+					&:checked+label
+						&:before
+							background #040652
+						&:after 
+							opacity 1
+					a 
+						font-weight 600
+						font-size 14px
+						line-height 25px
+						color $green
+						text-decoration underline
+				label 
+					position relative
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 25px;
+					color $gray
+					a 
+						font-weight: 500;
+						font-size: 12px;
+						line-height: 25px;
+						color $green
+					&:before 
+						content ""
+						position absolute 
+						left 0 
+						top 0 
+						border none
+						border-radius 8px
+						width 30px 
+						height 30px
+						cursor pointer
+						background #040652
+						transition $default-transition
+					&:after 
+						content ""
+						position absolute 
+						left 7px 
+						top 9px 
+						width 15px 
+						height 12px 
+						background-image url('../img/icons/done.svg')
+						background-size cover
+						background-repeat no-repeat
+						cursor pointer
+						opacity 0
+						transition $default-transition	
+		&__select 
+			.ui.dropdown
+				width 100%
+				border 1px solid transparent
+				background #040652
+				border-radius 15px
+				padding 14px 20px
+				.text 
+					font-weight 500
+					font-size 15px
+					line-height 20px
+					color $white
+				.menu 
+					width 100% 
+					border 1px solid transparent
+					border-radius 15px
+					background #040652
+					.item 
+						font-weight 500
+						font-size 15px
+						line-height 20px
+						color $white
+				.dropdown.icon
+					top calc(50% - 2px)
+					right 18px
+
+		
+	.pagination 
+		&__list
+			display flex
+			justify-content center
+			&-item 
+				a 
+					display flex
+					align-items center 
+					justify-content center
+					font-family $base-font-family
+					font-size 12px
+					font-weight 700
+					line-height 12px
+					border-radius 5px
+					color $gray
+					width 30px 
+					height 30px
+					&:hover 
+						color $white
+				&.disabled 
+					a 
+						pointer-events none
+						opacity .5
+				&.active 
+					a 
+						color $white
+						background $blue
+						box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.07);
+
+
+
+.pages 
+	padding 50px 30px
+	ul 
+		margin-bottom 20px
+	li 
+		margin 10px 0px
+		a 
+			color $white 
+			font-size 20px 
+			line-height 30px 	
+			font-weight 600
+			&:hover 
+				color $blue
+			span 
+				color $blue 
+				margin-right 5px
+
+
+
+

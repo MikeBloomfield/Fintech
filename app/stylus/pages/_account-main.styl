@@ -1,0 +1,1663 @@
+
+body 
+  background $dark-blue-bg 
+
+
+
+.account 
+  display flex
+  justify-content space-between
+  h1,h2,h3,h4,h5,p 
+    font-family $custom-font-family
+    margin 0
+  p,a 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color $gray
+    font-family $custom-font-family
+  h2 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: $white;
+  td 
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: $white;
+    vertical-align middle
+    padding-top 11px 
+    padding-bottom 12px
+    &:last-child
+      text-align right
+    &.red 
+      color $red 
+    &.green 
+      color $green
+    &.bold 
+      font-weight 700
+    .show 
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      color $blue
+      text-transform uppercase
+      &:hover 
+        color $white
+        
+    .ticket 
+      font-size: 15px;
+      line-height: 25px;
+      color $blue
+      font-weight 500
+      &:hover 
+        color $white
+    &.normal 
+      color #FFC43F
+    &.low 
+      color $green
+    &.high 
+      color $red
+
+  th 
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    color $gray
+    text-align left
+    padding-bottom 10px
+    padding-top 6px
+    position relative
+    &[data-title="Status"]
+      text-align center
+    &.is-sort 
+    &:last-child
+      text-align right
+        
+      span 
+        cursor pointer 
+        position relative
+        padding-right 15px
+        &:after 
+          content ""
+          position absolute
+          background-image url('../img/icons/arrow-blue.svg')
+          background-size contain
+          background-repeat no-repeat
+          width 10px 
+          height 4px
+          right 0 
+          top 5px
+      &.active 
+        span
+          color $white 
+          &:after 
+            transform rotate(-180deg)
+  tr 
+    border-bottom: 1px solid rgba($gray, .2);
+  tbody tr
+    &:last-child 
+      border-bottom: 1px solid transparent
+
+  table 
+    width 100%
+    .icon 
+      display inline-block
+      width 20px
+      height 20px 
+      border-radius 10px
+      vertical-align top
+      margin-right 15px
+  .is-center 
+    text-align center
+  .default
+    &__input  
+      input 
+        border 1px solid $gray
+        background transparent
+      &-check 
+        label
+          &:before 
+            border 1px solid $gray
+        input:checked+label
+          &:before
+            background $dark-blue
+            border 1px solid $dark-blue
+          &:after 
+            background-image: url(../img/icons/done-white.svg);
+      &-search 
+        display flex
+        align-items center
+        border 1px solid $gray
+        background transparent
+        border-radius 15px
+        max-width 215px
+        width 100%
+        padding 0 0 0 13px
+        .seacrh__icon 
+          max-width 21px
+          width 100%
+        input 
+          border none
+          background transparent
+          padding 9px 10px
+  .ui
+    font-family $custom-font-family !important
+    &.input
+      font-family $custom-font-family
+      &>input
+        font-family $custom-font-family
+    &.checkbox label
+      font-size: 12px;
+      line-height: 25px;
+      color $white
+  .sticker
+    position relative
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 25px;
+    color $white 
+    border-radius: 3px;
+    max-width 75px 
+    width 100% 
+    display inline-block
+    text-align center
+    text-transform uppercase
+    transition all .4s ease
+    margin-right 5px
+    &.dep,
+    &.buy
+      background $green
+      &:hover 
+        box-shadow: 0px 13px 23px rgba($green, 0.2);
+    &.with,
+    &.sell
+      background $blue
+      &:hover
+        box-shadow: 0px 13px 23px rgba($blue, 0.2);
+    &.sell,
+    &.buy
+      max-width 65px
+    &.opacity 
+      pointer-events none
+      &:hover 
+        box-shadow none
+      &.dep,
+      &.buy
+        background rgba($green, .2)
+        color $green
+      &.with,
+      &.sell
+        background rgba($blue, .2)
+        color $blue
+    &:last-child 
+      margin-right 0
+  .notification
+    background: $dark-blue;
+    border-radius: 10px;
+    display flex
+    justify-content space-between
+    padding 10px 25px
+    width 100%
+    margin 0 auto
+    margin-top 10px
+    &.red
+      border-left 5px solid $red 
+      .notification__icon
+        path 
+          fill $red 
+    &.green
+      border-left 5px solid $green 
+      .notification__icon
+        path 
+          fill $green 
+    &.yellow
+      border-left 5px solid $yellow 
+      .notification__icon
+        path 
+          fill $yellow 
+    &__block 
+      border-right 1px solid #4647A1
+      display flex
+      justify-content space-between
+      width 100%
+      padding-right 30px
+    &__icon 
+      margin-right 25px 
+      display flex
+      justify-content center
+      align-items center
+      width 22px
+    &__text 
+      flex-grow 1
+      p 
+        font-weight: 400
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+    &__btns 
+      display flex
+      align-items center 
+      justify-content space-between
+      max-width 126px 
+      width 100% 
+      margin-left 5px
+    &__btn 
+      padding 0 3px
+      a
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-transform uppercase
+      &.green a 
+        color $blue
+      &.red a 
+        color $green
+    &__steps 
+      max-width 195px 
+      width 100%
+      display flex
+      align-items center 
+      justify-content space-between
+      padding-left 30px
+    &__step 
+      font-weight: 700
+      font-size: 15px;
+      line-height: 25px;
+      color #4647A1
+      .step-active 
+        color #ffffff
+      .step-all
+        color #4647A1
+      &-btn 
+        a 
+          display flex 
+          justify-content center
+          align-items center 
+          width 25px 
+          height 25px
+        a.disabled 
+          pointer-events none 
+          opacity .7 
+
+  .tooltip 
+    position relative 
+    display inline-block
+    vertical-align: middle;
+    cursor pointer
+    max-width 23px 
+    width 100%
+    &-block 
+      display none
+      box-shadow 0 20px 40px rgba(0, 0, 0, 0.2)
+      border-radius 5px 5px 0px 5px
+      background-color $dark-blue-bg 
+      position absolute
+      padding 7px 13px
+      bottom 100% 
+      right 100%
+      width max-content
+      max-width 200px
+      min-width 100px
+      z-index 11
+      p
+        font-size 13px
+        line-height 20px
+        color $white
+        text-align center
+    img
+      max-width 23px 
+      height 23px 
+      cursor pointer
+    &:hover 
+        .tooltip-block
+            display block
+ 
+  .toolbar 
+    display flex
+    justify-content flex-end
+    align-items center 
+    flex-grow 1
+    label 
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      color: $gray
+
+    &__dates 
+      display flex
+      justify-content space-between
+      max-width 270px 
+      width 100%
+      .ui.calendar
+        width 50%
+        min-width 120px
+        &:first-child 
+          margin-right 10px
+        .table .day
+          min-width 270px
+        &.popup
+          width: 100%;
+          min-width: 260px;
+    &__select 
+      display flex
+      align-items center 
+      margin-left 10px
+      label 
+        margin-right 5px
+      &-type 
+        .ui.dropdown
+          min-width 160px 
+          width 100%
+      &-down 
+        max-width 245px
+        width 100%
+        .ui.dropdown
+          border-radius 5px 0 0 5px
+          border-right none
+          .dropdown.icon
+            right 10px
+          .menu 
+            min-width 175px
+        .select__down  
+          display flex
+          min-width 175px 
+          width 100%
+          .text 
+            white-space: nowrap;
+        .ui.button 
+          background $blue
+          padding 0
+          max-width 45px 
+          width 100%
+          height: 100%;
+          top: 0;
+          right: 0;
+          padding 10px 0 11px
+          border-radius 0 5px 5px 0
+          margin 0
+          display flex
+          justify-content center
+          align-items center
+      &-assets, 
+      &-status 
+        max-width 185px 
+        width 100%
+    .ui.dropdown .text
+      font-size 12px
+  input
+    &::placeholder 
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 30px;
+      color rgba($white, .2) 
+  
+
+  main 
+    width 100%
+    padding 0 30px 0 20px
+
+  .sidebar 
+    padding-top 23px
+    width 190px
+    min-width 190px 
+    position relative 
+    transition all .4s ease
+    background $dark-blue
+    overflow hidden
+    min-height: 100vh;
+    &__btn 
+      position absolute 
+      top 20px 
+      right 0px 
+      width 14px 
+      height 43px
+      transition all .4s ease
+      cursor pointer
+      display flex
+      align-items center  
+      justify-content flex-end
+      background-image url('../img/account/menu_icon/triangle.svg')
+      background-repeat no-repeat 
+      background-size cover
+      position absolute
+      span
+        transform: rotate(-180deg)
+    &__wrapper 
+      padding 0 10px 0 10px
+    &__logo
+      padding-left 7px 
+      a 
+        display inline-block
+        max-width 95px 
+        width 100%
+        position relative
+    .logo-open 
+      display inline-block
+      overflow hidden
+      img
+        width 95px 
+        max-width none
+    .logo-close 
+      display none
+    &__list 
+      margin-top 13px
+      padding-left 7px
+      &-item 
+        padding 11px 0 12px
+        a 
+          display flex
+          align-items center
+          justify-content flex-start
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 20px;
+          .icon 
+            max-width 24px
+          path 
+            fill $gray
+            transition all .4s ease
+          &:hover 
+            color $white
+            path 
+              fill $white
+        .name 
+          opacity 1
+          visibility visible
+          width 100%
+          padding-left 15px
+          pointer-events all
+          transition all .4s ease,
+                    opacity .1s ease
+        &.active 
+          a 
+            color $white 
+            path 
+              fill $blue
+    &__table 
+      padding 0 10px 0 10px
+      margin-top 32px
+      width 170px
+      transition all .4s ease
+      background rgba(#5257AC, .2)
+      border-radius 5px
+    th 
+      font-weight: 700
+      font-size: 10px;
+      line-height: 15px;
+      color #ffffff
+      text-align left
+      padding 4px 0 4px
+      &.gray
+        color $gray
+      &:nth-child(2)
+        padding 4px 3px
+      &:last-child
+        text-align right
+    td 
+      font-weight: 700
+      font-size: 10px;
+      line-height: 15px;
+      color: #FFFFFF;
+      padding 5px 0 4px
+      &:nth-child(2)
+        padding 4px 3px
+      &.green 
+        color $green
+      &.red 
+        color $red
+    &__close
+      width 60px
+      min-width 60px
+      .sidebar__btn 
+        span 
+          transform rotate(0)
+      .logo-close 
+        display inline-block
+      .logo-open 
+        display none 
+      .sidebar__list-item 
+        .name 
+          opacity 0 
+          visibility hidden
+          padding-left 0
+          width 0
+          pointer-events none
+      .sidebar__table 
+        display none
+        width 0
+
+  .account__header 
+    margin-left auto 
+    display flex
+    justify-content flex-end
+    align-items center
+    padding 11px 0 19px
+    .account
+      &__name h4 
+        font-weight: 700
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+      &__block 
+        display flex
+        align-items center 
+        cursor pointer 
+        position relative
+        margin-left 10px
+        a 
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 30px;
+          color: #FFFFFF;
+          padding 5px 5px
+          display inline-block
+        &.open 
+          .account__drop 
+            display block
+      &__img 
+        max-width 40px 
+        width 100%
+        margin-right 6px
+      &__drop 
+        display none 
+        position absolute
+        width 100px
+        border-radius: 5px;
+        padding 0 10px
+        top 100%
+        right 0
+        background $dark-blue
+        box-shadow: 0px 10px 90px rgb(0 0 0 / 40%);
+        z-index 10
+      
+  .section 
+    &__top 
+      display flex
+      justify-content space-between
+      align-items center
+      flex-wrap wrap
+      margin-bottom 10px
+      gap: 10px
+    &__id 
+      margin-right auto 
+      h2 
+        font-weight 400
+        font-size: 20px;
+        line-height: 30px;
+        color $blue
+        display none
+    &__block 
+      border-radius: 5px;
+      background #1F204E
+      padding 20px 30px
+      margin-bottom 10px 
+    &__detailed
+      p
+        color $blue
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        text-transform uppercase
+    &__title 
+      margin-right 10px
+    &__description 
+      p 
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color rgba($gray, .5)
+    &__bottom 
+      &-description
+        p 
+          font-weight: 700
+          font-size: 20px;
+          line-height: 40px;
+          text-align: center;
+          color $white
+          display none
+
+  .sections 
+    display flex
+    justify-content space-between
+    flex-wrap wrap 
+    .section__block 
+      width calc(50% - 10px)
+    .section__description 
+      margin-bottom 10px
+      p 
+        color $gray
+
+  .accounts 
+    &__check 
+      label 
+        display inline-block
+        padding-left 36px
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30px;
+        color: $white;
+    &__form 
+      display flex
+      justify-content flex-end
+      align-items center
+      flex-grow 1
+      .ui.search
+        max-width 225px 
+        width 100%
+        margin-left 16px
+    &__input 
+      max-width 215px 
+      width 100%
+      margin-left 15px
+    &__block 
+      padding-bottom 20px
+      &-bottom 
+        display flex
+        justify-content space-between
+        align-items center 
+    &__more 
+      a 
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color $blue 
+        display flex
+        align-items center
+        text-transform uppercase
+        path 
+          fill $blue
+      span 
+        display inline-block
+        margin-right 5px
+    &__total 
+      display flex
+      align-items center
+      justify-content flex-end
+      p 
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: $white
+        &.total 
+          display inline-block
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+          color: $blue
+          margin-left 13px
+    &__table 
+      th  
+        &[data-title="Currency"]  
+          width 15%
+          text-align left
+          color: rgba(255, 255, 255, .5)
+        &[data-title="Balance"]  
+          width 14%
+          color: rgba(255, 255, 255, .5)
+        &[data-title="24h CHG in %"]  
+          width 11%
+          text-align: left
+          color: rgba(255, 255, 255, .5)
+        &[data-title="Reserved"]  
+          width 12%
+          text-align left
+          color: rgba(255, 255, 255, .5)
+        &[data-title="Available balance"]  
+          width 15%
+          text-align left
+          color: rgba(255, 255, 255, .5)
+        &[data-title="EUR Value"]  
+          width 14%
+          text-align left
+          color: rgba(255, 255, 255, .5)
+        &[data-title="Operations"]  
+          width 18%
+          text-align left
+          color: rgba(255, 255, 255, .5)
+      td 
+        padding-top 12px 
+        padding-bottom 12px  
+        .oper-item 
+          display flex
+          align-items center
+          justify-content space-between
+          max-width 190px 
+          width 100%
+        &[data-title="Currency"]  
+          font-weight 700
+        &[data-title="Balance"]  
+          font-weight 400
+    &__block-bottom 
+      padding-top 9px
+
+  .transactions
+      &__table 
+        th
+          padding-right 3px
+          &[data-title="Number"]
+            width 11%
+          &[data-title="Time"]
+            width 15%
+          &[data-title="Operation type"]
+            width 10%
+          &[data-title="Amount"]
+            width 10%
+          &[data-title="Currency"]
+            width 7%
+            &.is-center
+              text-align left 
+          &[data-title="Status"]
+            width 8%
+          &[data-title="To"]
+            width 20%
+          &[data-title="Details"]
+            width 4%
+            padding-right 0
+        td
+          padding-right 3px
+          &[data-title="Details"]
+            padding-right 0
+          &[data-title="Amount"]
+            font-weight 700
+          &[data-title="Currency"]
+            font-weight: 700
+            .icon 
+              margin-right 0px
+            &.is-center
+              text-align left 
+  &.account__operations
+    .operations 
+      &__tabs
+        .ui.tabular.menu
+          border-bottom none
+          .item 
+            font-weight: 700
+            font-size: 15px;
+            line-height: 30px;
+            color $gray
+            border none
+            padding 7px 34px 8px
+            margin 0
+            border-radius 5px 5px 0 0 !important
+            background rgba($dark-blue, .5)
+            margin-right 5px
+            &.active 
+              color $white
+              background: $dark-blue
+              border none
+            &:hover 
+              color $white
+      &__blocks 
+        .ui.attached.segment
+          border-radius: 5px;
+          background $dark-blue
+          padding 15px 30px 30px
+          border none
+          margin 0
+          &:first-child
+            border-radius 0 5px 5px 5px
+      &__top 
+        &-tabs 
+          max-width 250px 
+          width 100%
+          .ui.attached.tabular.menu
+            background: transparent
+            border-radius: 5px;
+            border 1px solid $blue
+            width 100%
+            .item 
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 25px;
+              color $blue
+              border-radius: 3px !important
+              border none
+              margin 0
+              padding 8px 10px 7px
+              width 50%
+              justify-content center
+              &.active 
+                color $white
+                background: $blue
+              &:hover 
+                color $white
+      &__block 
+        &.ui.attached.segment
+          padding 0 
+          border-radius 0
+          margin-top 20px
+        .field__bottom 
+          display flex
+          justify-content space-between
+          align-items center
+          border-bottom: 1px solid rgba(#6E7073, .1);
+          padding-bottom 18px
+          margin-bottom 10px
+          padding-top 10px
+          &:last-of-type 
+            border-bottom none
+          label 
+            line-height 15px
+          .field__sum 
+            font-weight: 700
+            font-size: 20px;
+            line-height: 20px;
+            color $white 
+            span 
+              display inline-block
+            .description 
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 12px;
+              color $gray
+              margin-left 10px
+  .funding-fiat__block 
+    display flex
+    justify-content space-between
+    align-items stretch
+    .fiat
+      &__form 
+        max-width 320px 
+        width 100%
+        flex-grow 1
+        margin-top -5px
+      &__details
+        background $dark-blue-bg
+        border-radius: 5px;
+        width 100%
+        margin-left 30px
+        display flex
+        flex-direction column
+        display none
+        padding 50px 60px
+        &.active 
+          display flex
+        &-block 
+          text-align center
+          max-width 460px 
+          width 100%
+          margin auto
+        &-img 
+          max-width 243px 
+          width 100%
+          margin 15px auto 45px
+        &-title
+          margin-bottom 18px
+          h3 
+            font-weight: 700
+            font-size: 20px;
+            line-height: 40px;
+            color $white
+        &-text 
+          p
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color $gray
+        &-fields 
+          margin-top 7px
+        &-field 
+          display flex
+          justify-content flex-start
+          margin-bottom 20px
+          &:last-of-type 
+            margin-bottom 0px
+          .fiat__details-label
+            max-width 150px
+            width 100%
+            margin-right 10px
+            p
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 25px;
+              color $gray
+          .fiat__details-text
+            p
+              font-weight: 700
+              font-size: 15px;
+              line-height: 25px;
+              color $white
+
+  .funding-crypto__block 
+    max-width 520px 
+    width 100% 
+    margin 0 auto
+    padding-bottom 110px
+    .crypto
+      &__form 
+        margin-top 30px
+        .text 
+          width 100%
+          line-height 30px
+      &__qrcode 
+        max-width 210px 
+        width 100% 
+        margin 0 auto
+
+
+  .limit 
+    margin-bottom: 18px
+    margin-top 10px
+    &-row
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    &-text
+      text-align: left;
+      & > p
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30px;
+        color $white
+        white-space nowrap
+    &-amount
+      text-align: right;
+      & > p
+        font-weight: 500
+        font-size: 15px;
+        line-height: 30px;
+        .green 
+          color $white
+        .limit-current
+          color $white
+    &-bar
+      width: 100%;
+      font-size: 0;
+      line-height: 0;
+      border-radius: 2px;
+      height: 15px;
+      background-color: rgba($white, .1);
+      position: relative;
+    &-status
+      display: block;
+      position: absolute;
+      left: 0;
+      margin-left: -1px;
+      top: -0px;
+      bottom: -1px;
+      background-color: $blue;
+      border-radius: 2px
+      transition: width 1s ease-in-out;
+
+  .withdrawal-fiat__block
+    .fiat
+      &__form
+        max-width 520px 
+        width 100%
+        margin 0 auto
+        .field__bottom
+          padding-top 8px
+          &-amount
+            border-bottom none
+        .fields__radio 
+          .ui.radio.checkbox
+            width calc(33% - 5px)
+        .field__cards
+          background: $dark-blue-2 
+          border-radius: 5px;
+          align-items flex-start
+          .field 
+            margin-bottom 15px
+            input 
+              border 1px solid $white
+          .field__block 
+            &.field
+              border-radius: 5px;
+              padding 15px 15px 0 15px
+              width 100%
+              margin-bottom 0
+              &:first-child 
+                background $blue
+                max-width 285px 
+              &:last-child 
+                max-width 235px
+            .field 
+              padding-right 0
+        .field__date 
+          max-width 110px 
+        .field__img
+          max-width 87px 
+          width 100%
+          margin-top auto
+          margin-left auto
+          margin-bottom 14px
+        .ui.calendar 
+          .ui.icon.input>i.icon
+            right 5px 
+            left auto
+            top 6px
+          .ui input 
+            padding 9px 35px 9px 10px !important
+        .ui.dropdown 
+          .text 
+            line-height 30px
+        .ui.attached.menu
+          flex-wrap wrap 
+          justify-content space-between
+          margin-top 0
+          .item
+            width calc(50% - 5px)
+            border none
+            background: transparent;
+            border-radius 5px !important
+            border 1px solid $blue
+            padding 5px 10px 5px
+            display flex
+            justify-content space-between
+            align-items center
+            margin-bottom 10px
+            &:nth-child(3),
+            &:nth-child(4)
+              margin-bottom 0
+            &:hover 
+              background $blue
+            &.active 
+              background $blue
+              .fiat__item-block-text p 
+                color $white
+              .fiat__item-block-selected
+                display block
+        .ui.attached.segment
+          padding 0
+          margin-bottom 15px
+        .ui.button 
+          max-width 255px 
+          margin 0 auto
+          display flex
+          justify-content center
+          align-items center
+      &__item 
+        &-block 
+          &-icon 
+            max-width 42px 
+            margin-right 10px
+            border-radius 5px
+          &-info 
+            width 100%
+          &-title 
+            margin-bottom -2px
+            h5 
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 30px;
+              color $white
+          &-text 
+            p 
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 20px;
+              color $gray
+          &-selected 
+            display none
+        &-descriptions
+          display flex
+          justify-content flex-end
+          align-items center
+          position absolute 
+          top 0
+          right 0
+        &-description 
+          display flex
+          align-items center 
+          justify-content flex-end
+          margin-left 10px
+          &-icon 
+            max-width 11px
+          &-text 
+            margin-left 5px
+            p 
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 20px;
+              color $gray
+
+  .withdrawal-crypto__block 
+    .crypto__form 
+      max-width 520px 
+      width 100% 
+      margin 0 auto
+      .ui.button 
+        max-width 255px 
+        margin 20px auto 0
+        display flex
+        justify-content center
+        align-items center
+
+    .section__description 
+      margin 10px 0 15px
+    .crypto__code 
+      max-width 410px 
+      width 100%
+      text-align center
+      margin 70px auto 40px
+      .ui.button 
+        max-width 255px 
+        margin 20px auto 0
+        display flex
+        justify-content center
+        align-items center
+    
+    .crypto__block 
+      max-width 450px 
+      width 100% 
+      margin 100px auto 40px
+      text-align center
+      padding 60px 15px 40px 15px
+      position relative
+      .section__description 
+        margin 10px auto 15px
+      &-icon 
+        max-width 80px 
+        position absolute  
+        top -40px
+        left calc(50% - 40px)
+      .ui.button 
+        max-width 255px 
+        margin 20px auto 0
+        display flex
+        justify-content center
+        align-items center
+
+  
+
+  .verification
+    h2 
+      line-height 30px
+    .ui.accordion .title 
+      display flex
+      justify-content space-between
+      align-items center
+      padding 0
+      font-family $custom-font-family
+      .dropdown.icon
+        width 28px 
+        height 28px
+        position relative
+        &:before
+          content "" 
+          position absolute
+          background-image url('../img/icons/arrow-blue.svg') !important
+          background-repeat no-repeat !important
+          background-size cover !important
+          width 10px 
+          height 6px
+          top 50%
+          left 50% 
+          transform translate(-50%, -50%) 
+      &.active 
+        .dropdown.icon
+          transform rotate(-180deg)
+
+    &__status
+      margin-left auto 
+      margin-right 8px
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 30px;
+      color $gray
+      .current 
+        color $blue 
+      .status 
+        color $green
+        font-weight 700
+    .ui.icon.input>i.icon
+      &.declined, 
+      &.accepted, 
+      &.review 
+        opacity 1
+        &:before
+          content ""
+          position absolute
+          background-size cover !important
+          background-repeat no-repeat !important
+          width 25px 
+          height 25px
+          top 50% 
+          right 15px 
+          left auto
+          transform translateY(-50%)
+          margin 0
+      &.declined
+        &:before
+          background-image url('../img/icons/cross.svg') !important
+      &.accepted
+        &:before
+          background-image url('../img/icons/check-2.svg') !important
+      &.review
+        &:before
+          background-image url('../img/icons/clock.svg') !important
+    &__step 
+      border-bottom: 1px solid rgba(#6E7073, .2);
+      margin-bottom 17px
+      &-block 
+        display flex
+        justify-content space-between
+        align-items center
+        margin-top 10px
+        padding-bottom 30px
+        .verification__step-description
+          margin-bottom 0
+        .button.ui 
+          max-width 270px
+      &:last-child 
+        padding-top 3px
+        .verification__step-block
+          padding-bottom 5px
+          margin-top 25px
+    &__field 
+      display flex
+      justify-content space-between
+      position relative
+      padding-left 40px
+      margin-bottom 5px
+      &:before 
+        content attr(data-step)
+        font-weight: 600
+        font-size: 12px;
+        line-height: 25px;
+        text-align center
+        color $white 
+        width 25px 
+        height 25px 
+        border-radius 50% 
+        background $blue
+        position absolute
+        left 0 
+        top calc(50% - 12px)
+      .fields 
+        width 100%
+      &-description 
+        position absolute 
+        right 0 
+        top -2px
+        p
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 25px;
+          color $blue
+          text-transform uppercase
+
+    &__step 
+      &.disabled 
+        opacity .5 
+        pointer-events none
+      &-description 
+        margin-bottom 10px
+        p 
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 25px;
+          color $white
+        &.opacity 
+          p   
+            color $gray
+      &-top 
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+      &-stickers 
+        .sticker 
+          background: rgba(49, 155, 226, 0.3);
+          border-radius: 5px;
+          max-width none 
+          width auto 
+          padding 3px 14px 2px
+          color $blue
+          font-weight: 500
+          font-size: 10px;
+          line-height: 25px;
+          margin-right 10px
+          &:last-child 
+            margin-right 0
+      &-to 
+        padding-bottom 3px
+        .verification__field
+          margin-bottom 12px
+      &:last-child 
+        margin-bottom 0
+        border-bottom none
+    &__text 
+      display flex
+      justify-content space-between
+      align-items center
+      width 100%
+      .line 
+        border-bottom: 2px dashed rgba(#319BE2, .2);
+        width 100%
+        margin 2px 5px 0
+      p 
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30px;
+        color: #FFFFFF;
+        white-space nowrap
+    &__info 
+      display flex
+      justify-content flex-end
+      align-items center
+      .info
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color $blue 
+        text-transform uppercase
+        white-space nowrap
+      .icon 
+        margin-left 10px
+        width 25px
+        display flex
+        justify-content center     
+
+  .sections
+    .ui.button
+      min-height 50px 
+
+
+  .password.section__block
+    display: flex;
+    flex-direction: column;
+    .ui.button 
+      max-width 220px
+      margin-top auto
+
+  .sessions-history 
+    table 
+      tbody 
+        td[data-title="Browser"] 
+          .icon 
+            margin-right 0
+
+  .tickets
+    &__top 
+      display flex
+      justify-content space-between
+      align-items center 
+      margin-bottom 15px
+      &-list 
+        display flex
+        justify-content flex-start
+        align-items center 
+        margin-left 10px
+      &-item 
+        font-weight: 600
+        font-size: 15px;
+        line-height: 20px;
+        color $white
+        position relative
+        padding-right 10px
+        padding-left 10px
+        border-right 1px solid #9798DB;
+        &:first-child
+          padding-left 0 
+        &:last-child 
+          border-right none
+          padding-right 0
+        &.active 
+          color $blue
+          font-weight 400
+    .closed
+      color#8D8DA3
+      background: rgba(73, 73, 109, 0.3);
+      border-radius: 3px;
+      text-transform uppercase
+      padding: 5px 0
+      font-weight 500
+      text-align center
+      font-size 9px
+      line-height 15px
+      display block
+      width: 85px
+      margin: auto
+    .open
+      color#06D49C
+      background: rgba(6, 212, 156, 0.3);
+      border-radius: 3px;
+      text-transform uppercase
+      padding: 5px 0
+      font-weight 500
+      text-align center
+      font-size 9px
+      line-height 15px
+      display block
+      width: 85px
+      margin: auto
+    .button.ui 
+      max-width 140px
+      padding 8px 10px 7px
+      font-size: 12px;
+      line-height: 25px;
+      text-transform uppercase
+      margin-left: auto
+    &__table
+      .pagination 
+        margin-top 10px
+      td[data-title="Priority"]
+        font-weight 700
+
+  .ticket 
+    &__back 
+      margin-bottom 10px
+      a
+        display flex
+        justify-content flex-start
+        align-items center 
+        font-weight: 700
+        font-size: 15px;
+        line-height: 25px;
+        color $green
+        .icon 
+          margin-right 5px
+          margin-bottom 2px
+    &__table 
+      background: transparent;
+      border-radius 15px 15px 0 0
+      padding 0px 0px 4px 0px
+      td 
+        padding-top 14px
+        &[data-title="Ticket name"]
+          font-weight 700
+        &[data-title="Priority"]
+          font-weight 700
+    &__content  
+      &-bottom 
+        padding 25px 25px
+        background $dark-blue-2
+        border-radius: 5px;
+      &-info 
+        display flex
+        align-items center 
+        justify-content flex-start
+        .date 
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color $gray
+          margin-right 10px
+        .owner
+          font-weight: 500
+          font-size: 12px;
+          line-height: 15px;
+          color $blue
+      &-text 
+        margin-top 10px
+        p 
+          font-size: 15px;
+          line-height: 25px;
+          color $white
+      &-reply 
+        margin-top 35px
+        .ui.button 
+          max-width 220px
+          display block
+          margin-left: auto
+
+  .pagination 
+    &__list
+      display flex
+      justify-content center
+      &-item 
+        a 
+          display flex
+          align-items center 
+          justify-content center
+          font-family $custom-font-family
+          font-size 12px
+          font-weight 700
+          line-height 12px
+          border-radius 5px
+          color $gray
+          width 30px 
+          height 30px
+          &:hover 
+            color $white
+        &.disabled 
+          a 
+            pointer-events none
+            opacity .5
+        &.active 
+          a 
+            color $white
+            background $blue
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.07);
+  
+  .field__banking-account
+    .ui.dropdown 
+      .text 
+        a 
+          display none
+      .menu 
+        .item
+          display flex 
+          align-items center 
+          justify-content space-between
+          padding-right 0
+          span 
+            width calc(100% - 60px)
+            display inline-block
+          a 
+            display inline-block
+            margin-left auto
+            width 30px
+            margin 0 5px
+          &.selected 
+            background rgba($blue, .5)
+            &:after 
+              display none
+      .ui.button
+        max-width 100%
+        border-radius 0 0 5px 5px
+      .plus-icon
+        margin-right 5px
+
+.ui.modal>.close
+    top 15px 
+    right 15px 
+    display flex
+    justify-content center
+    align-items center 
+    img 
+        max-width 12px
+
+.ui.form
+  .code__inputs.fields  
+    flex-wrap nowrap
+    max-width 410px 
+    width 100%
+    margin 0 auto 15px
+    .code__input 
+      width 100%
+      max-width 60px 
+      height 60px
+      margin-right 10px
+      border: 1px solid $gray;
+      background transparent
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-weight: 700
+      font-size: 20px;
+      line-height: 30px;
+      text-align center
+      color $white
+      padding 0
+      &:last-child 
+        margin-right 0
+      &:focus,
+      &:active
+        border: 1px solid $blue
+        background transparent
+        color $white
+        border-radius 5px
+
+.popup 
+    &__block 
+      .ui.button 
+        max-width 320px 
+        margin 0 auto
+        display flex 
+        justify-content: center;
+        align-items center
+      .button-link 
+        .ui.button 
+          font-weight: 700
+          font-size: 15px;
+          line-height: 25px;
+          color $green 
+          background transparent 
+          &:hover,
+          &:active,
+          &:focus 
+            color $white
+            background transparent 
+            box-shadow none
+    &__wrapper 
+        max-width 500px 
+        width 100%
+        padding 0 15px 
+        margin 0 auto
+    &__title 
+      margin-bottom 10px
+      h2 
+        font-weight: 700
+        font-size: 25px;
+        line-height: 35px;
+        text-align center
+    &__text 
+      margin-bottom 10px
+      p 
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color $gray
+        text-align center
+    &__qrcode 
+      max-width 210px 
+      width 100%
+      margin 0 auto 10px
+      &-img 
+        background: #FFFFFF;
+        border-radius: 5px;
+        margin-bottom 10px
+      &-or 
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color $gray
+        text-align center 
+    &__authentication,
+      .ui.form 
+        max-width 410px 
+        width 100% 
+        margin 0 auto
+    &__account-num 
+      margin-bottom 10px
+      p 
+        font-weight 700
+        font-size: 30px;
+        line-height: 40px;
+        text-align center
+    
+      
+    

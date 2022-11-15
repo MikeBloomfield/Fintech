@@ -1,0 +1,550 @@
+.ui.input
+  font-family $base-font-family
+  font-weight 500
+  font-size 15px
+  line-height 20px
+  color $white
+  &>input
+    font-family $base-font-family
+    font-weight 500
+    font-size 15px
+    line-height 20px
+    color $white
+    border: 1px solid $gray;
+    background transparent
+    box-sizing: border-box;
+    border-radius: 5px;
+    width 100%
+    &::placeholder 
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 30px;
+      color rgba($white, .2) 
+.ui.input.focus>input, .ui.input>input:focus
+  border: 1px solid $gray
+  background transparent
+  color $white
+
+.ui
+  font-family $base-font-family !important
+  &.input
+    &.focus 
+      border: 1px solid $blue
+    &.error 
+      background-color: transparent;
+      border-color: $red;
+      color: $red;
+  &.checkbox
+    a 
+      color $blue
+      &:hover 
+        color $white
+    label 
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      color $gray 
+      padding-left 35px
+      &:before 
+        border 1px solid $gray
+        background: transparent
+        border-radius: 5px; 
+        width 25px 
+        height 25px
+      &:hover 
+        color $white 
+        &:before 
+          border 1px solid $gray
+          background: transparent
+    input
+      background red
+      &:checked 
+        & ~ label
+          &:before
+            background: $blue
+          &:after 
+            content ""
+            position absolute
+            left 6px 
+            top 8px 
+            width 14px 
+            height 10px 
+            background-image: url(../img/icons/done-white.svg);
+            background-size cover
+            background-repeat no-repeat
+        &:focus
+          & ~ label
+            color $white
+            &:before 
+              background: $blue
+              border 1px solid $blue
+        &:hover ~ label
+          color $white 
+      &:focus ~ label
+        color $white
+        &:before 
+          background: transparent
+          border 1px solid $blue
+  
+  &.search 
+    .ui.icon.input
+      &>i.icon
+        right auto 
+        left 0
+        opacity 1
+        &:before 
+          content ""
+          background-image: url(../img/icons/search.svg) !important
+          background-position center !important
+          background-repeat no-repeat !important
+          background-size cover !important 
+          width 21px
+          height 21px
+          top calc(50% - 10px)
+          left calc(50% - 7px)
+          margin-top 0
+      &> input 
+        padding 10px 10px 8px 42px !important
+      .prompt
+        border-radius: 5px;
+    & > .results 
+      background $gray
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.07);
+      border-radius: 5px;
+      border 5px solid $gray
+      right 0
+      left auto
+      .result
+        color $white 
+        padding 6px 15px
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        border-bottom none
+        &:first-child 
+          border-radius 5px 15px 0 0 
+        &:last-child 
+          border-radius 0 0 15px 15px
+        .title 
+          color $white 
+          margin 0
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 25px;
+        &:hover 
+          background $gray
+.ui.default.dropdown:not(.button)>.text, 
+.ui.dropdown:not(.button)>.default.text  
+  color rgba($white, .2)      
+.ui.dropdown
+  width 100%
+  border 1px solid $gray
+  background transparent
+  border-radius 5px
+  padding 9px 30px 9px 13px
+  &.active 
+    border 1px solid $gray
+  &>.dropdown.icon
+    position absolute 
+    right 0
+    top 12px
+    width 8px 
+    height 5px
+    &:before
+      display none
+  .text.default
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color rgba($white, .2) 
+    
+  .text 
+    font-weight 500
+    font-size 15px
+    line-height 20px
+    color $white
+    width 100%
+  .default.text
+    color $white
+  .menu 
+    width 100% 
+    background: $dark-blue-2;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    border-radius 5px
+    .item 
+      font-weight 400
+      font-size: 15px;
+      line-height: 20px;
+      color $white
+      padding 9px 25px 9px 15px
+      &:first-child 
+        border-radius 5px 5px 0 0 
+      &:last-child 
+        border-radius 0 0 5px 5px
+      &:hover 
+        color $white
+        background $blue-active
+      &.selected 
+        background transparent
+        font-weight 700
+        color $white
+        &:after 
+          content ""
+          background-image: url(../img/icons/done.svg)
+          width 12px 
+          height 9px
+          position absolute 
+          top calc(50% - 4px) 
+          right 8px
+    
+  .crypto
+    &__item   
+      display flex
+      justify-content space-between
+      align-items center
+      &-currency 
+        display flex
+        justify-content flex-start
+        align-items center
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30px;
+        color $white
+        border-right: 1px solid $gray
+        width 35%
+        padding-right 15px
+        .icon 
+          width 20px
+          height 20px
+          margin-right 7px
+      &-balance 
+        width 65%
+        padding-left 15px
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30px;
+        .name 
+          margin-right 5px
+
+  .dropdown.icon
+    top calc(50% - 2px)
+    right 18px
+
+
+
+.ui.calendar
+  .ui
+    &.input 
+      width 100%
+    i.icon.calendar:before
+      content ""
+      background-image url('../img/icons/calendar.svg') !important
+      background-size cover !important
+
+      width 21px 
+      height 21px
+      top 15px 
+      left 8px
+    &.table
+      font-family $base-font-family 
+      background: $dark-blue-2;
+      border-radius: 5px;
+      color $white
+      .icon 
+        font-size 10px
+        color $blue
+      thead 
+        th 
+          background transparent
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 20px;
+          color $gray 
+        tr 
+          .link 
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            color $blue
+            &.prev, &.next
+              color $gray
+      tr 
+        .link 
+          color $white
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 20px;
+          text-align center
+          border-radius: 5px;
+          border none !important
+          &.disabled 
+            color rgba($gray, .4)
+          &.focus
+            background $gray
+            color $white !important
+          &.range 
+            color rgba($white, .8)
+            background $gray
+            border-radius 0
+          &.active
+            background $gray !important
+            color $white !important
+    input 
+      padding 9px 10px 9px 35px !important
+      &::placeholder 
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 30px;
+        color rgba($white, .2) 
+    &.popup 
+      background transparent
+      border-radius: 5px;
+      color $white
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      // width 100%
+      // min-width 260px
+      &:before 
+        display none
+
+
+  table 
+    table-layout: fixed;
+  th 
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color $gray 
+  &.ui-widget.ui-widget-content
+    border: 5px solid $gray
+    background: $gray;
+    border-radius: 5px;
+    color $white
+  .ui-datepicker-title
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color $blue
+  .ui-widget-header
+    border none 
+    background transparent
+  .ui-icon.ui-icon-circle-triangle-w
+    background-image url('../img/icons/arrow-sm-prev.svg')
+    background-position center
+  .ui-icon.ui-icon-circle-triangle-e
+    background-image url('../img/icons/arrow-sm-next.svg')
+    background-position center
+  .ui-state-default
+    background transparent
+    border none
+    color $white
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align center
+    border-radius: 5px;
+    &:hover 
+      background $gray
+
+.field 
+  margin 0
+  position relative
+
+
+.fields__radio 
+  border none
+  width 100%
+  display flex
+  justify-content space-between
+  .ui.radio.checkbox
+    width calc(50% - 5px)
+    input
+      & ~ label
+        &:after,
+        &:before 
+          display none
+      &:checked ~ label
+        color $white
+        background: $blue
+    label   
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      border 1px solid $blue
+      color $blue
+      border-radius: 5px !important
+      margin 0
+      padding 11px 10px 12px   
+      text-align center
+      &:hover 
+        color $white
+
+
+.ui.form 
+  .fields 
+    margin 0 0 15px 0
+    align-items flex-end
+    .field
+      padding 0
+      padding-right 10px 
+      &:last-child 
+        padding-right 0
+      .ui.button
+        margin-top 
+      &.wide 
+        padding 0
+        padding-right 10px
+        &:last-child 
+          padding-right 0
+  .field
+    margin 0 0 20px 0
+    input
+      border 1px solid $gray
+      background transparent
+      border-radius 5px
+      padding 9px 30px 9px 13px
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 30px;
+      color: #FFFFFF;
+      font-family $base-font-family
+      &:focus 
+        border: 1px solid $blue
+        background transparent
+        color $white
+        border-radius 5px
+      &::placeholder 
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 30px;
+        color rgba($white, .2) 
+    &.error 
+      input,
+      textarea
+        background transparent !important
+        border: 1px solid $red !important
+        color $red !important
+    &>label
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      color $gray
+      margin 0
+    textarea
+      border 1px solid $gray
+      background transparent
+      border-radius 5px
+      padding 9px 30px 9px 13px
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 30px;
+      color: #FFFFFF;
+      font-family $base-font-family
+      min-height 80px
+      height: 7em
+      resize: none
+      &:focus 
+        border: 1px solid $blue
+        background transparent
+        color $white
+        border-radius 5px
+      &::placeholder 
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        color rgba($white, .2) 
+  .ui.dropdown .text
+    line-height 30px
+  .ui.button 
+    min-height 50px
+  
+  
+.ui.buttons .ui.button,
+.ui.button 
+  background: $blue;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  color $white
+  text-transform uppercase
+  width 100%
+  position relative
+  transition all .4s ease
+  padding 13px 10px 12px
+  font-family $base-font-family
+  margin 0
+  transition all .4s ease
+  box-shadow: 0px 0px 0px $blue;
+  &:hover 
+    box-shadow: 0px 10px 19px rgba($blue, .5) 
+    color $white
+    background: $blue
+  &:active,
+  &:focus
+    box-shadow: 0px 10px 19px rgba($blue, .5);
+    color $white
+    background: $blue
+  &.green 
+    background $green
+    &:hover 
+      box-shadow: 0px 10px 19px rgba($green, .5);
+      color $white
+      background: $green
+
+.ui.buttons
+  width 100%
+  .ui.button
+    margin-right 10px 
+    width auto
+    &:last-child 
+      margin-right 0
+    &:not(.basic):not(.inverted)
+      &:hover 
+        box-shadow: 0px 10px 19px rgba($blue, .5) 
+      &.green 
+        &:hover 
+          box-shadow: 0px 10px 19px rgba($green, .5);
+    
+
+.ui.tabular.menu
+  border-bottom none
+  &:after 
+    display none
+
+.ui.action.input>.button
+  width auto
+  background $blue
+  border-radius 0 15px 15px 0 !important
+  max-width 140px 
+  width 100%
+  padding 0 10px 0 65px !important
+
+  i.icon.copy
+    right auto 
+    left 30px
+    background none
+    &:before 
+      content ""
+      background-image url('../img/icons/copy.svg') !important
+      background-size cover !important
+      background-repeat no-repeat !important
+      width 30px 
+      height 30px
+
+.ui.attached.segment 
+  width 100%
+  max-width 100%
+.ui.attached.menu
+  width 100%
+  max-width 100%
+
+@media (max-width : 767px)
+  .ui.form .fields 
+    margin-bottom 0
+    .field
+      padding-right 0
+      margin-bottom 10px
+
+

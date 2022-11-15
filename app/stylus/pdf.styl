@@ -1,0 +1,207 @@
+@import 'supports/_pdf-vars.styl';
+@import 'supports/_pdf-font-face';
+@import "supports/_reset.styl"
+
+
+.invoice
+  font-family 'Montserrat', sans-serif
+  .status-wrap
+    display: flex;
+    align-items: center;
+  &__content
+    max-width 595px 
+    width 100% 
+    margin 0 auto
+  &__block 
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding 40px 40px
+  &__title
+    h2 
+      font-size: 12px;
+      line-height: 15px;
+      color #212121
+      font-weight 400
+      margin-bottom: 10px
+      span 
+        font-weight bold
+        color: #212121
+    &-inv
+      h2 
+        color #212121
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 10px
+    &-bg 
+      margin-bottom 11px
+      h2 
+        font-size 20px 
+        line-height 30px
+        font-weight bold
+  &__description 
+    color #212121
+    font-family 'Montserrat', sans-serif
+    font-size: 12px;
+    line-height: 20px;
+    display flex
+    justify-content flex-start
+    align-items center
+    margin-top 8px
+    .status
+      margin-left 10px
+  &__text 
+    color #212121
+    font-family 'Montserrat', sans-serif
+    font-size: 12px;
+    line-height: 20px;
+  &__top 
+    display flex
+    justify-content space-between 
+    margin-bottom 5px 
+  &__info
+    margin-top 5px
+    margin-bottom 55px
+    display flex
+    justify-content space-between
+    &-first 
+      margin-top 0
+      margin-bottom: 27px
+    &-logo 
+      max-width 190px 
+      width 100%
+    .invoice__text 
+      margin-bottom 5px
+    &-description 
+      color $grey
+      font-family 'Montserrat', sans-serif
+      font-size: 10px;
+      line-height: 12px;
+      margin-bottom: 5px
+    &-title
+      color #212121
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 15px
+    &-name
+      margin-bottom 5px
+    p 
+      font-size 12px
+      line-height 15px
+      margin-bottom 6px
+  .right 
+    text-align right
+  .status 
+    display flex
+    justify-content center
+    align-items: center;
+    border-radius 3px
+    font-family 'Montserrat', sans-serif
+    font-size 10px
+    font-weight 500
+    line-height 20px
+    text-transform uppercase
+    text-align center
+    padding 0 15px
+    width 85px
+    height: 25px
+    margin-left 10px
+    &.gray
+      color #8D8DA3
+      background: rgba(73, 73, 109, 0.3);
+    &.yellow
+      color #FFC64D
+      background: rgba(255, 198, 77, 0.2);
+    &.green
+      color #11D62E
+      background: rgba(17, 214, 46, 0.2);
+  &__table 
+    margin-top 55px
+    .invoice__title 
+      margin-bottom 13px
+  &__tr 
+    display flex
+    justify-content space-between
+    align-items center
+    border-bottom 1px solid $white2
+    padding-bottom 3px
+  &__td 
+    color #212121
+    font-family 'Montserrat', sans-serif
+    font-size: 12px;
+    line-height: 15px;  
+    text-align left
+    width 100%
+    margin-right 5px
+    &.bold 
+        font-weight 500
+  &__td 
+    max-width 100px 
+    width 100%
+    text-align center
+    margin-right 10px
+    text-align right
+    &.left 
+      text-align left
+    &[data-table="Pay address"]
+      max-width none
+      width 60%
+      word-break: break-word;
+    &[data-table="Digital currency"]
+      display flex
+      justify-content flex-start
+      align-items center
+      max-width none
+      width 40%
+      .icon 
+        width 20px 
+        height 20px 
+        margin-right 5px
+    &[data-table="Amount"]
+      text-align right
+      margin-right 0
+    &[data-table="Description"]
+      max-width none
+      min-width 200px
+      text-align left
+  &__thead 
+    .invoice
+      &__tr
+        min-height 20px
+      &__td 
+        color $grey
+        font-size: 10px;
+        line-height: 12px;
+  &__tbody 
+    .invoice
+      &__tr
+        min-height 45px
+        padding 10px 0
+  &__total 
+    display flex
+    justify-content space-between
+    align-items center
+    max-width 177px 
+    width 100% 
+    margin-left auto
+    margin-top 12px
+    &-title 
+      color #212121
+      font-family 'Montserrat', sans-serif
+      font-size: 12px;
+      line-height: 15px;
+    &-sum
+      color #212121
+      font-family 'Montserrat', sans-serif
+      font-size: 20px;
+      line-height: 30px;
+      font-weight bold
+
+@media (max-width : 768px)
+
+  .invoice__block
+    padding 30px 15px
+  
+  .invoice__td[data-table="Description"]
+    min-width 110px

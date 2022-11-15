@@ -1,0 +1,278 @@
+//main styles
+.main-wrapper
+    padding 0 0 0 0
+    min-width $min-width
+    width 100%
+    position relative
+    overflow hidden
+    min-height 100%
+    display flex
+    flex-direction column
+    justify-content flex-start	
+
+.wrapper
+    padding-left: 190px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+
+/* titles */
+p
+    font($base-font-size, $base-line-height, $text-color, $custom-font-family, 400)
+
+h1
+    font($font-size-h1, $line-height-h1, $title-color, $custom-font-family, 700)
+
+h2
+    font($font-size-h2, $line-height-h2, $title-color, $custom-font-family, 700)
+
+h3
+    font($font-size-h3, $line-height-h3, $title-color, $custom-font-family, 700)
+
+/* styles */
+.main
+    padding: 16px 30px;
+    background: #090B2F;
+    min-height: 800px;
+
+.panel
+    display flex
+    justify-content: flex-end
+    margin-bottom 20px
+    .user
+        display flex
+        justify-content: space-between
+        align-items: center
+        &__pic
+            max-width: 40px
+            padding-right 11px
+            position relative
+            &:before
+                content: ""
+                position absolute
+                display block
+                width: 5px
+                height: 8px
+                right: 0
+                top: 10px
+                background: url(../img/main/arrow-menu.svg)
+                transform: rotate(90deg)
+        &__name
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FFFFFF;
+            margin-right 10px
+
+.danger
+    background: #1A1B47;
+    padding: 10px 0
+    display flex
+    justify-content: space-between
+    border-left: 5px solid #289AE5;
+    border-radius: 5px
+    padding-right 30px
+    margin-bottom 20px
+    &__left
+        display flex
+        justify-content: space-between
+        align-items: center
+    &__pic
+        max-width: 19px
+        margin-left 20px
+        margin-right 14px
+    &__desc
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+    &__right
+        display flex
+        justify-content: space-between
+        &-buttons
+            display flex
+            justify-content: space-between
+        &-arrows
+            margin-left 27px
+            display flex
+            justify-content: space-between
+            align-items: center
+            &-prev
+                transform: scale(-1, 1)
+                opacity .5
+                cursor: pointer
+            &-next
+                cursor: pointer
+            &-pages
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                color: rgba(255, 255, 255, .5)
+                margin: 0 34px
+                display inline-block
+                span
+                    color: #fff
+        &-blue
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: #319BE2!important
+            padding-right 30px
+            transition: $default-transition
+            cursor: pointer
+            display flex
+            justify-content: center
+            align-items: center
+            &:hover
+                opacity .6
+        &-green
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: #06D49C!important
+            padding-right 35px
+            border-right: 1px solid rgba(255, 255, 255, .2);
+            transition: $default-transition
+            cursor: pointer
+            display flex
+            justify-content: center
+            align-items: center
+            &:hover
+                opacity .6
+
+    
+
+.form
+    padding: 25px 30px 30px 30px
+    background: #24265A;
+    border-radius: 5px
+    input, textarea, select
+        border: 1px solid #48497D;
+        border-radius: 5px;
+        background: #24265A;
+        color: #fff
+        padding: 12px 15px
+        height: 50px
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        display block
+        width: 100%
+        appearance: none
+        &::placeholder 
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FFFFFF
+    &__desc
+        margin-bottom 15px
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+    &__title
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-bottom 15px
+    &__wrapper
+        display flex
+        justify-content: left
+        margin-bottom 15px
+        &-border
+            justify-content: right
+            padding: 15px 0
+            border-top: 1px solid rgba(255, 255, 255, .07);
+            border-bottom: 1px solid rgba(255, 255, 255, .07);
+            .total
+                width: 13.5%
+        &-bottom
+            align-items: center
+            .form__wrapper-item
+                margin-right 15px
+            .description
+                width: 45%
+            .quantity, .unit, .amount
+                width: 18%
+        &-button
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #319BE2!important
+            text-transform uppercase
+            width: 155px
+            padding: 12px 0
+            border-radius: 5px
+            text-align center
+            border: 1px solid #319BE2;
+            display flex
+            justify-content: center
+            align-items: center
+            height: 50px
+            margin-left 40px
+            transition: $default-transition
+            &:before
+                content: "+"
+                font-size 25px
+                position relative
+                top 0px
+                right 2px
+            &:hover
+                opacity .7
+        &-submit
+            font-weight: 500!important;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF !important;
+            width: 260px
+            padding: 12px
+            display block
+            background: #319BE2;
+            border-radius: 5px;
+            transition: $default-transition
+            margin-top 20px
+            margin-left auto
+            &:hover
+                background: hsl(204, 75%, 44%);
+
+        &-left
+            width: 35%
+            margin-right 16.37%
+        &-right
+            width: 30%
+            .currency
+                position relative
+                &:before
+                    content: ""
+                    position absolute
+                    display block
+                    width: 5px
+                    height: 8px
+                    right: 5%
+                    top: 60%
+                    background: url(../img/main/arrow-menu.svg)
+                    transform: rotate(90deg)
+        &-item
+            &:not(:last-child)
+                margin-bottom 15px
+        
+
+
+
+
+

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Xswiss</title>
+    <meta name="description" content="Site slogan">
+    <meta name="keywords" content="Site keys">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <meta name="theme-color" content="#fff">
+    <meta property="og:title" content="Site keys" />
+    <meta property="og:description" content="Site slogan" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="***permalink***" />
+    <meta property="og:image" content="***img***" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <!-- android favicon -->
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <!-- windows favicon -->
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <!-- apple favicon -->
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <!-- safari format detection -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="format-detection" content="date=no" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="libs/semantic/semantic.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body loaded">
+
+    <div class="icon-load">
+        <div class="sk-folding-cube">
+            <div class="sk-folding-cube-abs">
+                <img src="img/icons/preloader-1.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+
+        <header class="header">
+        	<div class="wrapper">
+        		<div class="logo">
+        			<a href="#!">
+        				<img src="img/main/logo-1.svg" alt="">
+        				<div class="logo-inner">
+        					<img src="img/main/logo-2.svg" alt="">
+        				</div>
+        			</a>
+        		</div>
+        		<ul class="header__menu">
+        			<li class="wow fadeInRight" data-wow-delay='.1s'><a href="#">Exchange</a></li>
+        			<li class="active wow fadeInRight" data-wow-delay='.2s'><a href="#">Trading</a></li>
+        			<li class="wow fadeInRight" data-wow-delay='.3s'><a href="#">Pricing</a></li>
+        			<li class="wow fadeInRight" data-wow-delay='.4s'><a href="#">Company</a></li>
+        			<span class="header__menu-close"></span>
+        			<a href="#" class="header__login ui modal-popup__signIn">Login</a>
+        			<a href="#" class="header__signup btn-empty ui modal-popup__newAccount">Sign Up</a>
+        		</ul>
+        		<div class="header__right">
+        			<div class="header__langs">
+        				<div class="header__langs-top">
+        					<div class="header__langs-flag"><img src="img/usa-flag.png" alt="usa"></div>
+        					<div class="header__langs-arr"></div>
+        				</div>
+        				<div class="header__langs-drop">
+        					<a href="#"><img src="img/usa-flag.png" alt="usa"></a>
+        					<a href="#"><img src="img/usa-flag.png" alt="usa"></a>
+        				</div>
+        			</div>
+        			<a href="#" class="header__login ui modal-popup__signIn">Login</a>
+        			<a href="#" class="header__signup btn-empty ui modal-popup__newAccount">Sign Up</a>
+        			<div class="header__hamb"><span></span></div>
+        		</div>
+        	</div>
+        </header>
+        
+        
+        
+        <div class="ui modal large popup__block popup__newAccount">
+        	<i class="close popup-close"><img src="img/icons/close.svg" alt=""></i>
+        	<div class="popup__wrapper">
+        		<div class="popup__title">
+        			<h2>Open a new account</h2>
+        		</div>
+        		<div class="popup__text">
+        			<p>Take full control of all your cryptocurrencies in one account</p>
+        		</div>
+        		<div class="ui top attached tabular menu">
+        			<a class=" item" data-tab="Personal">Personal account</a>
+        			<a class="item active" data-tab="Company">Company account</a>
+        		</div>
+        		<div class="ui bottom attached  tab segment" data-tab="Personal">
+        			<form action="#" class="ui form">
+        				<div class="fields two">
+        					<div class="field">
+        						<label>Name</label>
+        						<input type="text">
+        					</div>
+        					<div class="field">
+        						<label>Surname</label>
+        						<input type="text">
+        					</div>
+        				</div>
+        				<div class="fields two">
+        					<div class="field">
+        						<label>Country</label>
+        						<div class="ui dropdown">
+        							<input type="hidden" name="Country">
+        							<div class=" text">Ukraine</div>
+        							<div class="dropdown icon"><img src="img/icons/arrow-blue.svg" alt=""></div>
+        							<div class="menu">
+        								<div class="item" data-value="Ukraine">Ukraine</div>
+        								<div class="item" data-value="France">France</div>
+        								<div class="item" data-value="Russia">Russia</div>
+        								<div class="item" data-value="Spain">Spain</div>
+        								<div class="item" data-value="England">England</div>
+        							</div>
+        						</div>
+        					</div>
+        					<div class="field">
+        						<label>Phone number</label>
+        						<input type="tel">
+        					</div>
+        				</div>
+        				<div class="field">
+        					<label>Email</label>
+        					<input type="email">
+        				</div>
+        				<div class="field">
+        					<label>Password</label>
+        					<input type="password">
+        				</div>
+        
+        				<div class="ui checked checkbox">
+        					<input type="checkbox">
+        					<label>I have read and agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+        				  </div>
+        				
+        				<div class="popup__form-bottom">
+        					<div class="popup__btn "><button class="button ui" type="submit">Create an account</button></div>
+        					<div class="popup__link ">
+        						<p>Have an account? <a href="#" class="ui modal-popup__signIn">Log in</a></p>
+        					</div>
+        				</div>
+        			</form>
+        		</div>
+        		  <div class="ui bottom attached active tab segment" data-tab="Company">
+        			<form action="#" class="ui form">
+        				<div class="fields two">
+        					<div class="field">
+        						<label>Company name</label>
+        						<input type="text">
+        					</div>
+        					<div class="field">
+        						<label>Brand Name</label>
+        						<input type="text">
+        					</div>
+        				</div>
+        				<div class="field">
+        					<label>Website</label>
+        					<input type="text">
+        				</div>
+        				<div class="field">
+        					<label>Company address</label>
+        					<input type="text">
+        				</div>
+        				<div class="fields two">
+        					<div class="field">
+        						<label>Contact person name</label>
+        						<input type="text">
+        					</div>
+        					<div class="field">
+        						<label>Contact person surname</label>
+        						<input type="text">
+        					</div>
+        				</div>
+        				<div class="field">
+        					<label>Country</label>
+        					<div class="ui dropdown">
+        						<input type="hidden" name="Country">
+        						<div class=" text">Ukraine</div>
+        						<div class="dropdown icon"><img src="img/icons/arrow-blue.svg" alt=""></div>
+        						<div class="menu">
+        							<div class="item" data-value="Ukraine">Ukraine</div>
+        							<div class="item" data-value="France">France</div>
+        							<div class="item" data-value="Russia">Russia</div>
+        							<div class="item" data-value="Spain">Spain</div>
+        							<div class="item" data-value="England">England</div>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="field">
+        					<label>Phone number</label>
+        					<input type="tel">
+        				</div>
+        				<div class="field">
+        					<label>Email</label>
+        					<input type="email">
+        				</div>
+        				<div class="field">
+        					<label>Password</label>
+        					<input type="password">
+        				</div>
+        				<div class="popup__form-bottom">
+        					<div class="popup__btn default__btn"><button class="button ui" type="submit">Create an account</button></div>
+        					<div class="popup__link default__text"><p>Have an account?  <a href="#" class="ui modal-popup__signIn">Log in</a></p></div>
+        				</div>
+        			</form>
+        		  </div>
+        		
+        	</div>
+        </div>
+        
+        <div class="ui modal large popup__block popup__signIn">
+        	<i class="close popup-close"><img src="img/icons/close.svg" alt=""></i>
+        	<div class="popup__wrapper">
+        		<div class="popup__title">
+        			<h2>Sign in</h2>
+        		</div>
+        		
+        		<form action="#" class="ui form">
+        			<div class="field">
+        				<label>Email</label>
+        				<input type="email">
+        			</div>
+        			<div class="field">
+        				<label>Password</label>
+        				<input type="password">
+        				<div class="popup__input-description">
+        					<a href="#">Forgot your password?</a>
+        				</div>
+        			</div>
+        			<div class="popup__form-bottom">
+        				<div class="popup__btn "><button type="submit" class="button ui">Log in</button></div>
+        				<div class="popup__link "><p>Don't have account?<a href="#" class="ui  modal-popup__newAccount">Create new one</a></p></div>
+        			</div>
+        		</form>
+        	</div>
+        </div>
+
+        <main class="main">
+            <section class="hero-index">
+                <div class="wrapper">
+                    <div class="hero-index__wrapper">
+                        <div class="hero-index__left">
+                            <h1 class="hero-index__title wow fadeInLeft" data-wow-duration=".5s">
+                                A trusted and secure bitcoin and <span class="hero-index__title-span">crypto</span>
+                                exchange
+                            </h1>
+                            <p class="hero-index__desc wow fadeInLeft" data-wow-duration=".7s">
+                                Get started with the easiest and most secure<br>
+                                platform to buy, sell, trade, and earn cryptocurrencies.
+                            </p>
+                            <a href="#!" class="hero-index__button wow fadeInLeft" data-wow-duration=".9s">
+                                GET STARTED
+                            </a>
+                        </div>
+                        <div class="hero-index__right wow fadeIn" data-wow-duration="2s">
+                            <div class="hero-index__pic"><img src="img/main/hero-index.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="index-slider wow fadeIn">
+                <div class="wrapper">
+                    <div class="index-slider__wrapper">
+                        <a href="#!">
+                            <div class="index-slider__item wow fadeInLeft" data-wow-delay=".5s">
+                                <div class="index-slider__item-top">
+                                    <p class="index-slider__item-label">
+                                        BTC/USD
+                                        <span>Bitcoin</span>
+                                    </p>
+                                    <div class="index-slider__item-currency">
+                                        <img src="img/slider-1.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="index-slider__pic">
+                                    <img src="img/main/chart-1.svg" alt="">
+                                </div>
+                                <div class="index-slider__bit">
+                                    bit 156 vol: 2.4
+                                </div>
+                                <div class="index-slider__ask">
+                                    ask 156 vol: 3.3
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#!">
+                            <div class="index-slider__item wow fadeInLeft" data-wow-delay=".55s">
+                                <div class="index-slider__item-top">
+                                    <p class="index-slider__item-label">
+                                        ZEC/USD
+                                        <span>Zcash</span>
+                                    </p>
+                                    <div class="index-slider__item-currency">
+                                        <img src="img/slider-2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="index-slider__pic">
+                                    <img src="img/main/chart-2.svg" alt="">
+                                </div>
+                                <div class="index-slider__bit">
+                                    bit 66 vol: 2.6
+                                </div>
+                                <div class="index-slider__ask">
+                                    ask 53 vol: 2.7
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#!">
+                            <div class="index-slider__item wow fadeInLeft" data-wow-delay=".6s">
+                                <div class="index-slider__item-top">
+                                    <p class="index-slider__item-label">
+                                        DASH/USD
+                                        <span>DASH</span>
+                                    </p>
+                                    <div class="index-slider__item-currency">
+                                        <img src="img/slider-3.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="index-slider__pic">
+                                    <img src="img/main/chart-3.svg" alt="">
+                                </div>
+                                <div class="index-slider__bit">
+                                    bit 66 vol: 2.6
+                                </div>
+                                <div class="index-slider__ask">
+                                    ask 53 vol: 2.7
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#!">
+                            <div class="index-slider__item wow fadeInLeft" data-wow-delay=".65s">
+                                <div class="index-slider__item-top">
+                                    <p class="index-slider__item-label">
+                                        ETX/USD
+                                        <span>Ethereum</span>
+                                    </p>
+                                    <div class="index-slider__item-currency">
+                                        <img src="img/slider-4.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="index-slider__pic">
+                                    <img src="img/main/chart-4.svg" alt="">
+                                </div>
+                                <div class="index-slider__bit">
+                                    bit 156 vol: 2.4
+                                </div>
+                                <div class="index-slider__ask">
+                                    ask 156 vol: 3.3
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#!">
+                            <div class="index-slider__item wow fadeInLeft" data-wow-delay=".7s">
+                                <div class="index-slider__item-top">
+                                    <p class="index-slider__item-label">
+                                        USDT/USD
+                                        <span>Tether</span>
+                                    </p>
+                                    <div class="index-slider__item-currency">
+                                        <img src="img/slider-5.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="index-slider__pic">
+                                    <img src="img/main/chart-5.svg" alt="">
+                                </div>
+                                <div class="index-slider__bit">
+                                    bit 13 vol: 6.0
+                                </div>
+                                <div class="index-slider__ask">
+                                    ask 1 vol: 4.7
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#!">
+                            <div class="index-slider__item wow fadeInLeft" data-wow-delay=".75s">
+                                <div class="index-slider__item-top">
+                                    <p class="index-slider__item-label">
+                                        LTC/USD
+                                        <span>Litecoin</span>
+                                    </p>
+                                    <div class="index-slider__item-currency">
+                                        <img src="img/slider-6.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="index-slider__pic">
+                                    <img src="img/main/chart-6.svg" alt="">
+                                </div>
+                                <div class="index-slider__bit">
+                                    bit 66 vol: 2.6
+                                </div>
+                                <div class="index-slider__ask">
+                                    ask 53 vol: 2.7
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="index-why">
+                <div class="wrapper">
+                    <h2 class="wow fadeInUp">
+                        Why to choose Xswiss?
+                    </h2>
+                    <div class="index-why__wrapper">
+                        <div class="index-why__item wow fadeInRight" data-wow-delay=".5s">
+                            <div class="index-why__item-pic">
+                                <img src="img/landing/why-4.svg" alt="">
+                            </div>
+                            <h3 class="index-why__item-title">
+                                Your own IBAN
+                            </h3>
+                            <p class="index-why__item-desc">
+                                Deposit and withdraw funds directly to/from your personal IBAN.
+                            </p>
+                        </div>
+                        <div class="index-why__item wow fadeInRight" data-wow-delay=".55s">
+                            <div class="index-why__item-pic">
+                                <img src="img/landing/why-2.svg" alt="">
+                            </div>
+                            <h3 class="index-why__item-title">
+                                No hidden fees
+                            </h3>
+                            <p class="index-why__item-desc">
+                                Our fees are transparent and fair. No hidden commissions or charges.
+                            </p>
+                        </div>
+                        <div class="index-why__item wow fadeInRight" data-wow-delay=".6s">
+                            <div class="index-why__item-pic">
+                                <img src="img/landing/why-7.svg" alt="">
+                            </div>
+                            <h3 class="index-why__item-title">
+                                Ultimate security
+                            </h3>
+                            <p class="index-why__item-desc">
+                                Sum & Substance KYC and AML compliance monitoring. Automated blockchain transactions
+                                monitoring powered by <span>Crystal</span>
+                            </p>
+                        </div>
+                        <div class="index-why__item wow fadeInRight" data-wow-delay=".65s">
+                            <div class="index-why__item-pic">
+                                <img src="img/landing/why-8.svg" alt="">
+                            </div>
+                            <h3 class="index-why__item-title">
+                                Instant 24/7 operations
+                            </h3>
+                            <p class="index-why__item-desc">
+                                Xswiss is offering instant everyday services such as crypto trading, loans and savings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="index-pic wow fadeIn" data-wow-delay=".5s">
+                <div class="wrapper">
+                    <div class="index-pic__pic"><img src="img/main/index-pic.png" alt=""></div>
+                </div>
+            </section>
+            <section class="home4">
+                <div class="wrapper">
+                    <div class="home4__left">
+                        <div class="home4__iban wow slideInUp" data-wow-delay='.35s'>IBAN</div>
+                        <div class="home4__card">
+                            <div class="home4__card-mainpart">
+                                <img class="home4__card-icon" src="img/icons/euro-icon.svg" alt="euro">
+                                <div class="home4__card-text">
+                                    <p>GB86 CLJU 0099 7190 0020 04</p>
+                                    <b>99882.83 EUR</b>
+                                </div>
+                                <div class="home4__card-check"></div>
+                            </div>
+                        </div>
+                        <div class="home4__card wow" data-wow-offset="100">
+                            <div class="home4__card-mainpart">
+                                <img class="home4__card-icon" src="img/icons/pound-icon.svg" alt="euro">
+                                <div class="home4__card-text">
+                                    <p>GB86 CLJU 0099 7190 0020 04</p>
+                                    <b>99882.83 EUR</b>
+                                </div>
+                                <div class="home4__card-check"></div>
+                            </div>
+                            <div class="home4__card-botpart">
+                                <div class="home4__card-input">Amount</div>
+                                <div class="home4__card-btns">
+                                    <div class="home4__card-btn deposit">Deposit</div>
+                                    <div class="home4__card-btn withdraw">Withdraw</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home4__card">
+                            <div class="home4__card-mainpart">
+                                <img class="home4__card-icon" src="img/icons/usd-icon.svg" alt="euro">
+                                <div class="home4__card-text">
+                                    <p>GB86 CLJU 0099 7190 0020 04</p>
+                                    <b>99882.83 EUR</b>
+                                </div>
+                                <div class="home4__card-check"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home4__right">
+                        <div class="ttl_h2 wow fadeInUp" data-wow-delay='.35s'>Your Own <br>IBAN Account</div>
+                        <div class="ttl_p wow fadeInUp" data-wow-delay='.45s'>Sign up and get your own IBAN free of
+                            charge.</div>
+                        <ul class="custom_ul">
+                            <li class="wow fadeInUp" data-wow-delay='.5s'>Advantage #1: the most popular and trusted
+                                stable coins.</li>
+                            <li class="wow fadeInUp" data-wow-delay='.58s'>Advantage #2: huge range of cryptocurrency
+                                pairs</li>
+                            <li class="wow fadeInUp" data-wow-delay='.66s'>Advantage #3: the most popular and trusted
+                                stable coins.</li>
+                        </ul>
+                        <a href="#" class="home1__btn btn-big wow fadeIn" data-wow-delay='1s'>Open an account</a>
+                    </div>
+
+                </div>
+            </section>
+            <section class="home5">
+                <div class="wrapper">
+                    <h2 class="home5__title wow fadeIn" data-wow-delay=".5s">
+                        Crypto Merchant Tools
+                    </h2>
+                    <p class="home5__desc wow fadeIn" data-wow-delay=".5s">
+                        Get paid in USD, EUR, GBP directly to your bank account
+                    </p>
+                    <div class="home5__wrapper">
+                        <div class="home5__left">
+                            <div class="accordeon">
+                                <dl>
+                                    <dt>Create invoice in Xswiss Merchant Tool section</dt>
+                                    <dd>Create Invoice from your merchant dashboard and send to your client
+                                        <div class="accordeon-pic"><img src="img/main/home5-1.png" alt=""></div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Payment link</dt>
+                                    <dd>Your client gets an e-mail payment link
+                                        <div class="accordeon-pic"><img src="img/main/home5-2.png" alt=""></div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Exchange rate will be fixed</dt>
+                                    <dd>When opening the payment link your client chooses BTC, ETH, LTC, USDT or other
+                                        crypto to pay with. A QR code with locked in Exchange rate is generated
+                                        <div class="accordeon-pic"><img src="img/main/home5-3.png" alt=""></div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Payment and settlement</dt>
+                                    <dd>As soon as the crypto payment is confirmed you get the invoice settlement in
+                                        FIAT
+                                        <div class="accordeon-pic"><img src="img/main/home5-4.png" alt=""></div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="home5__right">
+                            <div class="home5__pic"><img src="img/main/home5-1.png" alt=""></div>
+                            <div class="home5__pic"><img src="img/main/home5-2.png" alt=""></div>
+                            <div class="home5__pic"><img src="img/main/home5-3.png" alt=""></div>
+                            <div class="home5__pic"><img src="img/main/home5-4.png" alt=""></div>
+                        </div>
+                    </div>
+                    <a href="#!" class="home5__button wow fadeInUp" data-wow-delay=".5s">Try now</a>
+                </div>
+            </section>
+            <section class="home6">
+                <div class="wrapper">
+                    <h2 class="home6__title wow fadeInUp">
+                        Xswiss Figures
+                    </h2>
+                    <div class="home6__wrapper">
+                        <div class="home6__item wow fadeInLeft" data-wow-delay=".5s">
+                            <div class="home6__item-label">0.1%</div>
+                            <p class="home6__item-desc">The lowest maker & taker fees,
+                                from 0,1%</p>
+                        </div>
+                        <div class="home6__item wow fadeInLeft" data-wow-delay=".55s">
+                            <div class="home6__item-label">50+</div>
+                            <p class="home6__item-desc">Variety of crypto and fiat currencies available for exchange</p>
+                        </div>
+                        <div class="home6__item wow fadeInLeft" data-wow-delay=".6s">
+                            <div class="home6__item-label">180</div>
+                            <p class="home6__item-desc">Xswiss is available worldwide in the majority of jurisdictions
+                            </p>
+                        </div>
+                        <div class="home6__item wow fadeInLeft" data-wow-delay=".65s">
+                            <div class="home6__item-label">4 years</div>
+                            <p class="home6__item-desc">Of successful operations
+                                in crypto trading</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="index-wallet">
+                <div class="wrapper">
+                    <div class="index-wallet__wrapper">
+                        <div class="index-wallet__left">
+                            <h2 class="index-wallet__title wow fadeInUp" data-wow-delay=".5s">
+                                XSWISS Wallet
+                            </h2>
+                            <p class="index-wallet__desc wow fadeInUp" data-wow-delay=".55s">
+                                Your guide in digital assets investment. Buy, Sell, Store, and Earn crypto. For
+                                everyone.
+                            </p>
+                            <ul class="index-wallet__list">
+                                <li class="index-wallet__list-item wow fadeInUp" data-wow-delay=".6s">Wide range of top and trending cryptocurrencies.
+                                </li>
+                                <li class="index-wallet__list-item wow fadeInUp" data-wow-delay=".65s">Keep track of your portfolio conveniently, whether
+                                    on a mobile device (iOS, Android) or on the Web.</li>
+                                <li class="index-wallet__list-item wow fadeInUp" data-wow-delay=".7s">We're connected to Liquidity provider and offer the
+                                    best terms to our customers.</li>
+                            </ul>
+                            <a href="#!" class="index-wallet__button wow fadeInUp" data-wow-delay=".75s">GET STARTED</a>
+                        </div>
+                        <div class="index-wallet__right">
+                            <h3 class="index-wallet__right-title wow fadeInUp" data-wow-delay=".5s">
+                                Wallet
+                            </h3>
+                            <div class="index-wallet__right-item">
+                                <div class="index-wallet__right-item-pic">
+                                    <img src="img/main/bitcoin-index.png" alt="">
+                                </div>
+                                <div class="index-wallet__right-item-inner">
+                                    <div class="index-wallet__right-item-label">GB86 CLJU 0099 7190 0020 04</div>
+                                    <div class="index-wallet__right-item-amount">1.0834 BTC</div>
+                                </div>
+                            </div>
+                            <div class="index-wallet__right-item-empty wow fadeIn" data-wow-delay=".5s">
+                                <div class="index-wallet__right-item-empty-abs wow rotateInDownRight" data-wow-delay=".65s">
+                                    <img src="img/main/card.png" alt="">
+                                </div>
+                            </div>
+                            <div class="index-wallet__right-item">
+                                <div class="index-wallet__right-item-pic">
+                                    <img src="img/main/usdc.png" alt="">
+                                </div>
+                                <div class="index-wallet__right-item-inner">
+                                    <div class="index-wallet__right-item-label">GB86 CLJU 0099 7190 0509 02</div>
+                                    <div class="index-wallet__right-item-amount">2900.50 USDС</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+        	<div class="wrapper footer__wrap">
+        		<div class="footer__col1">
+        			<div class="footer__ttl wow fadeIn" data-wow-delay=".5s">Xswiss</div>
+        			<ul>
+        				<li class="wow fadeInUp" data-wow-delay=".5s"><a href="#">User Agreement</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".55s"><a href="#">Privacy Policy</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".6s"><a href="#">Refund policy</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".65s"><a href="#">Cookie policy</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".7s"><a href="#">AML/KYC policy</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".75s"><a href="#">Merchant Tools</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".8s"><a href="#">Merchant Tools Terms</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".85s"><a href="#">Video Identification Terms</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".9s"><a href="#">Video Identification Policy</a></li>
+        			</ul>
+        		</div>
+        		<div class="footer__col2">
+        			<div class="footer__ttl wow fadeIn" data-wow-delay=".5s">Information</div>
+        			<ul>
+        				<li class="wow fadeInUp" data-wow-delay=".5s"><a href="#">Fees</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".55s"><a href="#">FAQ</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".6s"><a href="#">Knowledge Base</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".65s"><a href="#">Buy Bitcoin</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".7s"><a href="#">Buy Bitcoin Cash</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".75s"><a href="#">Buy Ethereum</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".8s"><a href="#">Buy Monero</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".85s"><a href="#">Buy XRP</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".9s"><a href="#">Buy USDT</a></li>
+        				<li class="wow fadeInUp" data-wow-delay=".95s"><a href="#">Buy Cryptocurrency</a></li>
+        				<li class="wow fadeInUp" data-wow-delay="1s"><a href="#">Contacts</a></li>
+        			</ul>
+        		</div>
+        		<div class="footer__col4">
+        			<div class="footer__ttl wow fadeIn" data-wow-delay=".5s">Follow us</div>
+        			<div class="footer__socs">
+        				<a href="#" target="_blank" class="wow fadeInRight" data-wow-delay=".8s"><img src="img/icons/social/fb-icon.svg" alt="fb"></a>
+        				<a href="#" target="_blank" class="wow fadeInRight" data-wow-delay=".85s"><img src="img/icons/social/inst-icon.svg" alt="fb"></a>
+        				<a href="#" target="_blank" class="wow fadeInRight" data-wow-delay=".9s"><img src="img/icons/social/twit-icon.svg" alt="fb"></a>
+        				<a href="#" target="_blank" class="wow fadeInRight" data-wow-delay=".95s"><img src="img/icons/social/youtube-icon.svg" alt="fb"></a>
+        				<a href="#" target="_blank" class="wow fadeInRight" data-wow-delay="1s"><img src="img/icons/social/m-icon.svg" alt="fb"></a>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="wrapper">
+        		<div class="footer__copy wow fadeIn">©2021 Coinify, Address. All rights reserved</div>
+        	</div>
+        </footer>
+
+    </div>
+
+    <script src="js/libs.min.js"></script>
+
+    <script src="libs/semantic/semantic.min.js"></script>
+    <script src="js/common.min.js"></script>
+</body>
+
+</html>

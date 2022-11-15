@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Settings</title>
+	<meta name="description" content="Site slogan">
+	<meta name="keywords" content="Site keys">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+	<meta name="theme-color" content="#fff">
+	<meta property="og:title" content="Site keys" />
+	<meta property="og:description" content="Site slogan" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="***permalink***" />
+	<meta property="og:image" content="***img***" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<!-- windows favicon -->
+	<meta name="msapplication-config" content="browserconfig.xml">
+	<!-- css -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="libs/semantic/semantic.min.css">
+	<link rel="stylesheet" href="libs/semantic-ui-calendar/calendar.min.css">
+	<link rel="stylesheet" href="css/account.css">
+</head>
+
+<body class="body loaded">
+
+	<div class="icon-load">
+		<div class="sk-folding-cube">
+			<div class="sk-folding-cube-abs">
+				<img src="img/icons/preloader-1.svg" alt="">
+			</div>
+		</div>
+	</div>
+
+  <div class="account__settings account">
+		//= parts/account-sidebar.html
+
+
+		<main>
+			<section>
+				//= parts/account-header.html
+				
+			</section>
+
+      <section class="verification">
+        <div class="verification__block section__block">
+          <div class="ui accordion">
+
+            <div class="title verification__top">
+              <div class="section__title"><h2>Account verification </h2></div> 
+
+							<div class="verification__status">
+								<span class="current">4</span>
+								/
+								<span class="count">7</span>
+								completed
+							</div>
+              <i class="dropdown icon"></i>
+
+            </div>
+            <div class="content active">
+              
+              <div class="verification__form">
+                <form action="#" class="ui form">
+									
+                  <div class="verification__step">
+										<div class="verification__step-description opacity"><p>Verify your account to unlock additional Xswiss services</p></div>
+										<div class="verification__field verification__field-first"  data-step="1">
+											<div class="fields three">
+												<div class="field">
+													<label>Email address: </label>
+													<div class="ui icon input">
+														<input type="email" name="email" value="hamonrat@gmail.com ">
+														<i class="review icon"></i>
+													</div>
+												</div>
+												<div class="field">
+													<label>Email address: </label>
+													<div class="ui icon input">
+														<input type="email" name="email" value="hamonrat@gmail.com ">
+														<i class="accepted icon"></i>
+													</div>
+												</div>
+												<div class="field">
+													<div class="verification__field-description"><p>Re-upload</p></div>
+													<label>Email address: </label>
+													<div class="ui icon input">
+														<input type="email" name="email" value="hamonrat@gmail.com ">
+														<i class="declined icon"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="verification__field" data-step="2">
+											<div class="fields three">
+												<div class="field">
+													<label>Phone number:</label>
+													<input type="text" class="input-number" name="verification-phone">
+												</div>
+												<div class="field">
+													<label></label>
+													<button class="ui button" type="submit">Confirm</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="verification__step verification__step-to">
+										<div class="verification__step-top">
+											<div class="verification__step-description"><p>To unlock:</p></div>
+											<div class="verification__step-stickers">
+												<span class="sticker">Crypto operations</span>
+												<span class="sticker">Crypto exchange</span>
+												<span class="sticker">Loans</span>
+												<span class="sticker">Savings</span>
+											</div>
+										</div>
+										<div class="verification__field"  data-step="3">
+											<div class="verification__text"><p>Submit personal information</p>
+												<span class="line"></span>
+											</div>
+											<div class="verification__info"><span class="icon"><img src="img/icons/check-2.svg" alt=""></span></div>
+										</div>
+										<div class="verification__field" data-step="4">
+											<div class="verification__text"><p>Upload proof of identity document</p>
+												<span class="line"></span>
+											</div>
+											<div class="verification__info">
+												<span class="info">Re-upload</span>
+												<span class="icon"><img src="img/icons/cross.svg" alt=""></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="verification__step verification__step-to disabled">
+										<div class="verification__step-top">
+											<div class="verification__step-description"><p>To unlock:</p></div>
+											<div class="verification__step-stickers">
+												<span class="sticker">Fiat operations (up to 15’000 EUR)</span>
+												<span class="sticker">Fiat exchange</span>
+												<span class="sticker">Personal IBAN</span>
+											</div>
+										</div>
+										<div class="verification__field" data-step="5">
+											<div class="verification__text"><p>Upload your proof of address</p>
+												<span class="line"></span>
+											</div>
+											<div class="verification__info">
+												<span class="info">Fill in the form</span>
+											</div>
+										</div>
+										<div class="verification__field" data-step="6">
+											<div class="verification__text"><p>Submit additional information</p>
+												<span class="line"></span>
+											</div>
+											<div class="verification__info">
+												<span class="info">Upload</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="verification__step disabled">
+										<div class="verification__step-top">
+											<div class="verification__step-description"><p>To increase limits:</p></div>
+											<div class="verification__step-stickers">
+												<span class="sticker">Fiat (up to 100’000 EUR)</span>
+												<span class="sticker">Crypto (up to 100’000 EUR)</span>
+											</div>
+										</div>
+										<div class="verification__field" data-step="7">
+											<div class="verification__text"><p>Submit additional KYC information</p>
+												<span class="line"></span>
+											</div>
+											<div class="verification__info">
+												<span class="info">Fill in the form</span>
+											</div>
+										</div>
+									
+									</div>
+
+                </form>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+
+      </section>
+
+      <section class="verification">
+        <div class="verification__block section__block">
+          <div class="ui accordion">
+
+            <div class="title verification__top">
+              <div class="section__title"><h2>Account verification </h2></div> 
+							<div class="verification__status">
+								Status: <span class="status">Completed</span>
+							</div>
+
+              <i class="dropdown icon"></i>
+
+            </div>
+            <div class="content">
+              
+              <div class="verification__step">
+								<div class="verification__step-block">
+									<div class="verification__step-description opacity"><p>Please upload a document confirming the source of your funds. <br>
+										Please note that field will become mandatory when reaching certain turnover limits.</p></div>
+									<button class="button ui">Upload source of funds</button>
+								</div>
+							</div>
+							
+              <div class="verification__step">
+								<div class="limit">
+									<div class="limit-row">
+										<div class="limit-text">
+											<p>Monthly withdrawals limits</p>
+										</div>
+										<div class="limit-amount">
+											<p><span class="green">$</span><span class="limit-current">236524</span> of $<span class="limit-max">500000</span></p>
+										</div>
+									</div>
+									<div class="limit-bar">
+										<span class="limit-status" style="width: 0"></span>
+									</div>
+								</div>
+								<div class="verification__step-block">
+									<div class="verification__step-description opacity"><p>You can increase limits after confitmation of your documents</p></div>
+									<button class="button ui disabled">Increase limits</button>
+								</div>
+							</div>
+            </div>
+         
+          </div>
+        </div>
+
+
+      </section>
+
+
+
+			<section class="sections">
+				<div class="section__block authentication">
+					<div class="section__title"><h2>Two-factor authentication</h2></div>
+					<div class="section__description"><p>Set an additional protection layer on your account. We will request a verification code for login and transactions.</p></div>
+
+					<div class="ui buttons">
+						<button class="ui button modal-authentication">Google</button>
+						<button class="ui button disabled">SMS</button>
+						<button class="ui button disabled">Email</button>
+					</div>
+				</div>
+
+				<div class="section__block password">
+					<div class="section__title"><h2>Reset my password</h2></div>
+					<div class="section__description"><p>If you notice any suspicious activity, we recommend changing your password.</p></div>
+					<button class="ui button modal-change-password">Reset my password</button>
+
+				</div>
+			</section>
+
+
+			<section class="section__sessions-history">
+				<div class="section__block sessions-history">
+					<div class="section__top">
+						<div class="section__title"><h2>Sessions history</h2></div>
+
+						<table class="sessions-history__table account__table">
+							<thead>
+								<tr>
+									<th data-title="Time">Time</th>
+									<th data-title="Browser" class="is-center">Browser</th>
+									<th data-title="IP Address">IP Address</th>
+									<th data-title="Location">Location</th>
+									<th data-title="Success" class="is-center">Success</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-title="Time">01.01.2020 <span>12:51:16</span></td>
+									<td data-title="Browser"  class="is-center"><span class="icon"><img src="img/account/chrome.svg" alt="Chrome" title="Chrome"></span></td>
+									<td data-title="IP Address">82.15.151.205</td>
+									<td data-title="Location"><span class="icon"><img src="img/account/australia.svg" alt=""></span>Austria</td>
+									<td data-title="Success" class="is-center">
+										<span class="tooltip">
+											<img src="img/icons/clock.svg" alt="">
+											<span class="tooltip-block"><p>Under review</p></span>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td data-title="Time">01.01.2020 <span>12:51:16</span></td>
+									<td data-title="Browser"  class="is-center"><span class="icon"><img src="img/account/chrome.svg" alt="Chrome" title="Chrome"></span></td>
+									<td data-title="IP Address">82.15.151.205</td>
+									<td data-title="Location"><span class="icon"><img src="img/account/australia.svg" alt=""></span>Austria</td>
+									<td data-title="Success" class="is-center">
+										<span class="tooltip">
+											<img src="img/icons/check-2.svg" alt="">
+											<span class="tooltip-block"><p>Accepted</p></span>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td data-title="Time">01.01.2020 <span>12:51:16</span></td>
+									<td data-title="Browser"  class="is-center"><span class="icon"><img src="img/account/chrome.svg" alt="Chrome" title="Chrome"></span></td>
+									<td data-title="IP Address">82.15.151.205</td>
+									<td data-title="Location"><span class="icon"><img src="img/account/usa.svg" alt=""></span>United States of America</td>
+									<td data-title="Success" class="is-center">
+										<span class="tooltip">
+											<img src="img/icons/check-2.svg" alt="">
+											<span class="tooltip-block"><p>Accepted</p></span>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td data-title="Time">01.01.2020 <span>12:51:16</span></td>
+									<td data-title="Browser"  class="is-center"><span class="icon"><img src="img/account/chrome.svg" alt="Chrome" title="Chrome"></span></td>
+									<td data-title="IP Address">82.15.151.205</td>
+									<td data-title="Location"><span class="icon"><img src="img/account/australia.svg" alt=""></span>Austria</td>
+									<td data-title="Success" class="is-center">
+										<span class="tooltip">
+											<img src="img/icons/check-2.svg" alt="">
+											<span class="tooltip-block"><p>Accepted</p></span>
+										</span>
+								</td>
+								</tr>
+								<tr>
+									<td data-title="Time">01.01.2020 <span>12:51:16</span></td>
+									<td data-title="Browser"  class="is-center"><span class="icon"><img src="img/account/chrome.svg" alt="Chrome" title="Chrome"></span></td>
+									<td data-title="IP Address">82.15.151.205</td>
+									<td data-title="Location"><span class="icon"><img src="img/account/australia.svg" alt=""></span>Austria</td>
+									<td data-title="Success" class="is-center">
+										<span class="tooltip">
+											<img src="img/icons/cross.svg" alt="">
+											<span class="tooltip-block"><p>Declined</p></span>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+      
+
+		</main>
+
+		<div class="ui modal large popup__block popup__authentication">
+			<i class="close popup-close"><img src="img/icons/close.svg" alt=""></i>
+			<div class="popup__wrapper">
+				<div class="popup__title">
+					<h2>Two-factor authentication</h2>
+				</div>
+				<div class="popup__text">
+					<p>Set an additional proteciotn layer on your aacount. We will request a verification code for login and transactions</p>
+				</div>
+				<div class="popup__qrcode">
+					<div class="popup__qrcode-img">
+						<img src="img/account/qr-code.png" alt="">
+					</div>
+					<div class="popup__qrcode-or">or <a href="#">COPY SECRET KEY</a></div>
+				</div>
+				<div class="popup__text">
+					<p>Set an additional proteciotn layer on your aacount. We will request a verification code for login and transactions</p>
+				</div>
+				<form action="#" class="ui form">
+                    <div class="code__inputs fields">
+                      <input type="text" class="code__input" maxlength="1" required> 
+                      <input type="text" class="code__input" maxlength="1" required> 
+                      <input type="text" class="code__input" maxlength="1" required> 
+                      <input type="text" class="code__input" maxlength="1" required> 
+                      <input type="text" class="code__input" maxlength="1" required> 
+                      <input type="text" class="code__input" maxlength="1" required> 
+                    </div>
+                    <button class="ui button" type="submit">Confirm</button>
+                </form>
+			</div>
+		</div>
+		<div class="ui modal large popup__block popup__change-password">
+			<i class="close popup-close"><img src="img/icons/close.svg" alt=""></i>
+			<div class="popup__wrapper">
+				<div class="popup__title">
+					<h2>Change password</h2>
+				</div>
+				<div class="popup__text">
+					<p>If you notice any suspicious activity, we recommend changing 
+						your password.</p>
+				</div>
+				<form action="#" class="ui form">
+                    <div class="field">
+						<label>Old password</label>
+						<input type="password" placeholder="Old password" >
+					</div>
+                    <div class=" field">
+						<label>New password</label>
+						<input type="password" placeholder="New password">
+					</div>
+                    <div class=" field">
+						<label>Repeat password</label>
+						<input type="password" placeholder="Repeat password">
+					</div>
+                    <button class="ui button modal-pin-code" type="submit">Save</button>
+                </form>
+			</div>
+		  </div>
+
+		<div class="ui modal large popup__block popup__pin-code">
+			<i class="close popup-close"><img src="img/icons/close.svg" alt=""></i>
+			<div class="popup__wrapper">
+				<div class="popup__title">
+					<h2>Two-factor authentication</h2>
+				</div>
+				<div class="popup__text">
+					<p>A PIN has been sent to your email. Please enter the PIN you received to verify your identity.</p>
+				</div>
+				<form action="#" class="ui form">
+                    <div class="code__inputs fields">
+                      <input type="text" class="code__input" maxlength="1" required> 
+                      <input type="text" class="code__input" maxlength="1" required> 
+                      <input type="text" class="code__input" maxlength="1" required> 
+                      <input type="text" class="code__input" maxlength="1" required> 
+                      <input type="text" class="code__input" maxlength="1" required> 
+                      <input type="text" class="code__input" maxlength="1" required> 
+                    </div>
+                    <div class="button-link">
+						<button class="ui button" type="submit">Resend PIN code</button>
+					</div>
+                </form>
+			</div>
+		</div>
+
+		
+  </div>
+
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/semantic/semantic.min.js"></script>
+	<script src="libs/semantic-ui-calendar/calendar.min.js"></script>
+	<script src="libs/mask/jquery.inputmask.min.js"></script>
+	<script src="js/account.js"></script>
+</body>
+
+</html>

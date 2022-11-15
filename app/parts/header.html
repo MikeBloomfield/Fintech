@@ -1,0 +1,200 @@
+<header class="header">
+	<div class="wrapper">
+		<div class="logo">
+			<a href="#!">
+				<img src="img/main/logo-1.svg" alt="">
+				<div class="logo-inner">
+					<img src="img/main/logo-2.svg" alt="">
+				</div>
+			</a>
+		</div>
+		<ul class="header__menu">
+			<li class="wow fadeInRight" data-wow-delay='.1s'><a href="#">Exchange</a></li>
+			<li class="active wow fadeInRight" data-wow-delay='.2s'><a href="#">Trading</a></li>
+			<li class="wow fadeInRight" data-wow-delay='.3s'><a href="#">Pricing</a></li>
+			<li class="wow fadeInRight" data-wow-delay='.4s'><a href="#">Company</a></li>
+			<span class="header__menu-close"></span>
+			<a href="#" class="header__login ui modal-popup__signIn">Login</a>
+			<a href="#" class="header__signup btn-empty ui modal-popup__newAccount">Sign Up</a>
+		</ul>
+		<div class="header__right">
+			<div class="header__langs">
+				<div class="header__langs-top">
+					<div class="header__langs-flag"><img src="img/usa-flag.png" alt="usa"></div>
+					<div class="header__langs-arr"></div>
+				</div>
+				<div class="header__langs-drop">
+					<a href="#"><img src="img/usa-flag.png" alt="usa"></a>
+					<a href="#"><img src="img/usa-flag.png" alt="usa"></a>
+				</div>
+			</div>
+			<a href="#" class="header__login ui modal-popup__signIn">Login</a>
+			<a href="#" class="header__signup btn-empty ui modal-popup__newAccount">Sign Up</a>
+			<div class="header__hamb"><span></span></div>
+		</div>
+	</div>
+</header>
+
+
+
+<div class="ui modal large popup__block popup__newAccount">
+	<i class="close popup-close"><img src="img/icons/close.svg" alt=""></i>
+	<div class="popup__wrapper">
+		<div class="popup__title">
+			<h2>Open a new account</h2>
+		</div>
+		<div class="popup__text">
+			<p>Take full control of all your cryptocurrencies in one account</p>
+		</div>
+		<div class="ui top attached tabular menu">
+			<a class=" item" data-tab="Personal">Personal account</a>
+			<a class="item active" data-tab="Company">Company account</a>
+		</div>
+		<div class="ui bottom attached  tab segment" data-tab="Personal">
+			<form action="#" class="ui form">
+				<div class="fields two">
+					<div class="field">
+						<label>Name</label>
+						<input type="text">
+					</div>
+					<div class="field">
+						<label>Surname</label>
+						<input type="text">
+					</div>
+				</div>
+				<div class="fields two">
+					<div class="field">
+						<label>Country</label>
+						<div class="ui dropdown">
+							<input type="hidden" name="Country">
+							<div class=" text">Ukraine</div>
+							<div class="dropdown icon"><img src="img/icons/arrow-blue.svg" alt=""></div>
+							<div class="menu">
+								<div class="item" data-value="Ukraine">Ukraine</div>
+								<div class="item" data-value="France">France</div>
+								<div class="item" data-value="Russia">Russia</div>
+								<div class="item" data-value="Spain">Spain</div>
+								<div class="item" data-value="England">England</div>
+							</div>
+						</div>
+					</div>
+					<div class="field">
+						<label>Phone number</label>
+						<input type="tel">
+					</div>
+				</div>
+				<div class="field">
+					<label>Email</label>
+					<input type="email">
+				</div>
+				<div class="field">
+					<label>Password</label>
+					<input type="password">
+				</div>
+
+				<div class="ui checked checkbox">
+					<input type="checkbox">
+					<label>I have read and agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+				  </div>
+				
+				<div class="popup__form-bottom">
+					<div class="popup__btn "><button class="button ui" type="submit">Create an account</button></div>
+					<div class="popup__link ">
+						<p>Have an account? <a href="#" class="ui modal-popup__signIn">Log in</a></p>
+					</div>
+				</div>
+			</form>
+		</div>
+		  <div class="ui bottom attached active tab segment" data-tab="Company">
+			<form action="#" class="ui form">
+				<div class="fields two">
+					<div class="field">
+						<label>Company name</label>
+						<input type="text">
+					</div>
+					<div class="field">
+						<label>Brand Name</label>
+						<input type="text">
+					</div>
+				</div>
+				<div class="field">
+					<label>Website</label>
+					<input type="text">
+				</div>
+				<div class="field">
+					<label>Company address</label>
+					<input type="text">
+				</div>
+				<div class="fields two">
+					<div class="field">
+						<label>Contact person name</label>
+						<input type="text">
+					</div>
+					<div class="field">
+						<label>Contact person surname</label>
+						<input type="text">
+					</div>
+				</div>
+				<div class="field">
+					<label>Country</label>
+					<div class="ui dropdown">
+						<input type="hidden" name="Country">
+						<div class=" text">Ukraine</div>
+						<div class="dropdown icon"><img src="img/icons/arrow-blue.svg" alt=""></div>
+						<div class="menu">
+							<div class="item" data-value="Ukraine">Ukraine</div>
+							<div class="item" data-value="France">France</div>
+							<div class="item" data-value="Russia">Russia</div>
+							<div class="item" data-value="Spain">Spain</div>
+							<div class="item" data-value="England">England</div>
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<label>Phone number</label>
+					<input type="tel">
+				</div>
+				<div class="field">
+					<label>Email</label>
+					<input type="email">
+				</div>
+				<div class="field">
+					<label>Password</label>
+					<input type="password">
+				</div>
+				<div class="popup__form-bottom">
+					<div class="popup__btn default__btn"><button class="button ui" type="submit">Create an account</button></div>
+					<div class="popup__link default__text"><p>Have an account?  <a href="#" class="ui modal-popup__signIn">Log in</a></p></div>
+				</div>
+			</form>
+		  </div>
+		
+	</div>
+</div>
+
+<div class="ui modal large popup__block popup__signIn">
+	<i class="close popup-close"><img src="img/icons/close.svg" alt=""></i>
+	<div class="popup__wrapper">
+		<div class="popup__title">
+			<h2>Sign in</h2>
+		</div>
+		
+		<form action="#" class="ui form">
+			<div class="field">
+				<label>Email</label>
+				<input type="email">
+			</div>
+			<div class="field">
+				<label>Password</label>
+				<input type="password">
+				<div class="popup__input-description">
+					<a href="#">Forgot your password?</a>
+				</div>
+			</div>
+			<div class="popup__form-bottom">
+				<div class="popup__btn "><button type="submit" class="button ui">Log in</button></div>
+				<div class="popup__link "><p>Don't have account?<a href="#" class="ui  modal-popup__newAccount">Create new one</a></p></div>
+			</div>
+		</form>
+	</div>
+</div>

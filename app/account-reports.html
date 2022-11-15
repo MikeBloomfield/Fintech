@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Reports</title>
+	<meta name="description" content="Site slogan">
+	<meta name="keywords" content="Site keys">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+	<meta name="theme-color" content="#fff">
+	<meta property="og:title" content="Site keys" />
+	<meta property="og:description" content="Site slogan" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="***permalink***" />
+	<meta property="og:image" content="***img***" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<!-- windows favicon -->
+	<meta name="msapplication-config" content="browserconfig.xml">
+	<!-- css -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="libs/semantic/semantic.min.css">
+	<link rel="stylesheet" href="libs/semantic-ui-calendar/calendar.min.css">
+	<link rel="stylesheet" href="css/account.css">
+</head>
+
+<body class="body loaded">
+
+	<div class="icon-load">
+		<div class="sk-folding-cube">
+			<div class="sk-folding-cube-abs">
+				<img src="img/icons/preloader-1.svg" alt="">
+			</div>
+		</div>
+	</div>
+
+  <div class="account__reports account">
+		//= parts/account-sidebar.html
+
+
+		<main>
+			<section>
+				//= parts/account-header.html
+				
+			</section>
+
+			<section class="section__transactions">
+				
+				<div class="transactions__block section__block">
+					<div class="transactions__top section__top">
+						<div class="section__title">
+							<h2>Last transactions</h2>
+						</div>
+					
+							<form class="transactions-form toolbar" action="#">
+	
+									<div class="toolbar__dates">
+										<div class="ui calendar" id="rangestart">
+											<div class="ui input left icon">
+												<i class="calendar icon"></i>
+												<input type="text" placeholder="Start date">
+											</div>
+										</div>
+										<div class="ui calendar" id="rangeend">
+											<div class="ui input left icon">
+												<i class="calendar icon"></i>
+												<input type="text" placeholder="End date">
+											</div>
+										</div>
+									</div>
+	
+									<div class="toolbar__select toolbar__select-type">
+										<label>Type:</label>
+										<div class="ui dropdown">
+											<input type="hidden" name="Loan withdrawal">
+											<div class="text">Loan withdrawal</div>
+											<div class="dropdown icon"><img src="img/icons/arrow-blue.svg" alt=""></div>
+											<div class="menu">
+												<div class="item" data-value="Loan">Loan withdrawal</div>
+												<div class="item" data-value="Loan">Loan withdrawal</div>
+												<div class="item" data-value="Loan">Loan withdrawal</div>
+												<div class="item" data-value="Loan">Loan withdrawal</div>
+											</div>
+										</div>
+									</div>
+	
+	
+									<div class="toolbar__select toolbar__select-down">
+										<label>Download:</label>
+										<div class="select__down">
+											<div class="ui dropdown">
+												<input type="hidden" name="language">
+												<div class="text">.pdf Ledger</div>
+												<div class="dropdown icon"><img src="img/icons/arrow-blue.svg" alt=""></div>
+												<div class="menu">
+													<div class="item" data-value="Loan">.pdf Ledger</div>
+													<div class="item" data-value="Loan">.pdf Ledger</div>
+													<div class="item" data-value="Loan">.pdf Ledger</div>
+													<div class="item" data-value="Loan">.pdf Ledger</div>
+												</div>
+											</div>
+											<button class="ui button"><img src="img/icons/downlaod.svg" alt=""></button>
+										</div>
+									</div>
+	
+							</form>
+	
+					</div>
+					<table class="account__table transactions__table">
+						<thead>
+							<tr>
+								<th data-title="Number">Number</th>
+								<th data-title="Time">Time</th>
+								<th data-title="Operation type">Operation type</th>
+								<th data-title="Amount">Amount</th>
+								<th data-title="Currency" class="is-center">Currency</th>
+								<th data-title="Status" class="is-center">Status</th>
+								<th data-title="To">To</th>
+								<th data-title="Details">Details</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-title="Number">10000001</td>
+								<td data-title="Time">03.04.2020 16:12:32</td>
+								<td data-title="Operation type">
+									<a href="#" class="sticker opacity with">Withdrawal</a>
+								</td>
+								<td data-title="Amount" class="bold">0.0011373</td>
+								<td data-title="Currency" class="is-center">
+									<span class="icon">
+										<img src="img/account/crypto-icon/Bitcoin.png" alt="Bitcoin" title="Bitcoin">
+									</span>
+									BTC
+								</td>
+								<td  data-title="Status" class="is-center">
+									<span class="tooltip">
+										<img src="img/icons/cross.svg" alt="">
+										<span class="tooltip-block"><p>Declined</p></span>
+									</span>
+								</td>
+								<td data-title="To">XqSt1S9zVzfbujPD356LmWb4e7NyrQg</td>
+								<td data-title="Details">
+									<a href="#" class="show">Show</a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td data-title="Number">10000003</td>
+								<td data-title="Time">12.03.2020 12:05:56</td>
+								<td data-title="Operation type">
+									<a href="#" class="sticker opacity dep">Deposit</a>
+
+								</td>
+								<td data-title="Amount" class="bold">0.0011373</td>
+								<td data-title="Currency" class="is-center">
+									<span class="icon">
+										<img src="img/account/crypto-icon/Bitcoin.png" alt="Bitcoin" title="Bitcoin">
+									</span>
+									BTC
+								</td>
+								<td  data-title="Status" class="is-center">
+									<span class="tooltip">
+										<img src="img/icons/check-2.svg" alt="">
+										<span class="tooltip-block"><p>Accepted</p></span>
+									</span>
+								</td>
+								<td data-title="To">XqSt1S9zVzfbujPD356LmWb4e7NyrQg</td>
+								<td data-title="Details">
+									<a href="#" class="show">Show</a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td data-title="Number">10000003</td>
+								<td data-title="Time">12.03.2020 12:05:56</td>
+								<td data-title="Operation type">
+									<a href="#" class="sticker opacity dep">Deposit</a>
+								</td>
+								<td data-title="Amount" class="bold">0.0011373</td>
+								<td data-title="Currency" class="is-center">
+									<span class="icon">
+										<img src="img/account/crypto-icon/USDT.png" alt="Bitcoin" title="Bitcoin">
+									</span>
+									USDT
+								</td>
+								<td  data-title="Status" class="is-center">
+									<span class="tooltip">
+										<img src="img/icons/clock.svg" alt="">
+										<span class="tooltip-block"><p>Under review</p></span>
+									</span>
+								</td>
+								<td data-title="To">XqSt1S9zVzfbujPD356LmWb4e7NyrQg</td>
+								<td data-title="Details">
+									<a href="#" class="show">Show</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Number">10000003</td>
+								<td data-title="Time">13.03.2020 12:05:56</td>
+								<td data-title="Operation type">
+									<a href="#" class="sticker opacity dep">Deposit</a>
+								</td>
+								<td data-title="Amount" class="bold">0.0011373</td>
+								<td data-title="Currency" class="is-center">
+									<span class="icon">
+										<img src="img/account/crypto-icon/Bitcoin.png" alt="Bitcoin" title="Bitcoin">
+									</span>
+									BTC
+								</td>
+								<td  data-title="Status" class="is-center">
+									<span class="tooltip">
+										<img src="img/icons/clock.svg" alt="">
+										<span class="tooltip-block"><p>Under review</p></span>
+									</span>
+								</td>
+								<td data-title="To">XqSt1S9zVzfbujPD356LmWb4e7NyrQg</td>
+								<td data-title="Details">
+									<a href="#" class="show">Show</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section class="section__history">
+			
+				<div class="history__block section__block">
+					<div class="history__top section__top">
+						<div class="section__title">
+							<h2>Exchange history</h2>
+						</div>
+					
+							<form class="history-form toolbar" action="#">
+	
+									<div class="toolbar__dates">
+										<div class="ui calendar" id="rangestart-2">
+											<div class="ui input left icon">
+												<i class="calendar icon"></i>
+												<input type="text" placeholder="Start date">
+											</div>
+										</div>
+										<div class="ui calendar" id="rangeend-2">
+											<div class="ui input left icon">
+												<i class="calendar icon"></i>
+												<input type="text" placeholder="End date">
+											</div>
+										</div>
+									</div>
+	
+									<div class="toolbar__select toolbar__select-assets">
+										<label>Assets:</label>
+										<div class="ui dropdown">
+											<input type="hidden" name="Assets">
+											<div class="text">All</div>
+											<div class="dropdown icon"><img src="img/icons/arrow-blue.svg" alt=""></div>
+											<div class="menu">
+												<div class="item" data-value="Loan">All1</div>
+												<div class="item" data-value="Loan">All2</div>
+												<div class="item" data-value="Loan">All3</div>
+												<div class="item" data-value="Loan">All4</div>
+											</div>
+										</div>
+									</div>
+	
+									<div class="toolbar__select toolbar__select-status">
+										<label>Status:</label>
+										<div class="ui dropdown">
+											<input type="hidden" name="Status">
+											<div class="text">All</div>
+											<div class="dropdown icon"><img src="img/icons/arrow-blue.svg" alt=""></div>
+											<div class="menu">
+												<div class="item" data-value="Loan">All1</div>
+												<div class="item" data-value="Loan">All2</div>
+												<div class="item" data-value="Loan">All3</div>
+												<div class="item" data-value="Loan">All4</div>
+											</div>
+										</div>
+									</div>
+	
+									<div class="toolbar__select toolbar__select-down">
+										<label>Download:</label>
+										<div class="select__down">
+											<div class="ui dropdown">
+												<input type="hidden" name="language">
+												<div class="text">.pdf Ledger</div>
+												<div class="dropdown icon"><img src="img/icons/arrow-blue.svg" alt=""></div>
+												<div class="menu">
+													<div class="item" data-value="Loan">.pdf Ledger</div>
+													<div class="item" data-value="Loan">.pdf Ledger</div>
+													<div class="item" data-value="Loan">.pdf Ledger</div>
+													<div class="item" data-value="Loan">.pdf Ledger</div>
+												</div>
+											</div>
+											<button class="ui button"><img src="img/icons/downlaod.svg" alt=""></button>
+										</div>
+									</div>
+	
+							</form>
+	
+					</div>
+					<table class="account__table history__table">
+						<thead>
+							<tr>
+								<th data-title="Trade ID">Trade ID</th>
+								<th data-title="Created Date">Created Date</th>
+								<th data-title="Executed date">Executed date</th>
+								<th data-title="Oder type">Oder type</th>
+								<th data-title="Asset">Asset</th>
+								<th data-title="Order size">Order size</th>
+								<th data-title="Executed rate">Executed rate</th>
+								<th data-title="Fee">Fee</th>
+								<th data-title="Value">Value</th>
+								<th data-title="Status" class="is-center">Status</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-title="Trade ID">TCEP00003141</td>
+								<td data-title="Created Date">03.04.2020</td>
+								<td data-title="Executed date">03.04.2020</td>
+								<td data-title="Oder type">
+									<span class="sticker opacity sell">Sell</span>
+								</td>
+								<td data-title="Asset">BTC/EUR.E</td>
+								<td data-title="Order size">0.001000</td>
+								<td data-title="Executed rate">325.883</td>
+								<td data-title="Fee">0.000001 BTC</td>
+								<td data-title="Value">15.25333</td>
+								<td data-title="Status"  class="is-center">
+									<span class="tooltip">
+										<img src="img/icons/cross.svg" alt="">
+										<span class="tooltip-block"><p>Declined</p></span>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Trade ID">TCEP00003141</td>
+								<td data-title="Created Date">03.04.2020</td>
+								<td data-title="Executed date">03.04.2020</td>
+								<td data-title="Oder type">
+									<span class="sticker opacity buy">Buy</span>
+								</td>
+								<td data-title="Asset">BTC/EUR.E</td>
+								<td data-title="Order size">0.001000</td>
+								<td data-title="Executed rate">325.883</td>
+								<td data-title="Fee">0.000001 BTC</td>
+								<td data-title="Value">15.25333</td>
+								<td data-title="Status"  class="is-center">
+									<span class="tooltip">
+										<img src="img/icons/cross.svg" alt="">
+										<span class="tooltip-block"><p>Declined</p></span>
+									</span>
+								</td>
+							</tr>
+						
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+		</main>
+
+		
+  </div>
+
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/semantic/semantic.min.js"></script>
+	<script src="libs/semantic-ui-calendar/calendar.min.js"></script>
+	<script src="js/account.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+.page__cryptocurrency
+    overflow hidden
+    .cryptocurrency
+        padding 0px 0 49px
+        overflow hidden
+         &__table
+            width 100%
+            border-spacing: 0
+            margin-top 15px
+        &__th
+            text-align left
+            padding 14px 5px 14px 0
+        &__tr 
+            border-bottom: 1px solid rgba($white, .2)
+        &__tbody 
+            .cryptocurrency__tr:last-child 
+                border-bottom: 1px solid transparent
+        &__td 
+            color $white
+            text-align left
+            padding 17px 0
+            vertical-align: middle;
+            padding-right 5px
+            &[data-title='Full Name']
+                width 22%
+                a
+                    color $blue 
+                    font-weight 600
+                    font-size: 20px;
+                    line-height: 30px;
+                    &:hover 
+                        color $white
+            &[data-title='Symbol']
+                width 13.5%
+            &[data-title='Rate in usd']
+                font-weight 700
+                width 15%
+            &[data-title='Hashing algorithm']
+                width 18%
+            &[data-title='Difficulty']
+                width 14%
+            &[data-title='Network H/s']
+                width 13%
+            &[data-title='Icon']
+                width 5%
+                span 
+                    display flex
+                    justify-content center
+                    align-items center 
+                    max-width 25px 
+                    margin-left 4px
+
+    @media (max-width : 992px)
+        .cryptocurrency
+            &__th 
+                font-size 14px
+            &__td 
+                font-size 14px
+                &[data-title='Full Name']
+                    a
+                        font-size 17px
+                        line-height 25px
+    
+    @media (max-width : 768px)
+        .cryptocurrency
+            &__thead 
+                display none
+            &__tbody 
+                display flex
+                justify-content space-between
+                flex-wrap wrap 
+            &__tr 
+                width 50%
+                display flex
+                flex-wrap wrap
+                padding 20px 15px 10px 0
+                position relative
+                border-bottom: none
+                border-top: 1px solid rgba($white, .2)
+                &:nth-child(even)
+                    padding-left 15px
+                    padding-right 0
+                    &:before 
+                        content "" 
+                        position absolute 
+                        width 1px 
+                        height 70% 
+                        left 0 
+                        top 50% 
+                        transform translateY(-50%)
+                        background rgba(110,112,115,0.1)
+                    .td 
+                        padding-right 0
+                        padding-left 15px
+                &:first-child,
+                &:nth-child(2)
+                    border-top: none
+
+
+            &__td 
+                display flex
+                justify-content space-between
+                align-items center
+                padding 5px 0
+                &[data-title='Full Name']
+                    width 65%
+                    margin-right 5px
+                    &:before 
+                        display none
+                &[data-title='Symbol']
+                    width 20%
+                    text-align right
+                    justify-content flex-end
+                    margin-left auto
+                    &:before 
+                        display none
+                &[data-title='Rate in usd']
+                    width 100%
+                &[data-title='Hashing algorithm']
+                    width 100%
+                &[data-title='Difficulty']
+                    width 100%
+                &[data-title='Network H/s']
+                    width 100%
+                &[data-title='Icon']
+                    width 15%
+                    min-width 25px
+                    max-width 25px
+                    align-items flex-start
+                    margin-top 3px
+                    span 
+                        margin-left auto
+                        margin-right 5px
+                    &:before 
+                        display none
+                &:before 
+                    content attr(data-title)
+                    color $gray
+                    font-family $base-font-family 
+                    font-size 12px
+                    line-height 20px
+                    font-weight 500
+                    margin-right auto
+    
+    @media (max-width : 568px)
+        .cryptocurrency
+            &__tr 
+                width 100%
+                padding-right 0
+                &:nth-child(2)
+                    border-top: 1px solid rgba($white, .2)
+                &:before 
+                    display none 
+                &:nth-child(even)
+                    padding-left 0px
+                    padding-right 0
+                    .td 
+                        padding-right 0
+                        padding-left 0px
+
+
+
+        
+    
+                
+            
+
+                

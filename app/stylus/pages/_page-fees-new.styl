@@ -1,0 +1,107 @@
+
+.page__fees-new
+    .fees
+        padding-bottom 135px
+    h1, h2
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+        color: #FFFFFF;
+        text-align center
+        max-width: 800px
+        margin: 0 auto 40px
+    p
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #fff;
+        max-width: 800px
+        margin: 20px auto 40px
+    td
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        padding: 17px 0 18px
+    th
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(255, 255, 255, .5);
+        padding-bottom 10px
+    tbody tr
+        background: #1F204E
+    .blue
+        color: $blue
+    .bold
+        font-weight 500
+    .fees
+        &__title
+            // 
+    .table__wrapper
+        max-width: 970px
+        margin: auto
+        & + .table__wrapper
+            margin-top 36px
+        &-inner
+            display flex
+            align-items: center
+            gap: 24px
+        table
+            border-collapse: separate
+            border-spacing: 0 5px
+            th:first-child,td:first-child
+                padding-left 30px
+            th:last-child,td:last-child
+                padding-right 30px
+            td:first-child
+                border-radius: 5px 0 0 5px
+                width: 43%
+            td:last-child
+                border-radius: 0 5px 5px 0
+                width: 21%
+    .currency
+        position relative
+        padding: 135px 0
+        .table__wrapper
+            th:last-child
+                width: 31%
+            td:last-child
+                padding-left 84px
+
+
+
+
+@media (max-width : 768px)
+    .page__fees-new
+        th
+            &:nth-child(2)
+                width: 22%
+        td
+            padding: 5px 0
+@media (max-width : 425px)
+    .page__fees-new
+        h1, h2
+            font-size 28px
+            line-height 35px
+            text-align center
+            margin-bottom 20px
+        td
+            font-size: 13px;
+            line-height: 20px;
+            padding: 0 5px
+        th
+            font-size: 13px;
+            line-height: 20px;
+            padding: 0 5px
+            &:first-child
+                text-align left
+        .currency .table__wrapper td:last-child
+            padding-left 5px
+        .table__wrapper table th:last-child
+            padding-right 5px
+        .fees
+            padding-bottom 35px
+        .table__wrapper-inner
+            gap: 10px

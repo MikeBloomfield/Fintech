@@ -1,0 +1,62 @@
+.ui.dropdown
+  &>.dropdown.icon
+    position absolute 
+    right 0
+    top 12px
+    width 8px 
+    height 5px
+    &:before
+      display none
+
+.header__language 
+  .ui.dropdown
+    width 50px
+    padding-left 8px
+    height 30px
+    display flex
+    justify-content space-between
+    align-items center
+    .text 
+      display: flex;
+      justify-content: center;
+      img 
+        margin 0
+      span 
+        display none
+    .menu
+      background #040652
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.07);
+      border-radius: 20px;
+      margin-top 5px
+      border 5px solid $dark-blue-light
+      &>.item
+        padding 5px 14px 5px 8px
+        min-width 150px
+        &:after 
+          content ""
+          background-image url('../img/icons/done.svg')
+          background-size cover
+          background-repeat no-repeat
+          width 12px 
+          height 9px 
+          position absolute 
+          opacity 0
+          top 15px 
+          right 10px
+        &:hover 
+          background $dark-blue-light
+        &:first-child 
+          border-radius 5px 5px 0 0
+        &:last-child 
+          border-radius 0 0 5px 5px
+        img 
+          margin 0
+        span 
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 30px;
+          color: $white;
+      .selected.item
+        background transparent
+        &:after 
+          opacity 1

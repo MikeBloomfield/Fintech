@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Reports</title>
+	<meta name="description" content="Site slogan">
+	<meta name="keywords" content="Site keys">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+	<meta name="theme-color" content="#fff">
+	<meta property="og:title" content="Site keys" />
+	<meta property="og:description" content="Site slogan" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="***permalink***" />
+	<meta property="og:image" content="***img***" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<!-- windows favicon -->
+	<meta name="msapplication-config" content="browserconfig.xml">
+	<!-- css -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="libs/semantic/semantic.min.css">
+	<link rel="stylesheet" href="libs/semantic-ui-calendar/calendar.min.css">
+	<link rel="stylesheet" href="css/account.css">
+</head>
+
+<body class="body loaded">
+
+  <div class="icon-load">
+		<div class="sk-folding-cube">
+			<div class="sk-folding-cube-abs">
+				<img src="img/icons/preloader-1.svg" alt="">
+			</div>
+		</div>
+	</div>
+
+  <div class="account__operations account">
+		//= parts/account-sidebar.html
+
+
+		<main>
+			<section>
+				//= parts/account-header.html
+				
+			</section>
+
+      <section class="section__operations">
+        <div class="operations__tabs">
+          <div class="ui top attached tabular menu">
+            <a class="item " data-tab="Funding">Funding</a>
+            <a class="item active" data-tab="Withdrawal">Withdrawal</a>
+          </div>
+        </div>
+
+        <div class="operations__blocks">
+          <div class="ui bottom attached tab segment " data-tab="Funding">
+            <div class="operations__top section__top">
+              <div class="section__title"><h2>Funding in fiat</h2></div>
+              <div class="operations__top-tabs">
+                <div class="ui top attached tabular menu">
+                  <a class="item active" data-tab="Funding-fiat">Fiat</a>
+                  <a class="item" data-tab="Funding-crypto">Crypto</a>
+                </div>
+              </div>
+            </div>
+            <div class="operations__block ui bottom attached tab segment " data-tab="Funding-fiat">
+            </div>
+            <div class="operations__block ui bottom attached tab segment active" data-tab="Funding-crypto">
+            </div>
+          </div>
+
+          <div class="ui bottom attached tab segment active" data-tab="Withdrawal">
+            <div class="limit">
+              <div class="limit-row">
+                <div class="limit-text">
+                  <p>Monthly funding limits</p>
+                </div>
+                <div class="limit-amount">
+                  <p><span class="green">$</span><span class="limit-current">236524</span> of $<span class="limit-max">500000</span></p>
+                </div>
+              </div>
+              <div class="limit-bar">
+                <span class="limit-status" style="width: 0"></span>
+              </div>
+            </div>
+          
+
+            <div class="operations__block ">
+              <div class="withdrawal-crypto__block">
+                <div class="crypto__block">
+                  <div class="crypto__block-icon"><img src="img/account/withdrawal/fail-icon.svg" alt=""></div>
+                  <div class="section__title"><h2>Oopps, operation failed!</h2></div>
+                  <div class="section__description"><p>Your operation failed, please try again later.</p></div>
+                  <button class="ui button" type="submit">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+		</main>
+
+		
+  </div>
+
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/semantic/semantic.min.js"></script>
+	<script src="libs/semantic-ui-calendar/calendar.min.js"></script>
+	<script src="libs/mask/jquery.inputmask.min.js"></script>
+	<script src="js/account.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+.new-invoice
+  display: flex;
+  justify-content: space-between;
+  column-gap 20px
+  .send-timer
+    &__block
+      display flex
+      align-items: center
+    &__icon
+      margin-right 25px
+    &__info
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
+      color: #FFFFFF;
+    p
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+  &__qr
+    max-width: 150px
+    margin: 0 auto 20px
+  &__dropdown
+    margin-top 20px
+    margin-bottom 20px
+  &__left,
+  &__right
+    background-color: rgba(#1F204E, .8)
+    border-radius: 5px
+    padding: 25px 30px 30px
+    .ui.dropdown
+      margin-top 5px
+      img
+        position relative
+        top 3px
+        max-width: 20px
+        display inline-block
+        margin-right 10px
+  &__left
+    width: 100%
+    &-top
+      display flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom 50px
+  &__right
+    width: 400px
+    flex-shrink: 0
+  &__date
+    p
+     color: #fff
+  .client
+    margin-bottom 50px
+    &__details
+      p
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(#fff, .5);
+        mix-blend-mode: normal;
+        margin-bottom 10px
+    &__company
+      p
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-bottom 5px
+    &__name
+      p
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-bottom 5px
+  &__table
+    width: 100%
+    margin-bottom 30px
+    table
+      th
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(255, 255, 255, .5);
+        text-align center
+        &:first-child
+          text-align left
+      td
+        padding: 15px 0
+      tr
+        border-bottom: 1px solid rgba(255,255,255,0.2)
+        &:last-child
+          border-bottom: 1px solid rgba(255,255,255,0.2)
+  &__total
+    display flex
+    justify-content: right
+    margin-bottom 30px
+    p
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+      &:last-child
+        margin-left 50px
+  label
+    display block
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, .5)
+    textarea
+      width: 100%
+      margin-top 5px
+      display block
+      border-radius: 5px
+      background-color: #1b1c48
+      border: 1px solid #48497D;
+      resize: none
+      color: #fff
+      padding: 15px
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      &::placeholder
+        color: #fff
+  &__item
+    p 
+      margin-top 5px
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: #FFFFFF;
+      padding-bottom 10px
+      position relative
+      cursor: pointer
+      word-break: break-all
+      &:before
+        content ""
+        position absolute
+        width: 30px
+        height: 30px
+        display block
+        background: url(../img/copy.svg)
+        right: 0
+        top: 0
+    &:not(:last-of-type)
+      border-bottom: 1px solid #48497D;
+      margin-bottom 10px
+
+
+
+
+    

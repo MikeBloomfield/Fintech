@@ -1,0 +1,157 @@
+.page__help
+    overflow hidden
+    .help   
+        padding 0px 0 0px
+        &__content
+            display flex
+            justify-content space-between
+            align-items flex-start
+            margin-top 60px
+        &__tabs 
+            max-width 320px 
+            width 100% 
+            .ui.attached.tabular.menu
+                display block
+                border-bottom none
+                .item 
+                    background: $dark-blue
+                    border-radius: 5px !important
+                    border none
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: rgba(#FFFFFF, .5);
+                    font-weight 500
+                    display flex
+                    justify-content space-between  
+                    align-items center 
+                    font-family $base-font-family
+                    padding 15px 15px
+                    margin-bottom 5px
+                    min-height 70px
+                    span 
+                        text-align right
+                        color: $blue
+                        font-weight 500
+                    &:hover 
+                        color $white
+                    &.active 
+                        margin-bottom 5px
+                        color $white 
+                        background $blue
+                        font-weight 500
+                        span 
+                            color $white
+        &__blocks 
+            max-width 810px 
+            width 100%
+        .ui.segment
+            padding 0 
+            background transparent
+            border none
+        &__item
+            margin-bottom 40px
+            padding-left 40px
+            position relative
+            .title 
+                cursor pointer
+                &:hover h3
+                    color $blue
+                &.active 
+                    .help__item-arrow 
+                        transform rotate(0deg)
+            &-arrow 
+                position absolute 
+                left 13px 
+                top 5px
+                transform rotate(-180deg)
+                max-width 18px 
+                width 100%
+            &-bottom 
+                p 
+                    margin-top 20px
+                    max-width 900px 
+                    width 100%
+                    color $white
+                    &:first-child 
+                        margin-top 20px
+     
+
+    .answer 
+        padding 0 0 18px
+        &__content
+            margin 80px auto 22px
+            display flex
+            justify-content space-between ;
+            align-items center
+        &__block
+            &-els  
+                position relative
+                max-width 270px 
+                width 100% 
+                margin-right 70px
+            &-img-bottom 
+                position absolute 
+                bottom 17px  
+                left 19px
+        &__title 
+            margin-bottom 16px
+            h2 
+                text-align left
+        &__info 
+            display flex
+            justify-content flex-start
+            align-items center
+            flex-wrap wrap
+            p
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color $white
+                margin-right 10px
+            a 
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                color: $blue;
+                border-top 1px solid transparent
+                border-bottom 1px solid $blue
+                &:hover     
+                    color $white
+                    border-bottom 1px solid $white
+
+
+    @media (max-width : 1200px)
+        .answer 
+            &__block 
+                &-els 
+                    margin-right 0
+                    margin-left 10px
+
+    @media (max-width : 768px)
+
+        .help 
+            &__content 
+                flex-direction column   
+            &__tabs 
+                max-width none 
+                margin-bottom 20px
+            &__item 
+                padding-left 25px
+                margin-bottom 20px
+                &-arrow 
+                    top 0px
+                    left 0
+                    max-width 15px
+        .answer 
+            &__content
+               flex-direction column
+               margin-top 50px
+            &__block-els 
+                margin-left 0
+                margin-top 30px
+            
+    
+  
+
+
+

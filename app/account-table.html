@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <meta name="description" content="Site slogan">
+  <meta name="keywords" content="Site keys">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#fff">
+  <meta name="msapplication-navbutton-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+  <meta name="theme-color" content="#fff">
+  <meta property="og:title" content="Site keys" />
+  <meta property="og:description" content="Site slogan" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="***permalink***" />
+  <meta property="og:image" content="***img***" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <!-- windows favicon -->
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <!-- css -->
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="libs/semantic/semantic.min.css">
+  <link rel="stylesheet" href="css/account.css">
+</head>
+
+<body class="body loaded">
+
+<div class="icon-load">
+  <div class="sk-folding-cube">
+    <div class="sk-folding-cube-abs">
+      <img src="img/icons/preloader-1.svg" alt="">
+    </div>
+  </div>
+</div>
+
+
+<div class="account__dashborad account">
+  //= parts/account-sidebar.html
+  <main class="main">
+    //= parts/account-header.html
+    <section class="tools">
+      <div class="tools__step  tools__step-active  invoices" data-tools="first">
+        <div class="tools__top">
+          <div class="tools__title"><h2>My invoices</h2></div>
+          <div class="tools__button"><a href="#" data-tools="second" class="btn__next-step">Create new <span> Invoice</span></a></div>
+        </div>
+        <div class="tools__table">
+          <div class="tools__thead">
+            <div class="tools__tr">
+              <div class="tools__td" data-table="Number">Number</div>
+              <div class="tools__td" data-table="Title">Title</div>
+              <div class="tools__td" data-table="Amount">Amount</div>
+              <div class="tools__td" data-table="Created date">Created date</div>
+              <div class="tools__td" data-table="Status">Status</div>
+              <div class="tools__td" data-table="Paid date">Paid date</div>
+              <div class="tools__td" data-table="Operations">Operations</div>
+            </div>
+          </div>
+          <div class="tools__tbody">
+            <div class="tools__tr tools__tr-unfaid">
+              <div class="tools__td " data-table="Number">22</div>
+              <div class="tools__td bold" data-table="Title">Nikolaus Vrestuhin</div>
+              <div class="tools__td" data-table="Amount">$50 000.00</div>
+              <div class="tools__td" data-table="Created date">5 Oct, 2020</div>
+              <div class="tools__td tools__td-status" data-table="Status"><span class="status unpaid">Unpaid</span></div>
+              <div class="tools__td" data-table="Paid date">-</div>
+              <div class="tools__td " data-table="Operations">
+                <div class="tools__td-operations">
+                  <a href="#" class="ui modal-popup__invoice">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                      <g><path fill="#cbcbcc" d="M10 10.53h-.33a.5.5 0 0 1-.5-.5V9.5a.5.5 0 0 1 .5-.5h1.83a.5.5 0 0 1 .5.5V15h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h.5zM0 11C0 4.925 4.925 0 11 0s11 4.925 11 11-4.925 11-11 11S0 17.075 0 11zm20 0a9 9 0 1 0-18 0 9 9 0 0 0 18 0zM8.999 6.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23">
+                      <g><path fill="#cbcbcc" d="M16.5 16a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm-12-7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm12-9a4.5 4.5 0 1 1-3.942 6.671L8.414 9.278A4.48 4.48 0 0 1 9 11.5a4.48 4.48 0 0 1-.536 2.132l4.721 1.825a4.5 4.5 0 1 1-.999 1.758L7.03 15.222a4.5 4.5 0 1 1 .006-7.44l4.967-3.125A4.5 4.5 0 0 1 16.5 0zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#" class="edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <g transform="rotate(-45 10 11)"><g><path fill="#cbcbcc" d="M23.096 9.98v2.76a2.84 2.84 0 0 1-2.84 2.84H3.273a2.84 2.84 0 0 1-1.43-.387l-3.61-2.105a2 2 0 0 1 0-3.456l3.61-2.105a2.84 2.84 0 0 1 1.43-.387h16.983a2.84 2.84 0 0 1 2.84 2.84zm-2.843 3.6a.842.842 0 0 0 .843-.84V9.98a.842.842 0 0 0-.843-.84h-1.306v4.44zM2.85 9.254L-.76 11.36l3.61 2.106a.84.84 0 0 0 .423.114h13.685V9.14H3.273a.84.84 0 0 0-.423.114z"/></g></g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tools__tr ">
+              <div class="tools__td " data-table="Number">21</div>
+              <div class="tools__td bold" data-table="Title">Kushnirenko Pavel</div>
+              <div class="tools__td" data-table="Amount">$3 500.00</div>
+              <div class="tools__td" data-table="Created date">1 Oct, 2020</div>
+              <div class="tools__td tools__td-status" data-table="Status"><span class="status unverified">Unverified</span></div>
+              <div class="tools__td" data-table="Paid date">-</div>
+              <div class="tools__td" data-table="Operations">
+                <div class="tools__td-operations">
+                  <a href="#" class="ui modal-popup__invoice">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                      <g><path fill="#cbcbcc" d="M10 10.53h-.33a.5.5 0 0 1-.5-.5V9.5a.5.5 0 0 1 .5-.5h1.83a.5.5 0 0 1 .5.5V15h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h.5zM0 11C0 4.925 4.925 0 11 0s11 4.925 11 11-4.925 11-11 11S0 17.075 0 11zm20 0a9 9 0 1 0-18 0 9 9 0 0 0 18 0zM8.999 6.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23">
+                      <g><path fill="#cbcbcc" d="M16.5 16a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm-12-7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm12-9a4.5 4.5 0 1 1-3.942 6.671L8.414 9.278A4.48 4.48 0 0 1 9 11.5a4.48 4.48 0 0 1-.536 2.132l4.721 1.825a4.5 4.5 0 1 1-.999 1.758L7.03 15.222a4.5 4.5 0 1 1 .006-7.44l4.967-3.125A4.5 4.5 0 0 1 16.5 0zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#" class="edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <g transform="rotate(-45 10 11)"><g><path fill="#cbcbcc" d="M23.096 9.98v2.76a2.84 2.84 0 0 1-2.84 2.84H3.273a2.84 2.84 0 0 1-1.43-.387l-3.61-2.105a2 2 0 0 1 0-3.456l3.61-2.105a2.84 2.84 0 0 1 1.43-.387h16.983a2.84 2.84 0 0 1 2.84 2.84zm-2.843 3.6a.842.842 0 0 0 .843-.84V9.98a.842.842 0 0 0-.843-.84h-1.306v4.44zM2.85 9.254L-.76 11.36l3.61 2.106a.84.84 0 0 0 .423.114h13.685V9.14H3.273a.84.84 0 0 0-.423.114z"/></g></g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tools__tr tools__tr-unfaid">
+              <div class="tools__td " data-table="Number">20</div>
+              <div class="tools__td bold" data-table="Title">Pereus Evgen</div>
+              <div class="tools__td" data-table="Amount">$9.00</div>
+              <div class="tools__td" data-table="Created date">29 Sep, 2020</div>
+              <div class="tools__td tools__td-status" data-table="Status"><span class="status unpaid">Unpaid</span></div>
+              <div class="tools__td" data-table="Paid date">-</div>
+              <div class="tools__td" data-table="Operations">
+                <div class="tools__td-operations">
+                  <a href="#" class="ui modal-popup__invoice">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                      <g><path fill="#cbcbcc" d="M10 10.53h-.33a.5.5 0 0 1-.5-.5V9.5a.5.5 0 0 1 .5-.5h1.83a.5.5 0 0 1 .5.5V15h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h.5zM0 11C0 4.925 4.925 0 11 0s11 4.925 11 11-4.925 11-11 11S0 17.075 0 11zm20 0a9 9 0 1 0-18 0 9 9 0 0 0 18 0zM8.999 6.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23">
+                      <g><path fill="#cbcbcc" d="M16.5 16a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm-12-7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm12-9a4.5 4.5 0 1 1-3.942 6.671L8.414 9.278A4.48 4.48 0 0 1 9 11.5a4.48 4.48 0 0 1-.536 2.132l4.721 1.825a4.5 4.5 0 1 1-.999 1.758L7.03 15.222a4.5 4.5 0 1 1 .006-7.44l4.967-3.125A4.5 4.5 0 0 1 16.5 0zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#" class="edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <g transform="rotate(-45 10 11)"><g><path fill="#cbcbcc" d="M23.096 9.98v2.76a2.84 2.84 0 0 1-2.84 2.84H3.273a2.84 2.84 0 0 1-1.43-.387l-3.61-2.105a2 2 0 0 1 0-3.456l3.61-2.105a2.84 2.84 0 0 1 1.43-.387h16.983a2.84 2.84 0 0 1 2.84 2.84zm-2.843 3.6a.842.842 0 0 0 .843-.84V9.98a.842.842 0 0 0-.843-.84h-1.306v4.44zM2.85 9.254L-.76 11.36l3.61 2.106a.84.84 0 0 0 .423.114h13.685V9.14H3.273a.84.84 0 0 0-.423.114z"/></g></g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tools__tr">
+              <div class="tools__td " data-table="Number">19</div>
+              <div class="tools__td bold" data-table="Title">Nikolaus Vrestuhin</div>
+              <div class="tools__td" data-table="Amount">$10.00</div>
+              <div class="tools__td" data-table="Created date">12 Sep, 2020</div>
+              <div class="tools__td tools__td-status" data-table="Status"><span class="status paid">Paid</span></div>
+              <div class="tools__td" data-table="Paid date">20 Sep, 2020</div>
+              <div class="tools__td" data-table="Operations">
+                <div class="tools__td-operations">
+                  <a href="#" class="ui modal-popup__invoice">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                      <g><path fill="#cbcbcc" d="M10 10.53h-.33a.5.5 0 0 1-.5-.5V9.5a.5.5 0 0 1 .5-.5h1.83a.5.5 0 0 1 .5.5V15h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h.5zM0 11C0 4.925 4.925 0 11 0s11 4.925 11 11-4.925 11-11 11S0 17.075 0 11zm20 0a9 9 0 1 0-18 0 9 9 0 0 0 18 0zM8.999 6.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23">
+                      <g><path fill="#cbcbcc" d="M16.5 16a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm-12-7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm12-9a4.5 4.5 0 1 1-3.942 6.671L8.414 9.278A4.48 4.48 0 0 1 9 11.5a4.48 4.48 0 0 1-.536 2.132l4.721 1.825a4.5 4.5 0 1 1-.999 1.758L7.03 15.222a4.5 4.5 0 1 1 .006-7.44l4.967-3.125A4.5 4.5 0 0 1 16.5 0zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#" class="edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <g transform="rotate(-45 10 11)"><g><path fill="#cbcbcc" d="M23.096 9.98v2.76a2.84 2.84 0 0 1-2.84 2.84H3.273a2.84 2.84 0 0 1-1.43-.387l-3.61-2.105a2 2 0 0 1 0-3.456l3.61-2.105a2.84 2.84 0 0 1 1.43-.387h16.983a2.84 2.84 0 0 1 2.84 2.84zm-2.843 3.6a.842.842 0 0 0 .843-.84V9.98a.842.842 0 0 0-.843-.84h-1.306v4.44zM2.85 9.254L-.76 11.36l3.61 2.106a.84.84 0 0 0 .423.114h13.685V9.14H3.273a.84.84 0 0 0-.423.114z"/></g></g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tools__tr tools__tr-unfaid">
+              <div class="tools__td " data-table="Number">22</div>
+              <div class="tools__td bold" data-table="Title">Nikolaus Vrestuhin</div>
+              <div class="tools__td" data-table="Amount">$50 000.00</div>
+              <div class="tools__td" data-table="Created date">5 Oct, 2020</div>
+              <div class="tools__td tools__td-status" data-table="Status"><span class="status unpaid">Unpaid</span></div>
+              <div class="tools__td" data-table="Paid date">-</div>
+              <div class="tools__td" data-table="Operations">
+                <div class="tools__td-operations">
+                  <a href="#" class="ui modal-popup__invoice">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                      <g><path fill="#cbcbcc" d="M10 10.53h-.33a.5.5 0 0 1-.5-.5V9.5a.5.5 0 0 1 .5-.5h1.83a.5.5 0 0 1 .5.5V15h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h.5zM0 11C0 4.925 4.925 0 11 0s11 4.925 11 11-4.925 11-11 11S0 17.075 0 11zm20 0a9 9 0 1 0-18 0 9 9 0 0 0 18 0zM8.999 6.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23">
+                      <g><path fill="#cbcbcc" d="M16.5 16a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm-12-7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm12-9a4.5 4.5 0 1 1-3.942 6.671L8.414 9.278A4.48 4.48 0 0 1 9 11.5a4.48 4.48 0 0 1-.536 2.132l4.721 1.825a4.5 4.5 0 1 1-.999 1.758L7.03 15.222a4.5 4.5 0 1 1 .006-7.44l4.967-3.125A4.5 4.5 0 0 1 16.5 0zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#" class="edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <g transform="rotate(-45 10 11)"><g><path fill="#cbcbcc" d="M23.096 9.98v2.76a2.84 2.84 0 0 1-2.84 2.84H3.273a2.84 2.84 0 0 1-1.43-.387l-3.61-2.105a2 2 0 0 1 0-3.456l3.61-2.105a2.84 2.84 0 0 1 1.43-.387h16.983a2.84 2.84 0 0 1 2.84 2.84zm-2.843 3.6a.842.842 0 0 0 .843-.84V9.98a.842.842 0 0 0-.843-.84h-1.306v4.44zM2.85 9.254L-.76 11.36l3.61 2.106a.84.84 0 0 0 .423.114h13.685V9.14H3.273a.84.84 0 0 0-.423.114z"/></g></g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tools__tr ">
+              <div class="tools__td " data-table="Number">21</div>
+              <div class="tools__td bold" data-table="Title">Kushnirenko Pavel</div>
+              <div class="tools__td" data-table="Amount">$3 500.00</div>
+              <div class="tools__td" data-table="Created date">1 Oct, 2020</div>
+              <div class="tools__td tools__td-status" data-table="Status"><span class="status unverified">Unverified</span></div>
+              <div class="tools__td" data-table="Paid date">-</div>
+              <div class="tools__td" data-table="Operations">
+                <div class="tools__td-operations">
+                  <a href="#" class="ui modal-popup__invoice">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                      <g><path fill="#cbcbcc" d="M10 10.53h-.33a.5.5 0 0 1-.5-.5V9.5a.5.5 0 0 1 .5-.5h1.83a.5.5 0 0 1 .5.5V15h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h.5zM0 11C0 4.925 4.925 0 11 0s11 4.925 11 11-4.925 11-11 11S0 17.075 0 11zm20 0a9 9 0 1 0-18 0 9 9 0 0 0 18 0zM8.999 6.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23">
+                      <g><path fill="#cbcbcc" d="M16.5 16a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm-12-7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm12-9a4.5 4.5 0 1 1-3.942 6.671L8.414 9.278A4.48 4.48 0 0 1 9 11.5a4.48 4.48 0 0 1-.536 2.132l4.721 1.825a4.5 4.5 0 1 1-.999 1.758L7.03 15.222a4.5 4.5 0 1 1 .006-7.44l4.967-3.125A4.5 4.5 0 0 1 16.5 0zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#" class="edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <g transform="rotate(-45 10 11)"><g><path fill="#cbcbcc" d="M23.096 9.98v2.76a2.84 2.84 0 0 1-2.84 2.84H3.273a2.84 2.84 0 0 1-1.43-.387l-3.61-2.105a2 2 0 0 1 0-3.456l3.61-2.105a2.84 2.84 0 0 1 1.43-.387h16.983a2.84 2.84 0 0 1 2.84 2.84zm-2.843 3.6a.842.842 0 0 0 .843-.84V9.98a.842.842 0 0 0-.843-.84h-1.306v4.44zM2.85 9.254L-.76 11.36l3.61 2.106a.84.84 0 0 0 .423.114h13.685V9.14H3.273a.84.84 0 0 0-.423.114z"/></g></g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tools__tr tools__tr-unfaid">
+              <div class="tools__td " data-table="Number">20</div>
+              <div class="tools__td bold" data-table="Title">Pereus Evgen</div>
+              <div class="tools__td" data-table="Amount">$9.00</div>
+              <div class="tools__td" data-table="Created date">29 Sep, 2020</div>
+              <div class="tools__td tools__td-status" data-table="Status"><span class="status unpaid">Unpaid</span></div>
+              <div class="tools__td" data-table="Paid date">-</div>
+              <div class="tools__td" data-table="Operations">
+                <div class="tools__td-operations">
+                  <a href="#" class="ui modal-popup__invoice">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                      <g><path fill="#cbcbcc" d="M10 10.53h-.33a.5.5 0 0 1-.5-.5V9.5a.5.5 0 0 1 .5-.5h1.83a.5.5 0 0 1 .5.5V15h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h.5zM0 11C0 4.925 4.925 0 11 0s11 4.925 11 11-4.925 11-11 11S0 17.075 0 11zm20 0a9 9 0 1 0-18 0 9 9 0 0 0 18 0zM8.999 6.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23">
+                      <g><path fill="#cbcbcc" d="M16.5 16a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm-12-7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm12-9a4.5 4.5 0 1 1-3.942 6.671L8.414 9.278A4.48 4.48 0 0 1 9 11.5a4.48 4.48 0 0 1-.536 2.132l4.721 1.825a4.5 4.5 0 1 1-.999 1.758L7.03 15.222a4.5 4.5 0 1 1 .006-7.44l4.967-3.125A4.5 4.5 0 0 1 16.5 0zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#" class="edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <g transform="rotate(-45 10 11)"><g><path fill="#cbcbcc" d="M23.096 9.98v2.76a2.84 2.84 0 0 1-2.84 2.84H3.273a2.84 2.84 0 0 1-1.43-.387l-3.61-2.105a2 2 0 0 1 0-3.456l3.61-2.105a2.84 2.84 0 0 1 1.43-.387h16.983a2.84 2.84 0 0 1 2.84 2.84zm-2.843 3.6a.842.842 0 0 0 .843-.84V9.98a.842.842 0 0 0-.843-.84h-1.306v4.44zM2.85 9.254L-.76 11.36l3.61 2.106a.84.84 0 0 0 .423.114h13.685V9.14H3.273a.84.84 0 0 0-.423.114z"/></g></g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tools__tr tools__tr-unfaid">
+              <div class="tools__td " data-table="Number">19</div>
+              <div class="tools__td bold" data-table="Title">Nikolaus Vrestuhin</div>
+              <div class="tools__td" data-table="Amount">$10.00</div>
+              <div class="tools__td" data-table="Created date">12 Sep, 2020</div>
+              <div class="tools__td tools__td-status" data-table="Status"><span class="status unpaid">Unpaid</span></div>
+              <div class="tools__td" data-table="Paid date">-</div>
+              <div class="tools__td" data-table="Operations">
+                <div class="tools__td-operations">
+                  <a href="#" class="ui modal-popup__invoice">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                      <g><path fill="#cbcbcc" d="M10 10.53h-.33a.5.5 0 0 1-.5-.5V9.5a.5.5 0 0 1 .5-.5h1.83a.5.5 0 0 1 .5.5V15h.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h.5zM0 11C0 4.925 4.925 0 11 0s11 4.925 11 11-4.925 11-11 11S0 17.075 0 11zm20 0a9 9 0 1 0-18 0 9 9 0 0 0 18 0zM8.999 6.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23">
+                      <g><path fill="#cbcbcc" d="M16.5 16a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm-12-7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm12-9a4.5 4.5 0 1 1-3.942 6.671L8.414 9.278A4.48 4.48 0 0 1 9 11.5a4.48 4.48 0 0 1-.536 2.132l4.721 1.825a4.5 4.5 0 1 1-.999 1.758L7.03 15.222a4.5 4.5 0 1 1 .006-7.44l4.967-3.125A4.5 4.5 0 0 1 16.5 0zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></g>
+                    </svg>
+                  </a>
+                  <a href="#" class="edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                      <g transform="rotate(-45 10 11)"><g><path fill="#cbcbcc" d="M23.096 9.98v2.76a2.84 2.84 0 0 1-2.84 2.84H3.273a2.84 2.84 0 0 1-1.43-.387l-3.61-2.105a2 2 0 0 1 0-3.456l3.61-2.105a2.84 2.84 0 0 1 1.43-.387h16.983a2.84 2.84 0 0 1 2.84 2.84zm-2.843 3.6a.842.842 0 0 0 .843-.84V9.98a.842.842 0 0 0-.843-.84h-1.306v4.44zM2.85 9.254L-.76 11.36l3.61 2.106a.84.84 0 0 0 .423.114h13.685V9.14H3.273a.84.84 0 0 0-.423.114z"/></g></g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tools__btn-show">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><g><g><path fill="#319BE2" d="M0 4.5A.5.5 0 0 1 .5 4H4V.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V4h3.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H6v3.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V6H.5a.5.5 0 0 1-.5-.5z"/></g></g></svg>
+            Show more</a>
+        </div>
+
+      </div>
+      <div class="tools__step " data-tools="second">
+        <div class="tools__top">
+          <div class="tools__title"><h2>Create new Invoice</h2></div>
+        </div>
+        <form action="#" class="tools__form">
+          <div class="tools__blocks">
+            <div class="tools__block bill">
+              <div class="tools__block-title"><h4>Bill to:</h4></div>
+              <div class="tools__block-item">
+                <label for="name">Name, Surname:</label>
+                <input type="text" class="tools__input" id="name">
+              </div>
+              <div class="tools__block-item">
+                <label for="company">Company name:</label>
+                <input type="text" class="tools__input" id="company">
+              </div>
+              <div class="tools__block-item">
+                <label for="email">Email:</label>
+                <input type="email" class="tools__input" id="email">
+              </div>
+            </div>
+            <div class="tools__block info">
+              <div class="tools__block-title"><h4>General info:</h4></div>
+              <div class="tools__block-item">
+                <label for="name">Invoice number:</label>
+                <input type="text" class="tools__input tools__input-sm" id="name">
+              </div>
+              <div class="tools__block-item">
+                <label for="name">Invoice number:</label>
+                <select name="Invoice" class="tools__select" style="width: 100%">
+                  <option value="">USD</option>
+                  <option value="">USD2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="tools__block">
+            <div class="tools__block-title"><h4>Invoice items:</h4></div>
+            <div class="tools__block-items">
+              <div class="tools__block-item description">
+                <label for="description:">Description:</label>
+                <input type="text" class="tools__input tools__input-bg" id="description:">
+              </div>
+              <div class="tools__block-item">
+                <label for="quantity:">Quantity:</label>
+                <input type="text" class="tools__input tools__input-sm" id="quantity">
+              </div>
+              <div class="tools__block-item">
+                <label for="unit">Unit price:</label>
+                <input type="text" class="tools__input tools__input-sm" id="unit">
+              </div>
+              <div class="tools__block-item">
+                <label for="amount">Amount:</label>
+                <input type="text" class="tools__input tools__input-sm" id="amount">
+              </div>
+              <div class="tools__block-items-del">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><g transform="rotate(45 6 6)"><path fill="#223060" d="M-1 5h6v-6a1 1 0 0 1 2 0v6h6a1 1 0 0 1 0 2H7v6a1 1 0 0 1-2 0V7h-6a1 1 0 0 1 0-2z"/></g></g></svg>
+                </a>
+              </div>
+            </div>
+            <div class="tools__button tools__button-add">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><g><g><path fill="#04c5ce" d="M0 4.5A.5.5 0 0 1 .5 4H4V.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V4h3.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H6v3.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V6H.5a.5.5 0 0 1-.5-.5z"/></g></g></svg>
+                Add item</a>
+            </div>
+          </div>
+          <div class="tools__block total">
+            <div class="tools__block-item">
+              <label for="total:">Total:</label>
+              <input type="text" class="tools__input tools__input-sm" id="total">
+            </div>
+          </div>
+          <div class="tools__block notes">
+            <div class="tools__block-item">
+              <label for="Notes:">Notes:</label>
+              <textarea id="Notes" class="tools__block-textarea"></textarea>
+            </div>
+          </div>
+
+          <button class="tools__form-button btn__next-step" data-tools="third"> Create Invoice</button>
+        </form>
+      </div>
+      <div class="tools__step" data-tools="third">
+        <div class="tools__blocks">
+          <div class="tools__block invoice">
+            <div class="tools__top">
+              <div class="tools__invoice"><h3>Invoice # 124</h3></div>
+              <div class="tools__info-title">Orbita Telecom LTD</div>
+            </div>
+            <div class="tools__info">
+              <div class="tools__info-block">
+                <div class="tools__info-logo">
+                  <img src="img/invoice-logo.jpg" alt="">
+                </div>
+              </div>
+              <div class="tools__info-block right">
+                <p>87 Queen street, Hamlet, <br> Ontario, 98029, Canada</p>
+                <p>Reg. num.: #5929-368</p>
+                <p>ordita_telecom@gmail.com</p>
+              </div>
+            </div>
+            <div class="tools__info">
+              <div class="tools__info-block">
+                <div class="tools__info-description">Billed to:</div>
+                <div class="tools__invoice"><h3>Nikolaus Vrestuhin</h3></div>
+                <p>nikola.vrestuhin@gmail.com</p>
+              </div>
+              <div class="tools__info-block right">
+                <div class="tools__info-description">Due date:</div>
+                <div class="tools__invoice"><h3>02 Oct, 2020</h3></div>
+              </div>
+            </div>
+            <div class="tools__table">
+              <div class="tools__thead">
+                <div class="tools__tr">
+                  <div class="tools__td" data-table="Description">Description</div>
+                  <div class="tools__td" data-table="Quantity">Quantity</div>
+                  <div class="tools__td" data-table="Unit price">Unit price</div>
+                  <div class="tools__td" data-table="Amount">Amount</div>
+                </div>
+              </div>
+              <div class="tools__tbody">
+                <div class="tools__tr">
+                  <div class="tools__td" data-table="Description">Professional training</div>
+                  <div class="tools__td" data-table="Quantity">1</div>
+                  <div class="tools__td" data-table="Unit price">€10</div>
+                  <div class="tools__td" data-table="Amount">€10</div>
+                </div>
+                <div class="tools__tr">
+                  <div class="tools__td" data-table="Description">New skills tutorial</div>
+                  <div class="tools__td" data-table="Quantity">2</div>
+                  <div class="tools__td" data-table="Unit price">€45</div>
+                  <div class="tools__td" data-table="Amount">€90</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tools__total">
+              <div class="tools__total-title">Total:</div>
+              <div class="tools__total-sum">€100</div>
+            </div>
+
+            <div class="tools__notes">
+              <div class="tools__notes-description">Notes:</div>
+              <div class="tools__notes-text tools__text">Put some description here, some additional information or explanation</div>
+            </div>
+
+          </div>
+          <div class="tools__block payment">
+            <div class="tools_top">
+              <div class="tools__title"><h2>Payment instructions for your customer.</h2></div>
+            </div>
+            <div class="tools__payment-select">
+              <label>Pay with:</label>
+              <div class="ui dropdown">
+                <input type="hidden" name="pay" >
+                <div class="text item">
+                  <span class="img"><img src="img/bitcoin.png" alt=""></span>Bitcoin (BTC)
+                </div>
+                <div class="dropdown icon"><img src="img/arrow-blue.svg" alt=""></div>
+                <div class="menu">
+                  <div class="item" data-value="BTC"><span class="img"><img src="img/bitcoin.png" alt=""></span>BTC</div>
+                  <div class="item" data-value="ETH"><span class="img"><img src="img/eth.png" alt=""></span>ETH</div>
+                  <div class="item" data-value="USDT"><span class="img"><img src="img/usdt.png" alt=""></span>USDT</div>
+                  <div class="item" data-value="DOT"><span class="img"><img src="img/dash.png" alt=""></span>DASH</div>
+                  <div class="item" data-value="ADA"><span class="img"><img src="img/bitcoin-cash.png" alt=""></span>BCH</div>
+                  <div class="item" data-value="LINK"><span class="img"><img src="img/gbp.png" alt=""></span>GBR</div>
+                  <div class="item" data-value="LTC"><span class="img"><img src="img/litecoin.png" alt=""></span>LTC</div>
+                </div>
+              </div>
+            </div>
+            <div class="tools__payment-img"><img src="img/tools/Bitmap@2x.jpg" alt=""></div>
+            <div class="tools__payment-item">
+              <label for="adress">Adress:</label>
+              <div class="tools__payment-item-block copy-block">
+                <input type="text" class="tools__payment-item-input copy-input" value="3P3QsMVK89JBNqZQv5zMAKG8FK3k" id="adress">
+                <a href="#" class="copy-btn"><img src="img/tools/copy_icon.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="tools__payment-item">
+              <label for="Amount:">Amount:</label>
+              <div class="tools__payment-item-block copy-block">
+                <input type="text" class="tools__payment-item-input copy-input" value="0.0001462 BTC" id="Amount:">
+                <a href="#" class="copy-btn"><img src="img/tools/copy_icon.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="tools__payment-item">
+              <label for="Share">Share this link with your customer:</label>
+              <div class="tools__payment-item-block copy-block">
+                <input type="text" class="tools__payment-item-input copy-input" value="https://Xswiss.com/invoices/124_doioe2" id="Share">
+                <a href="#" class="copy-btn"><img src="img/tools/copy_icon.svg" alt=""></a>
+              </div>
+            </div>
+
+            <div class="tools__payment-time">
+              <div class="tools__payment-time-title">Amount recalculation in</div>
+              <div class="tools__payment-time-block">
+                <div class="tools__payment-time-icon"><img src="img/tools/clock_icon.svg" alt=""></div>
+                <div class="tools__payment-time-info js-timer"data-time='500000'>
+                  <span class="js-hours"></span>
+                  <span class="js-minutes">04</span>:
+                  <span class="js-seconds">44</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="ui modal large popup__block popup__invoice popup__tools">
+    <i class="close popup-close"><img src="img/icons/close.svg" alt=""></i>
+    <div class="top">
+      <div class="title ">
+        <h2>Invoice</h2>
+      </div>
+      <div class="status unverified">Unverified</div>
+    </div>
+    <div class="popup__tools-field">
+      <div class="popup__tools-label">Amount:</div>
+      <div class="popup__tools-info">
+        <span class="text">0.000119 BTC  <span class="gray">($10.00)</span></span>
+
+      </div>
+    </div>
+    <div class="popup__tools-field">
+      <div class="popup__tools-label">To:</div>
+      <div class="popup__tools-info">
+        <span class="text">Dmitrijs Maceraliks</span>
+        <br>
+        <span class="text">d.maceraliks@gmail.com</span>
+      </div>
+    </div>
+    <div class="popup__tools-field">
+      <div class="popup__tools-label">Date created:</div>
+      <div class="popup__tools-info">
+        <span class="text">Mar 31, 2021, 8:19 PM</span>
+      </div>
+    </div>
+    <div class="popup__tools-field">
+      <div class="popup__tools-label">Invoice ID:</div>
+      <div class="popup__tools-info copy-block">
+        <input readonly type="text" class="copy-input" value="ANDLVMQW">
+        <a href="#" class="copy-btn"><img src="img/tools/copy_icon.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="popup__tools-field">
+      <div class="popup__tools-label">Memo:</div>
+      <div class="popup__tools-info">
+        <span class="text">Dmitrijs Maceraliks</span>
+      </div>
+    </div>
+    <div class="popup__tools-btn">
+      <a href="#" class="link link__notify ui modal-popup__details">View payments details</a>
+    </div>
+  </div>
+
+
+  <div class="ui modal large popup__block popup__details popup__tools">
+    <i class="close popup-close"><img src="img/icons/close.svg" alt=""></i>
+    <div class="title center">
+      <h2>Details</h2>
+    </div>
+    <div class="popup__tools-field">
+      <div class="popup__tools-label"><a href="#" class=" modal-popup__invoice">Invoice CYVZPAZ9</a></div>
+      <div class="popup__tools-info">
+        <span class="text">0.000119 BTC  <span class="gray">($10.00)</span></span>
+
+      </div>
+    </div>
+    <div class="popup__tools-field">
+
+      <div class="ui accordion">
+        <div class="title ">
+          <div class="popup__tools-label">Activity:</div>
+          <span class="icon-arrow"><img src="img/arrow_hide.svg" alt=""></span>
+        </div>
+        <div class="content ">
+          <div class="popup__tools-step active">
+            <div class="popup__tools-step-icon">
+              <div class="icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="round-main" cx="10" cy="10" r="9.5" fill="#24265A" stroke="#8D8DA3"/>
+                  <path class="done"  d="M13.4142 7.29289C13.8047 6.90237 14.4379 6.90237 14.8284 7.2929C15.219 7.68343 15.2189 8.31659 14.8284 8.70711L9.70703 13.8284C9.31651 14.219 8.68334 14.2189 8.29282 13.8284L5.29289 10.8284C4.90237 10.4379 4.90237 9.80473 5.2929 9.41421C5.68343 9.02369 6.31659 9.02369 6.70711 9.41422L8.99995 11.7071L13.4142 7.29289Z" fill="white"/>
+                  <circle class="round"  cx="10" cy="10" r="4" fill="#8D8DA3"/>
+                </svg>
+              </div>
+            </div>
+            <div class="popup__tools-step-info">
+              <div class="popup__tools-step-title">Transaction detected</div>
+              <div class="popup__tools-step-date">03/31/2021</div>
+            </div>
+          </div>
+          <div class="popup__tools-step">
+            <div class="popup__tools-step-icon">
+              <div class="icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="round-main" cx="10" cy="10" r="9.5" fill="#24265A" stroke="#8D8DA3"/>
+                  <path class="done"  d="M13.4142 7.29289C13.8047 6.90237 14.4379 6.90237 14.8284 7.2929C15.219 7.68343 15.2189 8.31659 14.8284 8.70711L9.70703 13.8284C9.31651 14.219 8.68334 14.2189 8.29282 13.8284L5.29289 10.8284C4.90237 10.4379 4.90237 9.80473 5.2929 9.41421C5.68343 9.02369 6.31659 9.02369 6.70711 9.41422L8.99995 11.7071L13.4142 7.29289Z" fill="white"/>
+                  <circle class="round"  cx="10" cy="10" r="4" fill="#8D8DA3"/>
+                </svg>
+              </div>
+            </div>
+            <div class="popup__tools-step-info">
+              <div class="popup__tools-step-title">Underpayment</div>
+              <div class="popup__tools-step-date">03/31/2021</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="popup__tools-field">
+      <div class="ui accordion">
+        <div class="title ">
+          <div class="popup__tools-label">Payment details:</div>
+          <span class="icon-arrow"><img src="img/arrow_hide.svg" alt=""></span>
+        </div>
+        <div class="content">
+          <p class="transition visible">This payment was less than the listing price and exceeded your acceptable threshold. <a href="#"> Learn more</a></p>
+
+          <div class="popup__tools-field column noborder">
+            <div class="popup__tools-label">Amount received:</div>
+            <div class="popup__tools-info">
+              <span class="text">0.0001 BTC (5.94 USD)</span>
+            </div>
+          </div>
+          <div class="popup__tools-field column noborder">
+            <div class="popup__tools-label">Different from listed price:</div>
+            <div class="popup__tools-info">
+              <span class="text">-0.000068 BTC (-4.06 USD)</span>
+            </div>
+          </div>
+          <div class="popup__tools-field column noborder">
+            <div class="popup__tools-label">Effective underpayment threshold</div>
+            <div class="popup__tools-info">
+              <span class="text">0.5% of the listing price (-0.05 USD)</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="popup__tools-field noborder">
+      <div class="popup__tools-label">Date & Time:</div>
+      <div class="popup__tools-info">
+        <span class="text">Mar 31, 2021, 8:19 PM</span>
+      </div>
+    </div>
+    <div class="popup__tools-field noborder">
+      <div class="popup__tools-label">Status:</div>
+      <div class="popup__tools-info">
+        <div class="status unverified">Unverified</div>
+      </div>
+    </div>
+    <div class="popup__tools-field noborder">
+      <div class="popup__tools-label">Amount received:</div>
+      <div class="popup__tools-info">
+        <span class="text">0.0001 BTC (5.94 USD)</span>
+      </div>
+    </div>
+    <div class="popup__tools-field noborder">
+      <div class="popup__tools-label">Exchange rate:</div>
+      <div class="popup__tools-info">
+        <span class="text">59400.00 BTC-USD</span>
+      </div>
+    </div>
+    <div class="popup__tools-field noborder">
+      <div class="popup__tools-label">Full name:</div>
+      <div class="popup__tools-info">
+        <span class="text">Dmitrijs Maceraliks</span>
+      </div>
+    </div>
+    <div class="popup__tools-field ">
+      <div class="popup__tools-label">Email:</div>
+      <div class="popup__tools-info">
+        <span class="text">d.maceraliks@gmail.com</span>
+      </div>
+    </div>
+    <div class="popup__tools-btn tools__button blue">
+      <a href="#">Refund payment</a>
+    </div>
+  </div>
+
+
+</div>
+
+<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+<script src="libs/semantic/semantic.min.js"></script>
+<script src="js/account.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1044 @@
+//main styles
+.main-wrapper
+	padding 0
+	min-width $min-width
+	width 100%
+	position relative
+	overflow hidden
+	min-height 100%
+	display flex
+	flex-direction column
+	justify-content flex-start
+
+.wrapper
+	min-width $min-width
+	max-width $max-width
+	padding 0 15px 0 15px
+	margin 0 auto
+	position relative
+
+/* titles */
+p
+	font($base-font-size, $base-line-height, $text-color, $custom-font-family, 400)
+	// padding 15px 0 15px 0
+
+h1
+	font($font-size-h1, $line-height-h1, $title-color, $custom-font-family, 700)
+	// padding 15px 0 15px 0
+
+h2
+	font($font-size-h2, $line-height-h2, $title-color, $custom-font-family, 700)
+	// padding 15px 0 15px 0
+
+// h3
+	// font($font-size-h3, $line-height-h3, $title-color, $custom-font-family, 700)
+	// padding 15px 0 15px 0
+
+/* styles */
+.main
+	min-width $min-width
+	width 100%
+	order 2
+	flex-grow 1
+
+
+.header__hamb,
+.header__menu-close
+	display none
+
+
+body.scroll-block,
+html.scroll-block
+	height 100%
+	width 100%
+	overflow auto
+
+
+.home1
+	min-height 800px
+	text-align center
+	padding-top 100px
+	&__wrapper
+		pointer-events none
+	&__ttl
+		font-weight bold
+		margin-bottom 23px
+		font-size 100px
+		line-height 120px
+		pointer-events none
+	&__t2
+		margin-bottom 50px
+		font-size 20px
+		line-height 1.5
+		pointer-events none
+	&__btn
+		position relative
+		z-index 8
+
+
+.home2
+	padding-top 170px
+	// overflow hidden
+	.wrapper
+		max-width 1100px
+		display flex
+		justify-content space-between
+	&__left,
+	&__right
+		width calc(50% - 10px)
+		max-width 470px
+	&__left
+		padding-top 30px
+	&__table
+		&-head
+			margin-bottom 7px
+			display flex
+			align-items center
+			justify-content space-between
+			padding 0 25px
+			.home2__table-td
+				font-size 12px
+				line-height 15px
+				color #fff
+				opacity 0.5
+		&-body
+			height 350px
+			// overflow hidden
+			&-wrap
+				&.trans
+					transition all 1s
+		&-tr
+			display flex
+			justify-content space-between
+			align-items center
+			padding 12.5px 25px
+			margin-bottom 10px
+			background-color rgba(#1f204e, .8)
+			border-radius 5px
+			opacity 0
+			pointer-events none
+			&.last-visible
+				transition all 1s
+			&.visible
+				opacity 1
+				pointer-events initial
+			&.hidden
+				opacity 0
+				transition all 1s
+			&:last-of-type
+				margin-bottom 0
+			&.active
+				background-color rgba(#4981f0, .5)
+			.home2__table-td
+				&:nth-child(1)
+					display flex
+					align-items center
+					font-weight 500
+					img
+						margin-right 10px
+				&:nth-child(4)
+					font-weight 500
+		&-td
+			&:nth-child(1)
+				width 155px
+			&:nth-child(2)
+				width 80px
+			&:nth-child(3)
+				width 135px
+				text-align right
+			&:nth-child(4)
+				width 100px
+				text-align right
+	&__icons
+		display flex
+		align-items center
+		margin-bottom 40px
+		img
+			width 44px
+			margin-left -9px
+			&:first-child
+				width 40px
+				margin-left 0
+		&-more
+			width 44px
+			height 44px
+			border-radius 50%
+			background-color $accent
+			text-align center
+			line-height 44px
+			color #fff
+			font-weight 500
+			margin-left -9px
+			border 2px solid $dark-blue
+			padding-right 3px
+		
+
+
+
+.home3
+	padding 140px 0 180px
+	background linear-gradient(0deg, #090B2F 0%, #1D1F5A 50%, #090B2F 100%)
+	visibility visible !important
+	.wrapper
+		display flex
+		justify-content space-between
+		align-items flex-start
+		max-width 1230px
+	&__left
+		width 40%
+		max-width 470px
+		padding-top 30px
+	&__right
+		width calc(60% - 20px)
+		max-width 640px
+		display flex
+		justify-content space-between
+	.ttl_p
+		margin-bottom 40px
+	&.animated
+		.home3__card
+			&:nth-child(1),
+			&:nth-child(3)
+				transform translateY(0px)
+			&:nth-child(2)
+				transform translateY(80px)
+	&__card
+		width 200px
+		max-width calc(33.33% - 5px)
+		padding 15px 20px 20px
+		background-color rgba(#1F204E, .8)
+		border-radius 5px
+		cursor default
+		transition all 1s
+		transition-delay 1.8s
+		&:nth-child(1),
+		&:nth-child(3)
+			transform translateY(40px)
+		&:nth-child(2)
+			transform translateY(40px)
+		&.active
+			background-color rgba(#4981F0, .4)
+		&-star
+			width 20px
+			margin-bottom 10px
+			margin-left -5px
+		&-bal
+			text-align center
+			margin-bottom 5px
+			opacity 0.5
+		&-sum
+			text-align center
+			color #fff
+			margin-bottom 20px
+			font-size 35px
+			line-height 40px
+			font-weight 500
+		&-currency
+			margin-bottom 20px
+			display flex
+			align-items center
+			justify-content center
+			img
+				width 25px
+				margin-right 7px
+		&-adv
+			margin-bottom 20px
+			p
+				margin-bottom 10px
+				display flex
+				justify-content space-between
+				align-items center
+				font-size 15px
+				line-height 25px
+				&:last-of-type
+					margin-bottom 0
+				& span:first-child
+					opacity 0.5
+				& span:last-child
+					font-weight 500
+		&-btns
+			display flex
+			align-items center
+			justify-content space-between
+		&-btn
+			width calc(50% - 5px)
+			height 30px
+			line-height 30px
+			color #fff
+			text-align center
+			border-radius 3px
+			font-size 10px
+			font-weight 500
+			&.deposit
+				background-color #06d49c
+			&.withdraw
+				background-color #ff5359
+
+
+.home4
+	padding-bottom 105px
+	.wrapper
+		max-width 1110px
+		display flex
+		justify-content space-between
+		align-items flex-start
+	&__left
+		width 500px
+		max-width calc(50% - 15px)
+	&__right
+		width 470px
+		max-width calc(50% - 15px)
+	&__iban
+		font-size 170px
+		line-height 1
+		font-weight bold
+		color #fff
+		opacity 0.1
+		position relative
+		z-index 0
+		margin-bottom -65px
+		margin-left 20px
+	&__card
+		position relative
+		width 400px
+		margin-bottom 10px
+		background-color rgba(#1B1B47, .8)
+		border-radius 5px
+		overflow hidden
+		visibility visible !important
+		cursor default
+		transition all 1s
+		transition-delay 1s
+		&.animated
+			transform translateX(100px)
+			.home4__card-mainpart
+				background-color rgba(#4981f0, .4)
+			.home4__card-botpart
+				padding 20px
+				max-height 200px
+				transition-delay 2s
+			.home4__card-check:before
+				background-color #fff
+		&:last-of-type
+			margin-bottom 0
+		&-mainpart
+			display flex
+			align-items center
+			justify-content space-between
+			padding 20px
+			transition all .25s
+		&-icon
+			width 40px
+			flex-shrink 0
+			margin-right 15px
+		&-text
+			padding-right 15px
+			width 100%
+			p
+				line-height 19px
+				margin-bottom 6px
+			b
+				display block
+				line-height 1
+				font-weight bold
+		&-check
+			width 20px
+			height 20px
+			border-radius 3px
+			background-color rgba(#319BE2, .3)
+			flex-shrink 0
+			position relative
+			&:before
+				content ''
+				width 8px
+				height 8px
+				border-radius 2px
+				position absolute
+				left calc(50% - 4px)
+				top calc(50% - 4px)
+				transition all 1s
+				transition-delay 1s
+		&-botpart
+			padding 0 20px
+			max-height 0
+			transition all 1s
+		&-input
+			width 100%
+			height 40px
+			line-height 40px
+			padding-left 15px
+			margin-bottom 10px
+			border-radius 5px
+			border 1px solid #FFF
+			opacity 0.5
+		&-btns
+			display flex
+			justify-content space-between
+		&-btn
+			width calc(50% - 5px)
+			height 40px
+			line-height 40px
+			color #fff
+			text-align center
+			border-radius 5px
+			font-size 12px
+			font-weight 500
+			&.deposit
+				background-color #06d49c
+			&.withdraw
+				background-color #ff5359
+	.ttl_p,
+	.custom_ul
+		margin-bottom 40px
+
+
+.home5
+	background: url(../img/main/home5-bg.svg)
+	background-size: 100% 100%
+	background-position 0 0
+	padding-bottom 78px
+	&__title
+		margin-bottom 20px
+		text-align center
+	&__desc
+		margin-bottom 40px
+		text-align center
+	&__wrapper
+		min-height: 495px
+		display flex
+		justify-content: space-between
+		max-width: 1205px
+		margin: 0 auto 20px
+	.accordeon
+		counter-reset accordeon
+		&-pic
+			display none
+		.active
+			color: #FFFFFF;
+		dl
+			padding: 20px 0
+			border-bottom: 1px solid rgba(255, 255, 255, .1);
+		dt
+			color: #c2c2cb;
+			counter-increment: accordeon
+			padding-left 77px
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 30px;
+			position relative
+			max-width: 471px
+			margin-bottom 15px
+			cursor pointer
+			&:before
+				content: "Step " counter(accordeon)
+				color #319BE2
+				position absolute
+				left: 0
+		dd
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 25px;
+			color: #C2C2CB;
+			padding-left 77px
+			max-width: 414px
+	&__right
+		position relative
+		width: 615px
+	&__pic
+		position absolute
+		max-width: 100%
+		display none
+		top: 40px
+		right: -30px
+	&__button
+		text-align center
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		display block
+		max-width: 220px
+		padding: 23px 0 22px 0
+		background: #319BE2;
+		box-shadow: 5px -15px 40px rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
+		margin: auto
+		&:hover
+			color: $link-color
+			background: #4183C4;
+
+
+
+
+
+#myChart
+	width 100%
+
+.chartjs-tooltip
+	background-color #fff
+	color #131442
+	width 220px
+	padding 10px 20px 30px
+	transform translate(-50%, calc(-100% - 25px))
+	border-radius 10px
+	box-shadow 5px 20px 40px rgba(0, 0, 0, 0.3)
+	font-family $geometria
+	z-index 99
+	transition transform .15s
+	&__arr
+		content ''
+		width 14px
+		height 9px
+		background-image url('../img/icons/tooltip-arr.svg')
+		background-repeat no-repeat
+		background-size contain
+		position absolute
+		bottom -9px
+		left calc(50% - 7px)
+	&.bottom
+		transform translate(-50%, 30px)
+		.chartjs-tooltip__arr
+			bottom auto
+			top -9px
+			transform rotate(180deg)
+	&__head
+		display flex
+		align-items center
+		justify-content space-between
+		margin-bottom 5px
+		flex-wrap wrap
+		h2
+			font-size 20px
+			line-height 2
+			font-weight bold
+			color #131442
+			font-family $geometria
+		&-currency
+			display flex
+			align-items center
+			flex-shrink 0
+			margin-left 10px
+			img
+				width 22px
+				height 22px
+				margin-left -3px
+				&:first-child
+					width 20px
+					height 20px
+					margin-left 0
+	&__line
+		margin-bottom 7px
+		display flex
+		justify-content space-between
+		align-items center
+		font-size 12px
+		line-height 15px
+		&:last-child
+			margin-bottom 0
+		span
+			color rgba(#212121, .5)
+
+
+.main-chart-wrap
+	position absolute
+	left 0
+	top 0
+	width 100%
+	height 800px
+	&:hover
+		.chart-x-label
+			opacity 1
+.chart-x-label
+	position absolute
+	bottom 7px
+	left 0
+	font-size 15px
+	line-height 18px
+	color #06d49c
+	transform translateX(-50%)
+	opacity 0
+	transition opacity .25s
+	&:after
+		content ''
+		width 3px
+		height 3px
+		border-radius 50%
+		background-color #06d49c
+		position absolute
+		bottom -8px
+		left 50%
+
+.cursor-block
+	pointer-events none
+
+
+.hero-index
+	background: linear-gradient(191.07deg, #242666 0.71%, #090B2F 84.6%);
+	padding-top 181px
+	margin-bottom: 188px
+	position relative
+	&:before
+		content ""
+		background: rgba(63, 65, 150, .5);
+		position absolute
+		width: 300%
+		height: 300px
+		display block
+		filter: blur(200px)
+		z-index -1
+		top: -70%
+		left: 50%
+		transform: translateX(-50%)
+	&__wrapper
+		display flex
+	&__right
+		position relative
+	&__title
+		font-family: 'Geometria';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 45px;
+		line-height: 55px;
+		color: #FFFFFF;
+		margin-bottom 30px
+		max-width: 540px
+		&-span
+			color: #9D9DAC;
+	&__desc
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+		color: #FFFFFF;
+		max-width: 540px
+		margin-bottom 40px
+	&__pic
+		top: -50px
+		left 30px
+		position absolute
+		width: 900px
+	&__button
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		display block
+		width: 205px
+		background: #319BE2;
+		transition: $default-transition
+		padding: 22px 0
+		border-radius: 5px
+		text-align center
+		&:hover
+			background: #1c81c4
+			color: #fff
+
+.index-why
+	h2
+		font-weight: 700;
+		font-size: 45px;
+		line-height: 55px;
+		text-align: center;
+		color: $white
+		margin-bottom 50px
+	&__wrapper
+		display flex
+		justify-content: center
+		flex-wrap: wrap
+		max-width: 1130px
+		gap: 70px
+	&__item
+		display flex
+		flex-direction: column
+		align-items: center
+		justify-content: flex-start
+		&-title
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 30px;
+			text-align: center;
+			color: $white
+			margin: 25px auto 5px
+			max-width: 230px
+		&-desc
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 25px;
+			text-align: center;
+			color: rgba(198, 199, 210, .75);
+			max-width: 210px 
+			margin 0 auto
+			span
+				display inline-block
+				position relative
+				color: $white
+				font-weight 500
+				padding-left 15px
+				width: 77px
+				&:before
+					content: ""
+					position absolute
+					left: 0
+					top: 7px
+					background-image: url('../img/main/diamond.png')
+					background-repeat: no-repeat
+					background-size: 15px 15px
+					width: 15px
+					height: 15px
+
+		&-pic
+			max-width: 80px
+
+
+.index-pic
+	padding: 135px 0
+	background: linear-gradient(0deg, #090b2f 0%, #1d1f5a 50%, #090b2f 100%)
+	&__pic
+		max-width: 970px
+		margin: auto
+
+.home6
+	padding: 135px 0 127px
+	&__title
+		font-weight: 700;
+		font-size: 45px;
+		line-height: 55px;
+		text-align center
+		color: $white
+		margin 0 auto 40px
+	&__wrapper
+		display flex
+		justify-content: center
+		gap: 30px
+		flex-wrap: wrap
+	&__item
+		display flex
+		flex-direction: column
+		align-items: center
+		&-label
+			font-weight: 800;
+			font-size: 70px;
+			line-height: 90px;
+			color: $blue
+			text-align center
+		&-desc
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 25px;
+			text-align: center;
+			color: $white
+			max-width: 250px
+			margin: auto
+	
+.index-wallet
+	padding-bottom 135px
+	.wrapper
+		max-width: 1250px
+	&__wrapper
+		display flex
+		justify-content: center
+		flex-wrap: wrap
+		gap: 130px
+	&__title
+		font-weight: 700;
+		font-size: 45px;
+		line-height: 55px;
+		color: $white
+		margin: 0 auto 20px
+	&__desc
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+		color: $white
+		max-width: 470px
+		margin: 0 auto 40px
+	&__list
+		margin-bottom 40px
+		&-item
+			max-width: 430px
+			position relative
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 30px;
+			color: $white
+			padding-left 30px
+			&:before
+				content: '';
+				display: block;
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				border: 4px solid #319be2;
+				position: absolute;
+				left: 0;
+				top: 8px;
+			&:not(:last-child)
+				margin-bottom 15px
+	&__button
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		display block
+		width: 205px
+		background: #319BE2;
+		transition: $default-transition
+		padding: 22px 0
+		border-radius: 5px
+		text-align center
+		&:hover
+			background: #1c81c4
+			color: #fff
+	&__right
+		display flex
+		flex-direction: column
+		gap: 5px
+		&-title
+			font-weight: 700;
+			font-size: 150px;
+			line-height: 160px;
+			text-transform: uppercase;
+			color: rgba(255, 255, 255, .1);
+			margin-bottom -60px
+			margin-left -80px
+		&-item
+			display flex
+			justify-content: left
+			gap: 15px
+			padding: 20px
+			border-radius: 5px
+			background: #1B1B47;
+			max-width: 400px
+			opacity .8
+			position relative
+			z-index: 1
+			&:after
+				content: '';
+				position absolute
+				width: 20px;
+				height: 20px;
+				border-radius: 2px;
+				background: $blue
+				opacity .3
+				right: 30px
+				top: 30px
+			&-pic
+				max-width: 40px
+			&-label
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 19px;
+				color: $white
+				margin-bottom 6px
+			&-amount
+				font-weight: 700;
+				font-size: 15px;
+				line-height: 19px;
+				color: $white
+			&-empty
+				background: linear-gradient(100.63deg, rgba(17, 17, 44, 0.5) 35.53%, rgba(27, 28, 81, 0.5) 99.98%);
+				mix-blend-mode: normal;
+				border-radius: 8px;
+				height: 180px
+				width: 280px
+				border-radius: 5px
+				position relative
+				margin-left: auto
+				transform: translateX(-20%)
+				position relative
+				z-index: 2
+				background: url('../img/main/cardshadow.png')
+				background-size: 100% 100%
+				&-abs
+					position absolute
+					left: -20%
+					top: -10%
+					width: 100%
+					height: 100%
+					z-index 3
+
+.index-slider
+	padding-bottom 135px
+	.wrapper
+		max-width: 1250px
+	.slick-initialized .slick-slide 
+		margin-left: 30px;
+		align-items: center;
+		display: flex;
+	.slick-prev
+		left: -65px
+		background: #1b255a
+		border-radius: 40px;
+		width: 40px
+		height: 40px
+		transition: $default-transition
+		&:before
+			content: ""
+			width: 10px
+			height: 16px
+			background: url('../img/arrow-slider.svg')
+			background-repeat: no-repeat
+			display block
+			position absolute
+			top: 50%
+			left: 50%
+			transform: translate(-70%, -50%) scale(-1, 1)
+		&:hover
+			background: #1e316e
+	.slick-next
+		right: -65px
+		background: #1b255a;
+		border-radius: 40px;
+		width: 40px
+		height: 40px
+		transition: $default-transition
+		&:before
+			content: ""
+			width: 10px
+			height: 16px
+			background: url('../img/arrow-slider.svg')
+			background-repeat: no-repeat
+			display block
+			position absolute
+			top: 50%
+			left: 50%
+			transform: translate(-30%, -50%)
+		&:hover
+			background: #1e316e
+	&__wrapper
+		display flex
+		justify-content: center
+		gap: 30px
+	&__item
+		background: rgba(31, 32, 78, .8);
+		mix-blend-mode: normal;
+		border-radius: 5px;
+		width: 170px
+		padding: 15px 0 10px 0
+		transition: $default-transition
+		display flex
+		flex-direction: column
+		align-items: center
+		height: 263px
+		justify-content: flex-start
+		&:hover
+			background: #1e316e
+		&-top
+			display flex
+			justify-content: space-between
+			width: 130px
+			margin-bottom 24px
+		&-label
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 25px;
+			color: $white
+			span
+				color: #A2A3B7;
+				display block
+		&-currency
+			max-width: 35px
+			transition: $default-transition
+	&__pic
+		width: 100%
+		margin-bottom 24px
+	&__bit
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 25px;
+		color: #06D49C;
+		margin-bottom 4px
+		width: 130px
+	&__ask
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 25px;
+		color: #FF5259;
+		width: 130px
+
+
+
+
+
+
+
+
+@media (max-width : 1350px)
+	.index-slider .slick-next
+		right: 330px
+		top: 330px
+	.index-slider .slick-prev
+		left: 330px
+		top: 330px
+@media (max-width : 850px)
+	.index-slider .slick-next
+		right: 140px
+	.index-slider .slick-prev
+		left: 140px
+@media (max-width : 768px)
+	.hero-index
+		margin-bottom 468px
+		&__title, &__desc
+			text-align center
+		&__wrapper
+			flex-direction: column
+		&__left
+			display flex
+			flex-direction: column
+			align-items: center
+		&__pic 
+			top: 30px;
+			left: 30px;
+			width: 650px;
+	.index-wallet__right
+		align-items: center
+		&-title
+			margin-left 0
+@media (max-width : 480px)
+	.index-slider .slick-initialized .slick-slide
+		margin-left 5px
+	.hero-index
+		padding-top 101px
+	.home6
+		padding: 55px 0 67px
+	.index-why h2
+		font-size 38px
+	.index-slider .slick-next
+		right: 20px
+	.index-slider .slick-prev
+		left: 20px
+	.index-why__wrapper
+		gap: 40px
+	.index-pic
+		padding: 55px 0
+	.index-wallet__right-title
+		font-size 70px
+	.index-wallet__right-item-empty
+		transform: translateX(10%)
+	.hero-index
+		margin-bottom 298px
+		&__title
+			font-size: 25px;
+			line-height: 35px;
+			margin-bottom: 10px;
+		&__desc 
+			font-size: 20px;
+			line-height: 30px;
+		&__pic 
+			top: 30px;
+			left: 0px;
+			width: 360px;
+@media (max-width : 390px)
+	.index-slider .slick-initialized .slick-slide
+		margin: 0 40px
+	.hero-index
+		&__pic
+			width: 300px
+@media (max-width : 320px)
+	.hero-index
+		&__desc
+			font-size 14px
+		&__pic
+			width: 250px

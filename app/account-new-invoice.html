@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <meta name="description" content="Site slogan">
+  <meta name="keywords" content="Site keys">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#fff">
+  <meta name="msapplication-navbutton-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+  <meta name="theme-color" content="#fff">
+  <meta property="og:title" content="Site keys" />
+  <meta property="og:description" content="Site slogan" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="***permalink***" />
+  <meta property="og:image" content="***img***" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <!-- windows favicon -->
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <!-- css -->
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="libs/semantic/semantic.min.css">
+  <link rel="stylesheet" href="css/account.css">
+</head>
+
+<body class="body loaded ">
+
+  <div class="icon-load">
+    <div class="sk-folding-cube">
+      <div class="sk-folding-cube-abs">
+        <img src="img/icons/preloader-1.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="account__dashborad account">
+    //= parts/account-sidebar.html
+    <main class="main">
+      //= parts/account-header.html
+
+      <div class="danger">
+        <div class="danger__left">
+          <div class="danger__pic"><img src="img/main/danger.svg" alt=""></div>
+          <p class="danger__desc">Secure your Xswiss account by enabling 2FA</p>
+        </div>
+        <div class="danger__right">
+          <div class="danger__right-buttons">
+            <p class="danger__right-blue">Turn on</p>
+            <p class="danger__right-green">Skip</p>
+          </div>
+          <div class="danger__right-arrows">
+            <div class="danger__right-arrows-prev">
+              <img src="img/main/arrow-page.svg" alt="">
+            </div>
+            <span class="danger__right-arrows-pages"><span>1</span>/2</span>
+            <div class="danger__right-arrows-next">
+              <img src="img/main/arrow-page.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="new-invoice">
+        <div class="new-invoice__left">
+          <div class="new-invoice__left-top">
+            <h2 class="new-invoice__title">
+              My invoices
+            </h2>
+            <div class="new-invoice__date">
+              <p>
+                02 October 2020
+              </p>
+            </div>
+          </div>
+          <div class="new-invoice__client client">
+            <div class="client__details">
+              <p>Client details</p>
+            </div>
+            <div class="client__company">
+              <p>Orbita Telecom LTD</p>
+            </div>
+            <div class="client__name">
+              <p>Nikolaus Vrestuhin</p>
+            </div>
+            <div class="client__name">
+              <p>nikola.vrestuhin@gma</p>
+            </div>
+          </div>
+          <div class="new-invoice__table">
+            <table>
+              <tr>
+                <th align="left">Description</th>
+                <th align="center">Quantity</th>
+                <th align="center">Unit price</th>
+                <th align="center">Amount</th>
+              </tr>
+              <tr>
+                <td align="left">Professional trainin</td>
+                <td align="center">1</td>
+                <td align="center">€10</td>
+                <td align="center">€10</td>
+              </tr>
+              <tr>
+                <td align="left">New skills tutorial</td>
+                <td align="center">2</td>
+                <td align="center">€45</td>
+                <td align="center">€90</td>
+              </tr>
+            </table>
+          </div>
+          <div class="new-invoice__total">
+            <p>Total:</p>
+            <p>€100</p>
+          </div>
+          <label>
+            Notes:
+            <textarea name="" id="" cols="30" rows="3" spellcheck="false"
+              placeholder="Put some description here, some additional information or explanation"></textarea>
+          </label>
+        </div>
+        <div class="new-invoice__right">
+          <h2 class="new__invoice-title">
+            Payment instructions for your customer.
+          </h2>
+          <div class="new-invoice__dropdown">
+            <label>
+              Pay with:
+              <div class="ui dropdown">
+                <input type="hidden" name="pay">
+                <div class="text item">
+                  <span class="info">
+                    <span class="img"><img src="img/bitcoin.png" alt=""></span>Bitcoin (BTC)
+                  </span>
+                  <span class="balance"></span>
+                </div>
+                <div class="dropdown icon"><img src="img/arrow-blue.svg" alt=""></div>
+                <div class="menu">
+                  <div class="item" data-value="BTC">
+                    <span class="info">
+                      <span class="img"><img src="img/bitcoin.png" alt=""></span>BTC
+                    </span>
+                    <span class="balance"></span>
+                  </div>
+                  <div class="item" data-value="ETH">
+                    <span class="info">
+                      <span class="img"><img src="img/eth.png" alt=""></span>ETH
+                    </span>
+                    <span class="balance"></span>
+                  </div>
+                  <div class="item" data-value="USDT">
+                    <span class="info">
+                      <span class="img"><img src="img/usdt.png" alt=""></span>USDT
+                    </span>
+                    <span class="balance"></span>
+                  </div>
+                  <div class="item" data-value="DASH">
+                    <div class="info">
+                      <span class="img"><img src="img/dash.png" alt=""></span>DASH
+                    </div>
+                    <span class="balance"></span>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+          <div class="new-invoice__qr">
+            <img src="img/qr.png" alt="">
+          </div>
+          <p>Address:</p>
+          <div class="new-invoice__item">
+            <p>
+              New skills tutorial
+            </p>
+          </div>
+          <p>Amount:</p>
+          <div class="new-invoice__item">
+            <p>
+              0.0001462 BTC
+            </p>
+          </div>
+          <p>Share this link with your customer:</p>
+          <div class="new-invoice__item">
+            <p>
+              https://xswiss/invoices/124_doioe2
+            </p>
+          </div>
+          <div class="send-timer">
+            <p>Amount recalculation</p>
+            <div class="send-timer__block">
+              <div class="send-timer__icon"><img src="img/clock.svg" alt=""></div>
+              <div class="send-timer__info js-timer" data-time='60000'>
+                <span class="js-hours"></span>
+                <span class="js-minutes">04</span>:
+                <span class="js-seconds">44</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+
+  </div>
+
+  <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+  <script src="libs/semantic/semantic.min.js"></script>
+  <script src="libs/countdown/jquery.countdown.min.txt"></script>
+  <script src="js/account.js"></script>
+</body>
+
+</html>

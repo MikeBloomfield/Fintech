@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Refund</title>
+	<meta name="description" content="Site slogan">
+	<meta name="keywords" content="Site keys">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+	<meta name="theme-color" content="#fff">
+	<meta property="og:title" content="Site keys" />
+	<meta property="og:description" content="Site slogan" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="***permalink***" />
+	<meta property="og:image" content="***img***" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<!-- android favicon -->
+	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+	<!-- windows favicon -->
+	<meta name="msapplication-config" content="browserconfig.xml">
+	<!-- apple favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+	<!-- safari format detection -->
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="format-detection" content="date=no" />
+	<!-- css -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="libs/semantic/semantic.min.css">
+	<link rel="stylesheet" href="libs/wow/animate.css">
+	<link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body class="body loaded">
+
+	<div class="icon-load">
+		<div class="sk-folding-cube">
+			<div class="sk-folding-cube-abs">
+				<img src="img/icons/preloader-1.svg" alt="">
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="pages__info page__all">
+
+		<header class="header">
+			<div class="wrapper">
+				<div class="logo">
+					<a href="#!">
+						<img src="img/main/logo-1.svg" alt="">
+						<div class="logo-inner">
+							<img src="img/main/logo-2.svg" alt="">
+						</div>
+					</a>
+				</div>
+				<ul class="header__menu">
+					<li class="wow fadeInRight" data-wow-delay='.1s'><a href="#">Exchange</a></li>
+					<li class="active wow fadeInRight" data-wow-delay='.2s'><a href="#">Trading</a></li>
+					<li class="wow fadeInRight" data-wow-delay='.3s'><a href="#">Pricing</a></li>
+					<li class="wow fadeInRight" data-wow-delay='.4s'><a href="#">Company</a></li>
+					<span class="header__menu-close"></span>
+					<a href="#" class="header__login ui modal-popup__signIn">Login</a>
+					<a href="#" class="header__signup btn-empty ui modal-popup__newAccount">Sign Up</a>
+				</ul>
+				<div class="header__right">
+					<div class="header__langs">
+						<div class="header__langs-top">
+							<div class="header__langs-flag"><img src="img/usa-flag.png" alt="usa"></div>
+							<div class="header__langs-arr"></div>
+						</div>
+						<div class="header__langs-drop">
+							<a href="#"><img src="img/usa-flag.png" alt="usa"></a>
+							<a href="#"><img src="img/usa-flag.png" alt="usa"></a>
+						</div>
+					</div>
+					<a href="#" class="header__login ui modal-popup__signIn">Login</a>
+					<a href="#" class="header__signup btn-empty ui modal-popup__newAccount">Sign Up</a>
+					<div class="header__hamb"><span></span></div>
+				</div>
+			</div>
+		</header>
+		
+		
+		
+		<div class="ui modal large popup__block popup__newAccount">
+			<i class="close popup-close"><img src="img/icons/close.svg" alt=""></i>
+			<div class="popup__wrapper">
+				<div class="popup__title">
+					<h2>Open a new account</h2>
+				</div>
+				<div class="popup__text">
+					<p>Take full control of all your cryptocurrencies in one account</p>
+				</div>
+				<div class="ui top attached tabular menu">
+					<a class=" item" data-tab="Personal">Personal account</a>
+					<a class="item active" data-tab="Company">Company account</a>
+				</div>
+				<div class="ui bottom attached  tab segment" data-tab="Personal">
+					<form action="#" class="ui form">
+						<div class="fields two">
+							<div class="field">
+								<label>Name</label>
+								<input type="text">
+							</div>
+							<div class="field">
+								<label>Surname</label>
+								<input type="text">
+							</div>
+						</div>
+						<div class="fields two">
+							<div class="field">
+								<label>Country</label>
+								<div class="ui dropdown">
+									<input type="hidden" name="Country">
+									<div class=" text">Ukraine</div>
+									<div class="dropdown icon"><img src="img/icons/arrow-blue.svg" alt=""></div>
+									<div class="menu">
+										<div class="item" data-value="Ukraine">Ukraine</div>
+										<div class="item" data-value="France">France</div>
+										<div class="item" data-value="Russia">Russia</div>
+										<div class="item" data-value="Spain">Spain</div>
+										<div class="item" data-value="England">England</div>
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<label>Phone number</label>
+								<input type="tel">
+							</div>
+						</div>
+						<div class="field">
+							<label>Email</label>
+							<input type="email">
+						</div>
+						<div class="field">
+							<label>Password</label>
+							<input type="password">
+						</div>
+		
+						<div class="ui checked checkbox">
+							<input type="checkbox">
+							<label>I have read and agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+						  </div>
+						
+						<div class="popup__form-bottom">
+							<div class="popup__btn "><button class="button ui" type="submit">Create an account</button></div>
+							<div class="popup__link ">
+								<p>Have an account? <a href="#" class="ui modal-popup__signIn">Log in</a></p>
+							</div>
+						</div>
+					</form>
+				</div>
+				  <div class="ui bottom attached active tab segment" data-tab="Company">
+					<form action="#" class="ui form">
+						<div class="fields two">
+							<div class="field">
+								<label>Company name</label>
+								<input type="text">
+							</div>
+							<div class="field">
+								<label>Brand Name</label>
+								<input type="text">
+							</div>
+						</div>
+						<div class="field">
+							<label>Website</label>
+							<input type="text">
+						</div>
+						<div class="field">
+							<label>Company address</label>
+							<input type="text">
+						</div>
+						<div class="fields two">
+							<div class="field">
+								<label>Contact person name</label>
+								<input type="text">
+							</div>
+							<div class="field">
+								<label>Contact person surname</label>
+								<input type="text">
+							</div>
+						</div>
+						<div class="field">
+							<label>Country</label>
+							<div class="ui dropdown">
+								<input type="hidden" name="Country">
+								<div class=" text">Ukraine</div>
+								<div class="dropdown icon"><img src="img/icons/arrow-blue.svg" alt=""></div>
+								<div class="menu">
+									<div class="item" data-value="Ukraine">Ukraine</div>
+									<div class="item" data-value="France">France</div>
+									<div class="item" data-value="Russia">Russia</div>
+									<div class="item" data-value="Spain">Spain</div>
+									<div class="item" data-value="England">England</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<label>Phone number</label>
+							<input type="tel">
+						</div>
+						<div class="field">
+							<label>Email</label>
+							<input type="email">
+						</div>
+						<div class="field">
+							<label>Password</label>
+							<input type="password">
+						</div>
+						<div class="popup__form-bottom">
+							<div class="popup__btn default__btn"><button class="button ui" type="submit">Create an account</button></div>
+							<div class="popup__link default__text"><p>Have an account?  <a href="#" class="ui modal-popup__signIn">Log in</a></p></div>
+						</div>
+					</form>
+				  </div>
+				
+			</div>
+		</div>
+		
+		<div class="ui modal large popup__block popup__signIn">
+			<i class="close popup-close"><img src="img/icons/close.svg" alt=""></i>
+			<div class="popup__wrapper">
+				<div class="popup__title">
+					<h2>Sign in</h2>
+				</div>
+				
+				<form action="#" class="ui form">
+					<div class="field">
+						<label>Email</label>
+						<input type="email">
+					</div>
+					<div class="field">
+						<label>Password</label>
+						<input type="password">
+						<div class="popup__input-description">
+							<a href="#">Forgot your password?</a>
+						</div>
+					</div>
+					<div class="popup__form-bottom">
+						<div class="popup__btn "><button type="submit" class="button ui">Log in</button></div>
+						<div class="popup__link "><p>Don't have account?<a href="#" class="ui  modal-popup__newAccount">Create new one</a></p></div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+      <main>
+          <section class="main">
+              <div class="wrapper">
+                  <div class="main__title default__title big">
+                      <h1>REFUND POLICY</h1>
+                  </div>
+
+                  <div class="main__block">
+                      <div class="main__block-item">
+                          <div class="main__block-name">Version</div>
+                          <div class="main__block-info">v.2.0</div>
+											</div>
+											<div class="main__block-item">
+												<div class="main__block-name">Last updated:</div>
+												<div class="main__block-info">October 15, 2020</div>
+											</div>
+                     
+									</div>
+									
+									<div class="main__text default__text">
+										<p>The refund procedure by the Xswiss OÜ, REG. Nr.14453691, Harju maakond, Tallinn, Kesklinna linnaosa, Narva mnt 13, EE-10151, under the brand Xswiss (hereinafter Xswiss or we, us and our) possessing and operating an internet website www.Xswiss.eu (hereinafter Website) is governed by this Refund Policy, which is an integral part of our Terms and Conditions. We want you to have a satisfactory experience with our Services, that is why Xswiss guarantees the right to apply for a refund in cases provided below. You in particular have the right to change your mind in case your Xswiss Account was already funded and to request your funds to be returned. We will treat your requests with all due respect and care.
+										</p>
+									</div>
+
+									<div class="main__list-title default__title big">
+										<span class="num">1.</span> 
+										<h3>REFUND REQUEST</h3>
+									</div>
+									<div class="main__text default__text">
+										<p>THIS REFUND POLICY IS APPLICABLE ONLY TO YOUR FUNDS DEPOSITED TO Xswiss ACOUNT, AND TO REWARDS, CHARGES AND/OR COMMISSIONS PAID TO Xswiss. REFUNDS ARE NOT APPLICABLE TO TRANSACTIONS PERFORMED VIA THE Xswiss WEBSITE. REFUND AMOUNT CANNOT EXCEED THE TOTAL AMOUNT OF FUNDS DEPOSITED TO YOUR Xswiss ACCOUNT. YOU AGREE THAT Xswiss IN ITS SOLE DISCRETION SHALL HAVE THE RIGHT TO DECLINE YOUR REFUND REQUEST.</p>
+									</div>
+
+									<div class="main__list-item default__text">
+										<span class="num">1.1</span>
+										<p>The refund request must be initiated within 48 (forty-eight) hours after the transaction in question has taken place.</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">1.2</span>
+										<p> Refund Request Procedure:</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num num-2">1.2.1</span>
+										<p> if you want to request a refund, you shall send a request in a free form to the email info@Xswiss.eu, with a “Refund Request” in a subject line;</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num num-2">1.2.2</span>
+										<p>Xswiss support team will send you a refund form (“Refund Form”) and you shall file it and return to the same email address;</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num num-2">1.2.3</span>
+										<p> after Xswiss support team reviews Refund Form and verifies data stipulated therein;</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num num-2">1.2.4</span>
+										<p> our support team may request additional documents from you subject to provision within 3 (three) days, including but not limited to: identification document, bank or payment system transaction document, a photo of your payment card that is a subject to a disputed transaction and/or Website interface screenshot with a transaction under question.</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">1.3</span>
+										<p>If information in your Refund Form is incorrect or false, or if you fail fulfill the Refund Request Procedure, or if you fail to present requested documentation to our support team within 3 (three) days, or in case such documents delivered by you are not authentic or relevant, such refund request shall be deemed invalid and Xswiss have the right to decline it.</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">1.4</span>
+										<p> All refunds are subject to AML/CFT/KYC compliance. Xswiss cannot guarantee that your refund request will be satisfied unless it is fully compliant with a relevant applicable legislation.</p>
+									</div>
+
+
+									<div class="main__list-title default__title big">
+										<span class="num">2.</span> 
+										<h3>REFUND PROCESSING</h3>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">2.1</span>
+										<p>When the Refund Request is filed and all documents requested submitted, Xswiss shall respond to you within 14 (fourteen) banking.</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">2.2</span>
+										<p>When the Refund Request is filed and all documents requested submitted, Xswiss shall respond to you within 14 (fourteen) banking.</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">2.3</span>
+										<p>Please note that we have the right to suspend your Xswiss Account for the period of refund request review process.</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">2.4</span>
+										<p>Xswiss provides the refund only using the same payment method and only to the account that was used by you to deposit funds in question. If such payment method or account are unavailable, the refund cannot be provided. We do not perform refunds to your other accounts, in favor of any third parties or in cash.</p>
+									</div>
+									<div class="main__list-title default__title big">
+										<span class="num">3.</span> 
+										<h3>USE OF CHARGEBACK</h3>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">3.1</span>
+										<p>You shall resolve refund issues with Xswiss before contacting banks or financial institutions with a chargeback request. Otherwise, Xswiss cannot guarantee that the time periods prescribed by this Refund Policy for review or for refund processing will be complied with.</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">3.2</span>
+										<p>In case you have initiated a chargeback procedure with your bank or other financial institution, Xswiss will investigate such chargeback request within a reasonable term and will inform your bank or financial institution whether transaction in question has been cancelled.</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">3.3</span>
+										<p>Please, note that Xswiss have the right to suspend your Xswiss Account for the period of chargeback investigation process.</p>
+									</div>
+									<div class="main__list-title default__title big">
+										<span class="num">4.</span> 
+										<h3>REFUND CHARGES</h3>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">4.1</span>
+										<p>All bank, financial institution, and other transactional charges applicable to a refund shall be borne solely by you, and in case such charges are associated with Xswiss performing a refund transaction – such charges shall be deducted from a refund amount.</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">4.2</span>
+										<p> In case you provide wrong details that prevent us from executing a refund, all associated fees arising from correcting and processing such refund shall be borne solely by you.</p>
+									</div>
+									<div class="main__list-title default__title big">
+										<span class="num">5.</span> 
+										<h3>MISCELLANEOUS</h3>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">5.1</span>
+										<p>Xswiss may amend this Refund Policy anytime, notifying you about the most important amendments. In case you do not accept such amendments, you should initiate a closure of your Xswiss Account and immediately stop using our Services.</p>
+									</div>
+									<div class="main__list-item default__text">
+										<span class="num">5.2</span>
+										<p>We will execute all necessary procedures to fulfil our refund obligations before you under the terms and conditions of this Refund Policy and according to applicable legislation.</p>
+									</div>
+
+              
+              </div>
+          </section>
+      </main>
+      
+
+		<footer class="footer">
+			<div class="wrapper footer__wrap">
+				<div class="footer__col1">
+					<div class="footer__ttl wow fadeIn" data-wow-delay=".5s">Xswiss</div>
+					<ul>
+						<li class="wow fadeInUp" data-wow-delay=".5s"><a href="#">User Agreement</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".55s"><a href="#">Privacy Policy</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".6s"><a href="#">Refund policy</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".65s"><a href="#">Cookie policy</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".7s"><a href="#">AML/KYC policy</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".75s"><a href="#">Merchant Tools</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".8s"><a href="#">Merchant Tools Terms</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".85s"><a href="#">Video Identification Terms</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".9s"><a href="#">Video Identification Policy</a></li>
+					</ul>
+				</div>
+				<div class="footer__col2">
+					<div class="footer__ttl wow fadeIn" data-wow-delay=".5s">Information</div>
+					<ul>
+						<li class="wow fadeInUp" data-wow-delay=".5s"><a href="#">Fees</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".55s"><a href="#">FAQ</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".6s"><a href="#">Knowledge Base</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".65s"><a href="#">Buy Bitcoin</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".7s"><a href="#">Buy Bitcoin Cash</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".75s"><a href="#">Buy Ethereum</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".8s"><a href="#">Buy Monero</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".85s"><a href="#">Buy XRP</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".9s"><a href="#">Buy USDT</a></li>
+						<li class="wow fadeInUp" data-wow-delay=".95s"><a href="#">Buy Cryptocurrency</a></li>
+						<li class="wow fadeInUp" data-wow-delay="1s"><a href="#">Contacts</a></li>
+					</ul>
+				</div>
+				<div class="footer__col4">
+					<div class="footer__ttl wow fadeIn" data-wow-delay=".5s">Follow us</div>
+					<div class="footer__socs">
+						<a href="#" target="_blank" class="wow fadeInRight" data-wow-delay=".8s"><img src="img/icons/social/fb-icon.svg" alt="fb"></a>
+						<a href="#" target="_blank" class="wow fadeInRight" data-wow-delay=".85s"><img src="img/icons/social/inst-icon.svg" alt="fb"></a>
+						<a href="#" target="_blank" class="wow fadeInRight" data-wow-delay=".9s"><img src="img/icons/social/twit-icon.svg" alt="fb"></a>
+						<a href="#" target="_blank" class="wow fadeInRight" data-wow-delay=".95s"><img src="img/icons/social/youtube-icon.svg" alt="fb"></a>
+						<a href="#" target="_blank" class="wow fadeInRight" data-wow-delay="1s"><img src="img/icons/social/m-icon.svg" alt="fb"></a>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="footer__copy wow fadeIn">©2021 Coinify, Address. All rights reserved</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+	<script src="libs/semantic/semantic.min.js"></script>
+	<script src="libs/wow/wow.min.js"></script>
+	<script src="js/common.min.js"></script>
+</body>
+
+</html>

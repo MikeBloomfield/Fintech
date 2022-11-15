@@ -1,0 +1,133 @@
+m-font-face( $font-family = "Arial", $file-path = "", $weight = normal, $style = normal, $asset-pipeline = false )
+	@font-face 
+		font-family  $font-family
+		font-weight  $weight
+		font-style   $style
+		font-display swap
+
+		if $asset-pipeline 
+			src: font-url($file-path+'.eot')
+			src: font-url($file-path+'.eot?#iefix') format('embedded-opentype'), font-url($file-path+'.woff2') format('woff2'), font-url($file-path+'.ttf') format('truetype')
+		else
+			src: url($file-path+'.eot')
+			src: url($file-path+'.eot?#iefix') format('embedded-opentype'), url($file-path+'.woff2') format('woff2'), url($file-path+'.ttf') format('truetype')
+
+m-font-face("Montserrat", "../fonts/Montserrat/Montserrat-Light", 300);
+m-font-face("Montserrat", "../fonts/Montserrat/Montserrat-Regular", 400);
+m-font-face("Montserrat", "../fonts/Montserrat/Montserrat-Medium", 500);
+m-font-face("Montserrat", "../fonts/Montserrat/Montserrat-Bold", 700);
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?ono09l');
+  src:  url('../fonts/icomoon/icomoon.eot?ono09l#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.ttf?ono09l') format('truetype'),
+        url('../fonts/icomoon/icomoon.woff?ono09l') format('woff'),
+        url('../fonts/icomoon/icomoon.svg?ono09l#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon__"], [class*=" icon__"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon', sans-serif !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon__date:before {
+  content: "\e91c";
+}
+.icon__download:before {
+  content: "\e91b";
+}
+.icon__wait:before {
+  content: "\e91a";
+}
+.icon__arrow-right:before {
+  content: "\e919";
+}
+.icon__edit:before {
+  content: "\e918";
+}
+.icon__acc:before {
+  content: "\e917";
+}
+.icon__shield:before {
+  content: "\e916";
+}
+.icon__copy:before {
+  content: "\e915";
+}
+.icon__logout:before {
+  content: "\e913";
+}
+.icon__profile:before {
+  content: "\e914";
+}
+.icon__search:before {
+  content: "\e912";
+}
+.icon__arrow-dwn:before {
+  content: "\e900";
+}
+.icon__arrow-lft:before {
+  content: "\e901";
+}
+.icon__close:before {
+  content: "\e902";
+}
+.icon__dashboard:before {
+  content: "\e903";
+}
+.icon__down:before {
+  content: "\e904";
+}
+.icon__exchange:before {
+  content: "\e905";
+}
+.icon__help:before {
+  content: "\e906";
+}
+.icon__info:before {
+  content: "\e907";
+}
+.icon__loan:before {
+  content: "\e908";
+}
+.icon__minus:before {
+  content: "\e909";
+}
+.icon__ok:before {
+  content: "\e90a";
+}
+.icon__operation:before {
+  content: "\e90b";
+}
+.icon__plus:before {
+  content: "\e90c";
+}
+.icon__report:before {
+  content: "\e90d";
+}
+.icon__saving:before {
+  content: "\e90e";
+}
+.icon__setting:before {
+  content: "\e90f";
+}
+.icon__time:before {
+  content: "\e910";
+}
+.icon__up:before {
+  content: "\e911";
+}

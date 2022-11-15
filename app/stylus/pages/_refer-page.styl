@@ -1,0 +1,174 @@
+.refer
+    background: linear-gradient(191.07deg, #242666 0.71%, #090B2F 54.6%);
+    padding-top 132px
+    padding-bottom 135px
+    &__title
+        font-size 45px
+        line-height 55px
+        max-width: 730px
+        margin: auto
+        text-align center
+        margin-bottom 40px
+        span
+            color: $blue
+    &__button
+        font-size 15px
+        line-height 15px
+        display block
+        font-weight: 500;
+        max-width: 282px
+        text-align center
+        background: $blue
+        padding: 22px 0
+        border-radius: 5px
+        margin: auto
+        text-transform uppercase
+        &:hover
+            color: #fff
+            background: $blue-hover
+
+.refer-friend
+    position relative
+    background: linear-gradient(0deg, #090b2f 0%, #1d1f5a 50%, #090b2f 100%)
+    .wrapper
+        max-width: 1250px
+    &__title
+        font-size 45px
+        line-height 55px
+        margin-bottom 40px
+        text-align center
+        max-width: 483px
+        margin: 0 auto 40px
+        span
+            color: #9FA0B1
+    &__wrapper
+        max-width: 1170px
+        margin: auto
+        display flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: center
+        gap: 30px
+    &__item
+        background: linear-gradient(0deg, #1C1D4A, #1C1D4A), #1F204E;
+        mix-blend-mode: normal;
+        border-radius: 5px;
+        padding: 40px 
+        width: 370px
+        display flex
+        flex-direction: column
+        align-items: center
+        min-height: 275px
+        &-title
+            font-size 20px
+            line-height 30px
+            margin-bottom 5px
+            margin-top 0
+            text-align center
+        &-pic
+            max-width: 60px
+            margin-bottom 25px
+        &-desc
+            font-size 15px
+            line-height 25px
+            color: rgba(255, 255, 255, .75)
+            text-align center
+
+.refer-work
+    padding-top 206px
+    &__title
+        font-size 45px
+        line-height 55px
+        margin-bottom 20px
+    &__wrapper
+        display flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 100px
+    &__pic
+        max-width: 594px
+        position relative
+        bottom: 80px
+    .accordeon
+        max-width: 476px
+        counter-reset: refer
+        dt
+            padding-left 77px
+            counter-increment: refer
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            position relative
+            cursor: pointer
+            &:before
+                content: "Step "counter(refer)
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: #319BE2;
+                position absolute
+                left: 0
+        dd
+            margin-top 15px
+            padding-left 77px
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #C2C2CB;
+            max-width: 400px
+        dl
+            padding: 20px 0
+            &:not(:first-child)
+                border-top: 1px solid rgba(255, 255, 255, .1);
+
+.refer-faq
+    padding: 85px 0 135px
+    position relative
+    background: linear-gradient(0deg, #090b2f 0%, #1d1f5a 50%, #090b2f 100%)
+    &__title
+        font-size 45px
+        line-height 55px
+        margin-bottom 40px
+        text-align center
+    .accordeon
+        max-width: 700px
+        margin: auto
+        dl
+            padding: 20px 30px
+            background: #12133c;
+            border-radius: 5px;
+            &:not(:last-child)
+                margin-bottom 10px
+            span
+                transition: $default-transition
+        dl.active
+            background: #141e4f
+            span
+                transform: rotate(180deg)
+        dt
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            display flex
+            justify-content: space-between
+            cursor: pointer
+        dd
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #C6C6D1;
+            padding-top 10px
+
+
+
+
+@media (max-width : 425px)
+    .refer__title,  
+    .refer-friend__title, 
+    .refer-work__title, 
+    .refer-faq__title
+        font-size 28px
+        line-height 35px
+        text-align center

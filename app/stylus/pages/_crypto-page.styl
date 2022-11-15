@@ -1,0 +1,228 @@
+.page__crypto 
+    overflow hidden
+    .crypto 
+        padding 0 0 40px 0
+        .wrapper 
+            max-width 1000px 
+            width 100% 
+            margin 0 auto
+        &__btn-back 
+            margin-top 10px
+            a   
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 25px;
+                color $dark-gray
+                path 
+                    stroke $dark-gray
+                    transition $default-transition	
+                &:hover 
+                    color $blue 
+                    path 
+                        stroke $blue
+        &__title 
+            text-align center
+            margin-top 5px
+        &__content 
+            margin 30px auto 
+            position relative
+            display flex
+            justify-content space-between
+            align-items stretch
+        &__tr
+            display flex
+            justify-content space-between
+            align-items flex-start
+            flex-wrap wrap
+            padding 25px 0px
+            border-radius 5px 
+            background #2B428C
+            width 100% 
+            max-width 370px
+        &__td 
+            width calc(25% - 22px)
+            display flex
+            align-items center 
+            justify-content center
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 35px;
+            &-icon 
+                margin-right 15px
+                margin-top 3px
+                min-width 50px
+                max-width 50px
+                width 100%
+                border-radius 100%
+                img 
+                    border-radius 100%
+            &-text 
+                &.bold 
+                    p
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+            span 
+                display flex
+                position relative
+                min-width 18px
+            .label  
+                font-weight 400
+                font-size: 15px;
+                line-height: 25px;
+                color $gray
+            &.green 
+                color $green
+                span
+                    top -1px 
+                    margin-left 5px
+            &.red 
+                color $red
+                span
+                    top -2px 
+                    margin-left 9px
+            &-block 
+                display flex
+                align-items flex-start 
+                justify-content flex-start
+            &[data-title="Currency"]
+                justify-content flex-start
+                width 50%
+                font-size: 20px;
+                line-height: 30px;
+                padding-left 40px
+            &[data-title="Price"]
+                flex-direction column
+                align-items flex-start
+                justify-content center 
+                width 100%
+                font-size: 45px;
+                line-height: 50px;
+                margin-top 60px
+                padding 0 40px
+            &[data-title="24h change (%)"]
+                flex-direction column
+                align-items flex-start
+                justify-content center
+                width auto
+                margin-left auto
+                font-size: 20px;
+                line-height: 30px;
+                padding-right 40px
+                .change 
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 25px;    
+                    color: $gray;
+                    display none
+                   
+            &[data-title="Chart"]
+                justify-content flex-start
+                width 100%
+        &__blocks 
+            display flex
+            justify-content space-between
+            flex-wrap wrap  
+            width 100%
+            max-width 570px
+            margin-left 10px
+            padding 10px 35px 40px
+            background $dark-blue
+            border-radius 5px
+
+        &__chart 
+            width 100%
+        &__block
+            width calc(50% - 22px)
+            margin-top 30px
+            &-info   
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color $white
+            &-name 
+                color $gray 
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                margin-top 5px
+        &__text 
+            p 
+                margin-bottom 36px
+                span 
+                    color $blue
+                    font-weight 600
+            &-title 
+                margin-top 40px
+                margin-bottom 20px
+
+    @media (max-width : 768px)
+        .crypto
+            &__title 
+                margin-top 20px
+            &__content  
+                margin-bottom 40px 
+                flex-direction column
+            &__blocks 
+                max-width none
+                margin-left 0 
+            &__block 
+                width 33.3%
+                padding-right 10px
+                &:last-child
+                    margin-right auto
+            &__tr 
+                max-width none
+                margin-bottom 10px
+            &__text 
+                &-title 
+                    h3 
+                        font-size 18px
+         
+            
+
+    @media (max-width : 568px)
+
+        .crypto 
+            &__block 
+                display flex
+                justify-content space-between 
+                width 100% 
+                padding-right 0
+                margin-top 10px
+                &-name 
+                    order 1 
+                &-info 
+                    order 2
+    
+    @media (max-width : 480px)
+
+        .crypto 
+            &__blocks
+                padding 0 10px 30px
+            &__block 
+                margin-top 5px
+            &__td
+                &-icon 
+                    min-width 30px 
+                    max-width 30px
+                &[data-title="Currency"]
+                    padding-left 10px
+                &[data-title="24h change (%)"]
+                    padding-right 10px
+                &[data-title="Price"]
+                    padding 0 10px
+                    margin-top 20px
+                    font-size 30px 
+                    line-height 35px
+
+                
+    @media (max-width : 374px)
+
+        .crypto 
+            &__block    
+                &-info 
+                    font-size 15px
+
+
+               

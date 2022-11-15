@@ -1,0 +1,769 @@
+.tools
+    &__step 
+        display none
+        border-radius 10px
+        background-color #1B1C48
+        padding 19px 30px
+        &-active 
+            display block
+        &[data-tools="third"]
+            background transparent
+            padding 0
+            .tools__block 
+                padding 30px
+                border-radius 10px
+                background-color $white
+        &.invoices 
+            .tools__tbody 
+                .tools__tr
+                    transition all .4s ease 
+                    &:hover 
+                        background $white2
+                    &:not(:last-of-type)
+                        border-bottom 1px solid rgba(255, 255, 255, .2)
+    &__top 
+        display flex
+        justify-content space-between 
+        align-items center
+        margin-bottom 5px  
+    &__invoice 
+        h3
+            font-size 15px 
+            line-height 20px
+            font-weight 500
+            font-family: 'Gotham Pro', sans-serif;
+
+    &__info 
+        display flex
+        justify-content space-between
+        &-block 
+            p 
+                font-size 12px
+                line-height 17px
+                padding-bottom 4px
+            &.right 
+                text-align right
+                padding-top 7px
+        &-logo 
+            max-width 190px 
+            width 100%
+    &__description 
+        color $black
+        font-family $default-font
+        font-size 15px
+        line-height 20px    
+    &__text 
+        color $black
+        font-family $default-font
+        font-size 15px
+        line-height 20px
+    &__input 
+        border none
+        border-radius 20px
+        background-color $white2   
+        max-width 380px
+        width 100%
+        padding 10px 15px  
+        color $grey
+        font-family $default-font
+        font-size 15px
+        line-height 20px 
+        &-sm 
+            max-width 170px
+        &-bg 
+            max-width none  
+    .select2-container  
+        max-width 170px
+        &--default 
+            .select2-selection--single 
+                height 40px 
+                border none 
+                border-radius 20px
+                background-color $white2   
+                width 100%
+                max-width 170px
+                padding 10px 15px  
+                .select2-selection__rendered
+                    color $grey
+                    font-family $default-font
+                    font-size 15px
+                    line-height 20px 
+                .select2-selection__arrow
+                    height 6px
+                    width 9px
+                    right 13px
+                    top 17px
+                    background-image url('../img/tools/down_arrow_icon.svg')
+                    background-size cover
+                    background-repeat no-repeat
+                    b
+                        display none
+            &.select2-container--open
+                .select2-selection__arrow
+                    transform rotate(-180deg)
+
+                    
+    &__button   
+        max-width 180px
+        width 100%
+        a
+            display flex
+            justify-content center
+            align-items center
+            font-family $default-font
+            font-size 12px
+            font-weight 500
+            line-height 20px
+            text-transform uppercase
+            text-decoration none
+            color #fff
+            border-radius 5px
+            width 100%
+            padding 8px 0
+            text-align center
+            transition all .4s ease
+            text-transform uppercase
+            background: hsl(204, 75%, 54%);
+            span 
+                display inline-block
+                margin-left 5px
+            &:hover 
+                background: hsl(204, 75%, 44%);
+
+        &-add 
+            max-width 150px
+            a 
+                font-size 15px
+                padding 8px 10px
+            svg 
+                margin-right 10px
+        &.blue 
+            a 
+                background: #319BE2;
+                color: #fff;
+    &__btn-show
+        margin-top 17px
+        margin-bottom 10px
+        a
+            display flex 
+            justify-content flex-start
+            align-items center
+            color $blue
+            font-family $default-font
+            font-size 15px
+            font-weight 500
+            line-height 15px
+            text-transform uppercase
+            text-decoration none
+            transition: 0.4s
+            svg 
+                margin-right 5px
+            &:hover
+                opacity: .7
+
+    &__thead 
+        .tools
+            &__tr 
+                min-height 45px
+                border-bottom 1px solid rgba(255, 255, 255, .2)
+            &__td 
+                color rgba(255, 255, 255, .5)
+                font-size 12px
+                line-height 12px
+    &__tbody 
+        .tools
+            &__tr
+                min-height 53px
+                
+            &__td 
+                white-space: nowrap; 
+                overflow: hidden;
+                text-overflow: ellipsis; 
+                &[data-table="Number"]
+                    padding-left 15px
+    &__tr 
+        display flex
+        justify-content space-between
+        align-items center
+        border-bottom 1px solid $white2
+        padding-bottom 3px
+        &.tools__tr-unfaid
+            .tools__td-operations
+                a.edit
+                    display flex
+                    
+    &__td 
+        color #fff
+        font-family $default-font
+        font-size 15px
+        line-height 20px  
+        text-align left
+        width 100%
+        margin-right 5px
+        &.bold 
+            font-weight 500
+        
+        &-operations
+            display flex
+            justify-content flex-start
+            align-items center 
+            a 
+                display flex
+                justify-content center
+                align-items center
+                width 30px 
+                height 30px
+                margin-right 3px
+                &.edit 
+                    display none
+                &:last-child 
+                    margin-right 0
+                path 
+                    fill $grey2
+                    transition all .4s ease    
+                &:hover 
+                    path 
+                        fill $blue2
+        &[data-table="Number"]
+            max-width 77px
+            text-align left
+        &[data-table="Title"]
+            max-width 230px
+            font-weight 700
+        &[data-table="Amount"]
+            max-width 130px
+        &[data-table="Created date"]
+            max-width 140px
+        &[data-table="Status"]
+            max-width 100px
+            text-transform uppercase
+            text-align center
+            font-size 9px
+            .status
+                border-radius: 3px;
+                padding: 5px 0
+                font-weight 500
+                display block
+                min-width: 85px
+            .unpaid
+                color: #8D8DA3;
+                background: rgba(73, 73, 109, 0.3);
+            .unverified
+                color: #EFA809
+                background: #EFA8094D
+            .paid
+                color: #06D49C
+                background: rgba(6, 212, 156, 0.3);
+        &[data-table="Paid date"]
+            max-width 150px
+        &[data-table="Operations"]
+            max-width 94px
+    &__blocks 
+        display flex
+        justify-content space-between
+        align-items stretch
+        margin-top 15px
+        margin-bottom 40px
+        .tools__block 
+            border-bottom none
+            padding-bottom 0
+            label 
+                min-width 122px
+
+    &__block 
+        width 100%
+        border-bottom 1px solid $white2
+        padding-bottom 20px
+        &.bill 
+            max-width 530px
+            margin-right 15px
+        &.info 
+            max-width 350px
+        &.total 
+            padding 20px 0 25px
+            .tools__block-item
+                max-width 350px 
+                width 100%
+                margin-left auto
+                margin-bottom 0
+        &.notes 
+            padding 10px 0 0
+            border-bottom none
+            .tools__block-item
+                flex-direction column 
+                align-items flex-start
+        &.invoice
+            max-width none 
+            margin-right 30px
+            .tools
+                &__thead 
+                    .tools__tr
+                        min-height 28px
+                &__td 
+                    max-width 100px 
+                    width 100%
+                    text-align center
+                    margin-right 10px
+                    &[data-table="Description"]
+                        max-width none
+                        min-width 200px
+                        text-align left
+            
+        &.payment 
+            max-width 370px
+        &-title 
+            margin-bottom 10px
+            h4 
+                color $black
+                font-family $default-font
+                font-size 15px
+                font-weight 500
+                line-height 20px
+        &-items 
+            display flex
+            justify-content space-between
+            align-items center
+            position relative
+            .tools__block-item 
+                flex-direction column
+                align-items flex-start
+                width 100%
+                margin-left 11px
+                max-width 170px
+                margin-bottom 11px
+                &.description
+                    max-width none
+                    margin-left 0
+                label 
+                    margin-bottom 5px
+            &-del 
+                position absolute
+                right: -17px;
+                top: 39px;
+        &-item 
+            display flex
+            justify-content space-between
+            align-items center 
+            width 100%
+            margin-bottom 20px
+            label
+                color $grey
+                font-family $default-font
+                font-size 15px
+                line-height 20px   
+                margin-right 10px
+            textarea 
+                border none
+                border-radius 20px
+                background-color $white2
+                padding 10px 15px  
+                color $grey
+                font-family $default-font
+                font-size 15px
+                line-height 20px 
+                width 100%
+                max-width 100%
+                min-width 100%
+                min-height 100px
+                margin-top 5px
+                &:focus 
+                    outline none 
+    &__form 
+        &-button 
+            display flex
+            justify-content center
+            align-items center
+            max-width 190px 
+            width 100%
+            border-radius 20px
+            border 2px solid $blue
+            background-color $blue
+            color $white
+            font-family $default-font
+            font-size 15px
+            font-weight 500
+            line-height 20px
+            text-transform uppercase
+            padding 8px 0
+            margin-left auto
+            cursor pointer
+            margin-bottom 10px
+            transition all .4s ease
+            &:focus 
+                ouline none
+            &:hover 
+                background #06b1b9
+                color #ffffff
+                border 2px solid #06b1b9
+    &__info 
+        margin-top 5px
+        margin-bottom 41px
+        &-description 
+            color $grey
+            font-family $default-font
+            font-size 12px
+            line-height 12px
+            margin-bottom 8px
+        &-title 
+            color $black
+            font-family $default-font
+            font-size 25px
+            line-height 30px
+            margin 9px 0 6px
+        &-name 
+            margin-bottom 5px
+    &__total 
+        display flex
+        justify-content space-between
+        align-items center
+        max-width 226px 
+        width 100% 
+        margin-left auto
+        margin-top 16px
+        &-title 
+            color $black
+            font-family $default-font
+            font-size 25px
+            line-height 30px    
+        &-sum
+            color $black
+            font-family $default-font
+            font-size 25px
+            line-height 30px
+    &__notes 
+        margin-top 65px
+        &-description
+            color $grey
+            font-family $default-font
+            font-size 12px
+            line-height 12px
+            margin-bottom: 15px;
+    &__payment 
+        &-select
+            margin 10px 0 15px 
+            label 
+                font-size: 12px;
+                line-height: 15px;
+                color: rgba(#212121, .5);
+                display inline-block
+                margin-bottom 5px
+            .ui.dropdown
+                display flex
+                justify-content space-between
+                align-items center
+                background: #F0F4F7;
+                border-radius: 20px;
+                min-height 40px
+                padding 0 10px 0 20px
+                .menu 
+                    width 100%
+                    border none 
+                    border-radius 20px
+                    .item 
+                        padding 10px 20px
+                        &:first-child 
+                            border-radius 20px 20px 0 0 
+                        &:last-child 
+                            border-radius 0 0 20px 20px 
+                .icon 
+                    width 20px
+                    display flex
+                    align-items center 
+                    margin-left 3px
+                    &:before 
+                        display none
+                .img 
+                    max-width 20px
+                    display flex
+                    justify-content center
+                    align-items center
+                    margin-right 5px
+                .item 
+                    display flex
+                    justify-content flex-start
+                    align-items center
+        &-text
+            color $black
+            font-family $default-font
+            font-size 12px
+            line-height 18px
+            margin 9px 0 20px
+            span 
+                color $blue
+                font-weight 500
+        &-img 
+            max-width 140px
+            width 100%
+            margin 0 auto 17px
+        &-item 
+            border-bottom 1px solid $white2
+            margin-bottom 13px
+            padding-bottom 5px
+            label 
+                color $grey
+                font-family $default-font
+                font-size 12px
+                line-height 12px
+            &-block 
+                display flex
+                justify-content space-between
+                align-items center 
+            &-input 
+                width 100%
+                padding 5px 10px 5px 0
+                border none 
+                color $black
+                font-family $default-font
+                font-size 12px
+                line-height 15px
+        &-time 
+            margin-top 10px
+            &-title 
+                color $black
+                font-family $default-font
+                font-size 20px
+                font-weight 500
+                line-height 30px
+            &-block 
+                border-radius 10px
+                background-color $white2
+                display flex
+                align-items center
+                margin-top 12px
+                padding 20px 25px
+            &-icon 
+                margin-right 25px
+            &-info 
+                display flex
+                justify-content center
+                align-items center
+                color $black
+                font-family $default-font
+                font-size 40px
+                font-weight 500
+                line-height 50px
+                text-transform uppercase
+                padding-left 15px
+                border-left 1px solid $white
+                max-width 195px 
+                width 100%
+                span 
+                    margin 0 5px
+                    min-width 60px
+                    text-align center
+    &__drop 
+        background-color: #FFFFFF;
+        box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        .select2-results__option--selectable
+            color $black
+            font-family $default-font
+            font-size 15px
+            line-height 20px
+            border-left none 
+            &:last-child
+                border-radius  0 0 20px 20px
+
+        .select2-results__option--highlighted.select2-results__option--selectable
+            color $black
+            font-family $default-font
+            font-size 15px
+            line-height 20px
+            background-color: #F0F4F7;
+            border-left none 
+
+
+
+
+
+
+@media (max-width : 1200px)
+
+    .tools
+        &__step
+            &[data-tools="third"] 
+                .tools__blocks
+                    flex-direction column
+        &__block
+            &.invoice
+                margin-right 0px
+                margin-bottom 20px
+            &.payment
+                max-width none
+        &__payment
+            &-time-block
+                justify-content center
+        &__td 
+            font-size 13px
+            &[data-table="Number"]
+                max-width 55px
+            &[data-table="Paid date"] 
+                max-width: 90px;
+            &[data-table="Status"] 
+                max-width: 85px;
+            &[data-table="Created date"] 
+                max-width: 95px;
+            &[data-table="Amount"] 
+                max-width: 95px;
+
+
+@media (max-width : 998px)
+
+    .tools 
+        &__form 
+            .tools__blocks
+                flex-direction column
+        &__block
+            &-items 
+                flex-wrap wrap
+                .tools__block-item
+                    width calc(33.3% - 5px)
+                    margin-left 0
+                    &.description
+                        width 100%
+                &-del 
+                    top 75px
+            &.total 
+                .tools__block-item
+                    max-width 250px
+    
+    .invoices 
+        .tools 
+            &__thead 
+                display none
+            &__tr 
+                flex-direction column
+                padding 5px 10px
+            &__tbody 
+                .tools 
+                    &__td 
+                        max-width none
+                        padding-left 0
+                        display flex
+                        justify-content space-between
+                        align-items center
+                        margin-right 0
+                        line-height 25px
+                        &:before 
+                            content attr(data-table)
+                            float left
+                            color $grey
+                            font-family $default-font
+                            font-size 12px
+                            line-height 12px
+                            font-weight 400
+                            text-align left
+                            margin-right 5px
+                            width 40%
+                            min-width 82px
+                        
+        
+
+@media (max-width : 798px)
+    .tools
+        &__step
+            padding 15px 10px
+            &[data-tools="third"] 
+                .tools
+                    &__block
+                        padding 15px 10px
+        &__block
+            &.invoice 
+                .tools
+                    &__thead    
+                        .tools__td
+                            font-size 9px
+                            line-height 12px
+                    &__tbody 
+                        .tools__tr 
+                            min-height 40px
+                    &__td 
+                        font-size 12px
+                        &:last-child 
+                            margin-right 0
+            &-items-del
+                right -5px
+        &__total 
+            max-width 150px
+            margin-top 15px
+            &-title,
+            &-sum 
+                font-size 20px
+    
+    .invoices 
+        padding 15px 5px
+        .tools
+            &__tr
+                padding 5px 5px
+            &__button 
+                max-width 130px
+                margin-left 10px
+                a 
+                    span 
+                        display none
+    
+    .ui.modal.popup__tools
+        padding 50px 15px 30px
+        
+
+@media (max-width : 480px)
+
+    .tools
+
+        &__top 
+            flex-direction column
+            align-items flex-start
+
+        &__description
+            margin-left 5px 
+            font-size 9px
+        &__block
+            &.invoice 
+                .tools__td
+                    margin-right 3px
+                    &[data-table="Description"]
+                        min-width 150px
+        &__info 
+            margin-top 20px
+            margin-bottom 30px
+        &__notes 
+            margin-top 25px
+        &__text 
+            font-size 13px
+            line-height 18px
+        &__payment
+            &-time
+                &-title
+                    font-size 15px
+                    line-height 20px
+                &-block 
+                    padding 10px 15px
+                &-info 
+                    font-size: 26px;
+                    line-height: 40px;
+                    max-width 140px
+                    span 
+                        min-width 45px
+        &__info-title
+            font-size 20px 
+            line-height 25px
+        &__info 
+            flex-direction column
+            align-items flex-start
+            margin-bottom 10px
+            &-block.right 
+                padding-top 15px
+                text-align left
+        
+
+    .ui.modal.popup__tools  
+        .popup__tools-field
+            flex-direction column
+        .popup__tools-info 
+            text-align left
+            margin-top 5px
+            &.copy-block 
+                justify-content space-between
+                width 100%
+                input
+                    text-align left

@@ -1,0 +1,128 @@
+.pages__info 
+  overflow hidden
+  .main 
+    padding 0px 0 40px
+    &__title 
+      margin-bottom 25px
+      &.center 
+        h1 
+          text-align center
+    &__subtitle
+      margin-bottom 20px
+      margin-top 20px
+      h2 
+        font-size 30px
+        line-height 30px
+        text-align left
+      a
+        font-size 30px
+        line-height 40px
+        font-weight 700
+        text-align left
+        color $white 
+        &:hover
+          color $blue
+    &__text 
+      margin-bottom 15px
+      &-title 
+        margin-bottom 15px
+      a 
+        color $blue
+        text-decoration underline
+        &:hover
+          color $white
+      span 
+        font-weight 700
+    
+    &__block 
+      margin 30px 0
+      background $dark-blue
+      border-radius: 10px;
+      padding 30px 50px 25px
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+
+      &-item 
+        display flex
+        justify-content flex-start 
+        align-items flex-start 
+        margin-bottom 5px
+      &-name 
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color $gray 
+        width 100%
+        max-width 250px
+        padding-right 10px
+      &-info 
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px; 
+        color $white
+        max-width 610px
+        width 100%
+    .num 
+      font-weight: 600;
+      font-size: 20px;
+      color $blue
+      margin-right 7px
+      &-2 
+        margin-left 20px
+    &__list 
+      &-title
+        display flex
+        justify-content flex-start
+        align-items flex-start
+        margin-top 20px
+        margin-bottom 15px
+        h3 
+          text-transform capitalize
+        .num 
+          line-height 40px
+          font-size 25px
+      &-item 
+        display flex
+        justify-content flex-start
+        align-items flex-start
+        .num 
+          margin-top 4px
+   
+
+  @media (max-width : 768px)
+
+    .main 
+      &__block 
+        padding 20px 30px 15px
+        &-name 
+          max-width 170px
+      &__title 
+        margin-bottom 20px
+        h1 
+          font-size 30px 
+          line-height 40px
+      &__subtitle
+        margin-bottom 15px
+        h2,
+        a
+          font-size 25px 
+          line-height 30px
+      &__text-title
+        margin-bottom 15px
+        h3 
+          font-size 16px 
+          line-height 25px
+      .num 
+        font-size: 15px;
+        line-height: 20px;
+        &-2 
+          margin-left 15px
+      &__list-title 
+        .num 
+          font-size: 16px;
+          line-height: 25px;
+      &__list-item 
+        .num 
+          margin-top 1px
+
+    
+        

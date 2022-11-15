@@ -1,0 +1,128 @@
+.policy
+    padding-top 117px
+    background: linear-gradient(191.07deg, #242666 0.71%, #090B2F 54.6%);
+    padding-bottom 80px
+    &__wrapper
+        max-width: 970px
+        margin: auto
+    &__title
+        text-align center
+        font-size 45px
+        line-height 50px
+        text-transform uppercase
+        margin-bottom 40px
+    &__desc
+        padding-left 41px
+        position relative
+        margin-bottom 20px
+        font-size 20px
+        line-height 30px
+        &:last-child
+            margin-bottom 40px
+        a
+            color: #319BE2
+            &:hover
+                color: hsl(204, 75%, 44%)
+        &:before
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #309BE2;
+            position absolute
+            left: 0
+        &:nth-child(1):before
+            content: "A."
+        &:nth-child(2):before
+            content: "B."
+        &:nth-child(3):before
+            content: "C."
+        &:nth-child(4):before
+            content: "D."
+        &:nth-child(5):before
+            content: "E."
+    &__list
+        counter-reset: policy
+        list-style: none
+        &-item
+            font-size 20px
+            line-height 30px
+            position relative
+            counter-increment: policy
+            padding-left 41px
+            &-4
+                font-size 20px
+                line-height 30px
+                position relative
+                padding-left 41px
+                margin-bottom 30px
+                &:before
+                    content "4.1"
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #319BE2;
+                    left: 0
+                    position absolute
+                a
+                    color: #309BE2
+                    &:hover
+                        color: hsl(204, 75%, 44%)
+            &-5
+                font-size 20px
+                line-height 30px
+                position relative
+                padding-left 41px
+                margin-bottom 30px
+                &:before
+                    content "5.1"
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #319BE2;
+                    left: 0
+                    position absolute
+            &:before
+                content counter(policy) "."
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: #319BE2;
+                left: 0
+                position absolute
+            &:not(:last-child)
+                margin-bottom 30px
+            ul
+                padding-top 20px
+                li
+                    position relative
+                    padding-left 22px
+                    &:not(:last-child)
+                        margin-bottom 20px
+                    &:before
+                        content: '';
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%;
+                        border: 4px solid #319be2;
+                        position: absolute;
+                        left: 0;
+                        top: 8px;
+
+            
+
+@media (max-width : 425px)
+    .policy
+        &__title
+            font-size 28px
+            line-height 30px
+        &__desc
+            font-size 15px
+        &__list
+            &-item
+                font-size 15px
+                &-4
+                    font-size 15px
+                &-5
+                    font-size 15px

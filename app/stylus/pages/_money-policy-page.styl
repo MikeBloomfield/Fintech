@@ -1,0 +1,120 @@
+.money-policy
+    padding-top 117px
+    background: linear-gradient(191.07deg, #242666 0.71%, #090B2F 54.6%);
+    padding-bottom 80px
+    &__wrapper
+        max-width: 970px
+        margin: auto
+    &__title
+        text-transform uppercase
+        font-size 45px
+        line-height 50px
+        margin-bottom 40px
+        text-align center
+    &__desc
+        font-size 20px
+        line-height 30px
+        counter-reset: money-policy
+    &__list
+        margin-bottom 40px
+        list-style: none
+        &-item
+            counter-increment: money-policy
+            font-size 20px
+            line-height 30px
+            margin-left: 35px
+            padding-left 35px
+            position relative
+            &:not(:last-child)
+                margin-bottom 20px
+            &:before
+                content counter(money-policy) "."
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: #319BE2;
+                left: 0
+                position absolute
+            ul
+                max-width: 910px
+                margin: 20px auto 0
+                li
+                    position relative
+                    font-size 20px
+                    line-height 30px
+                    padding-left 22px
+                    &:before
+                        content: '';
+                        display: block;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        border: 3px solid #319be2;
+                        position: absolute;
+                        left: 0;
+                        top: 10px;
+                    &:not(:last-child)
+                        margin-bottom 20px
+                .letter
+                    padding-left 35px
+                    &:before
+                        content: "a)"
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #319BE2;
+                        position absolute
+                        left: 0
+                        top: -1px
+                        border: none
+                    &-2
+                        &:before
+                            content: "b)"
+                    &-3
+                        &:before
+                            content: "c)"
+                    &-4
+                        &:before
+                            content: "d)"
+                    &-5
+                        &:before
+                            content: "e)"
+                    &-6
+                        &:before
+                            content: "f)"
+                    &-7
+                        &:before
+                            content: "g)"
+                    &-8
+                        &:before
+                            content: "h)"
+                    &-9
+                        &:before
+                            content: "i)"
+                    &-10
+                        &:before
+                            content: "j)"
+                    &-11
+                        &:before
+                            content: "k)"
+                    &-12
+                        &:before
+                            content: "l)"
+
+
+
+
+@media (max-width : 425px)
+    .money-policy
+        &__title
+            font-size 28px
+            line-height 30px
+        &__list
+            &-item
+                margin-left 0
+                font-size 15px
+                ul
+                    li
+                        font-size 15px
+        &__desc
+            font-size 15px
